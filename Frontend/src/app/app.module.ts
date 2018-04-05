@@ -38,7 +38,7 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     HttpModule,
     ComponentsModule,
-RouterModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [],

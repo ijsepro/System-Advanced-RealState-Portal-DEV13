@@ -14,6 +14,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import {LoginComponent} from "./login/login.component";
 
 const routes: Routes =[
+    { path: '',        component: LoginComponent },
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
@@ -21,8 +22,8 @@ const routes: Routes =[
     { path: 'icons',          component: IconsComponent },
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
-    { path: 'login',        component: LoginComponent },
-    { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
+    { path: 'login',        component: LoginComponent }
+    //{ path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
 @NgModule({

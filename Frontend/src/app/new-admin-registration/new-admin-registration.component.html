@@ -1,0 +1,86 @@
+<div class="wrapper" style="height: 80%">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+
+                <div class="row card card-profile">
+                    <div class="card-header" data-background-color="default">
+                        <h4 class="title" style="font-weight: bold">New Admin </h4>
+                    </div>
+                    <div class="col-md-6">
+
+
+                        <form>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="content">
+                                <div class=" form-group card-avatar">
+                                    <a href="#pablo" type="profile">
+                                        <img id="profileImage"[src]="url" class="img-rounded img-responsive img-raised"
+                                             src="../../../assets/img/faces/avatar.jpg"/>
+                                        <input type="file" name="file" placeholder="Photo" (change)="readUrl($event)"
+                                               required=""/>
+                                    </a>
+
+                                </div>
+
+                                <h6 class="category text-gray">Admin</h6>
+
+
+                            </div>
+                        </form>
+
+
+
+                    </div>
+                    <form>
+                        <div class="col-md-6">
+                            <div class="content" style="padding-right: 20px">
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">account_circle</i>
+										</span>
+                                    <input type="text" class="form-control" placeholder="User Name...">
+                                </div>
+
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">email</i>
+										</span>
+                                    <input type="text" placeholder="Email..." class="form-control"/>
+                                </div>
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                                    <input type="password" placeholder="Password..." class="form-control"/>
+                                </div>
+                                <div class="input-group">
+										<span class="input-group-addon">
+											<i class="material-icons">lock_outline</i>
+										</span>
+                                    <input type="password" placeholder="Re Enter Password..." class="form-control"/>
+                                </div>
+                                <div class="input-group">
+
+                                </div>
+
+                                <button class="btn btn-facebook" style="left: 38.5%">Register</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>

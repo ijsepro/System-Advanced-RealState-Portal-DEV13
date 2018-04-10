@@ -12,7 +12,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="new-admin-registration.component.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="new-admin-registration.component.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frontend/src/app/new-admin-registration/new-admin-registration.component.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -22,7 +22,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frontend/src/app/login/login.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -165,62 +165,6 @@
             <path>
               <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="new-admin-registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="reset-password" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Advanced RealState Portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Advanced RealState Portal" type="462c0819:PsiDirectoryNode" />
-              <item name="Frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="typings" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -397,12 +341,12 @@
       <workItem from="1523247839428" duration="2361000" />
       <workItem from="1523257531066" duration="4173000" />
       <workItem from="1523294219006" duration="601000" />
-      <workItem from="1523370073832" duration="1444000" />
+      <workItem from="1523370073832" duration="2563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61808000" />
+    <option name="totallyTimeSpent" value="62927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -746,14 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frontend/src/app/new-admin-registration/new-admin-registration.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -796,6 +732,14 @@
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frontend/src/app/new-admin-registration/new-admin-registration.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -7,10 +7,12 @@ import { HomeComponent } from './home/home.component';
 import {LayoutComponent} from "./layout/layout.component";
 import {NotificationComponent} from "./layout/notification/notification.component";
 import {DashboardComponent} from "./layout/dashboard/dashboard.component";
+import {ForgetPasswordComponent} from "./forget-password/forget-password.component";
 
 const routes: Routes =[
     { path: '',             component: HomeComponent },
     { path: 'home',             component: HomeComponent },
+    { path: 'forget-password',             component: ForgetPasswordComponent },
     { path: 'layout',             component: LayoutComponent,
         children: [
             { path: '', component: DashboardComponent},

@@ -8,13 +8,13 @@ import {LayoutComponent} from './layout/layout.component';
 import {NotificationComponent} from './layout/notification/notification.component';
 import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
-import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
+import {NewAdminComponent} from './new-admin/new-admin.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'forget-password', component: ForgetPasswordComponent},
-    {path: 'new-admin', component: NewAdminRegistrationComponent},
+    {path: 'new-admin', component: NewAdminComponent},
     {
         path: 'layout', component: LayoutComponent,
         children: [

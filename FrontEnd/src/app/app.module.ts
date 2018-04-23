@@ -19,6 +19,7 @@ import {ForgetPasswordService} from "./services/forget-password.service";
 import {HttpModule} from "@angular/http";
 import { NewAdminRegistrationComponent } from './new-admin-registration/new-admin-registration.component';
 import {AdminService} from './services/admin.service';
+import { NewAdminComponent } from './new-admin/new-admin.component';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import {AdminService} from './services/admin.service';
         NotificationComponent,
         DashboardComponent,
         ForgetPasswordComponent,
-        NewAdminRegistrationComponent
+        NewAdminRegistrationComponent,
+        NewAdminComponent
     ],
     imports: [
         BrowserModule,

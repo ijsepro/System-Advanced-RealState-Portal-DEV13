@@ -12,10 +12,10 @@ export class AdminService {
 
     registerAdmin(formdata) {
         // return this.http.post(this.url + '/' + admin['name'] + '/' + admin['email'] + '/' + admin['password'], admin);
-        // return this.http.post(this.url, formdata);
+        return this.http.post(this.url, formdata);
     }
 
-    public uploadImage(formdata: any) {
-        return this.http.post('http://localhost/BackEnd/AREP/admin/uploadImage/', formdata);
-    }
+    // public uploadImage(formdata: any) {
+    //     return this.http.post('http://localhost/BackEnd/AREP/admin/uploadImage/', formdata);
+    // }
 }

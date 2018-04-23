@@ -1,0 +1,12 @@
+drop database edifices;
+create database edifices;
+use edifices;
+
+create table admin (
+	adminID int not null AUTO_INCREMENT,
+	adminUserName varchar(10)not null,
+	adminEmail varchar(100)not null,
+	adminPassword varchar(100)not null,
+	adminProfilePicture varchar(100),
+	constraint primary key(adminID)	
+);

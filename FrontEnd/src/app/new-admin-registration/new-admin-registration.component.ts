@@ -40,15 +40,14 @@ export class NewAdminRegistrationComponent implements OnInit {
         formData.append('adminName', adminName);
         formData.append('adminEmail', adminEmail);
         formData.append('adminPassword', adminPassword);
-        alert(adminName);
-        // this.service.registerAdmin(formData)
-        //     .subscribe(res => {
-        //         if (res.json() === 1) {
-        //             alert('New Admin Has Being Autherized')
-        //         } else {
-        //             alert('Error Autherizing  New Admin')
-        //         }
-        //     });
+        this.service.registerAdmin(formData)
+            .subscribe(res => {
+                if (res.json() === 1) {
+                    alert('New Admin Has Being Autherized')
+                } else {
+                    alert('Error Autherizing  New Admin')
+                }
+            });
 
     }
 

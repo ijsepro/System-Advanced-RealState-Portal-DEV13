@@ -15,6 +15,8 @@ import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import {NotificationComponent} from './layout/notification/notification.component';
 import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
+import {ForgetPasswordService} from "./services/forget-password.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
     declarations: [
@@ -32,11 +34,14 @@ import {ForgetPasswordComponent} from './forget-password/forget-password.compone
         NgbModule.forRoot(),
         FormsModule,
         RouterModule,
+        HttpModule,
         ReactiveFormsModule,
         AppRoutingModule,
         HomeModule
     ],
-    providers: [],
+    providers: [
+        ForgetPasswordService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {

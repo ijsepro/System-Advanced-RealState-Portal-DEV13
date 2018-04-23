@@ -1,23 +1,26 @@
-import { NgModule } from '@angular/core';
-import { CommonModule, } from '@angular/common';
-import { BrowserModule  } from '@angular/platform-browser';
-import { Routes, RouterModule } from '@angular/router';
+import {NgModule} from '@angular/core';
+import {CommonModule,} from '@angular/common';
+import {BrowserModule} from '@angular/platform-browser';
+import {Routes, RouterModule} from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import {LayoutComponent} from "./layout/layout.component";
-import {NotificationComponent} from "./layout/notification/notification.component";
-import {DashboardComponent} from "./layout/dashboard/dashboard.component";
-import {ForgetPasswordComponent} from "./forget-password/forget-password.component";
+import {HomeComponent} from './home/home.component';
+import {LayoutComponent} from './layout/layout.component';
+import {NotificationComponent} from './layout/notification/notification.component';
+import {DashboardComponent} from './layout/dashboard/dashboard.component';
+import {ForgetPasswordComponent} from './forget-password/forget-password.component';
+import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
 
-const routes: Routes =[
-    { path: '',             component: HomeComponent },
-    { path: 'home',             component: HomeComponent },
-    { path: 'forget-password',             component: ForgetPasswordComponent },
-    { path: 'layout',             component: LayoutComponent,
+const routes: Routes = [
+    {path: '', component: HomeComponent},
+    {path: 'home', component: HomeComponent},
+    {path: 'forget-password', component: ForgetPasswordComponent},
+    {path: 'new-admin', component: NewAdminRegistrationComponent},
+    {
+        path: 'layout', component: LayoutComponent,
         children: [
-            { path: '', component: DashboardComponent},
-            { path: 'dashboard', component: DashboardComponent },
-            { path: 'notification', component: NotificationComponent }
+            {path: '', component: DashboardComponent},
+            {path: 'dashboard', component: DashboardComponent},
+            {path: 'notification', component: NotificationComponent}
         ]
     },
 ];
@@ -34,11 +37,12 @@ const routes: Routes =[
 // ];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    BrowserModule,
-    RouterModule.forRoot(routes)
-  ],
-  exports: [RouterModule],
+    imports: [
+        CommonModule,
+        BrowserModule,
+        RouterModule.forRoot(routes)
+    ],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

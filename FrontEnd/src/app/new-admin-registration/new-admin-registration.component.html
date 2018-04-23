@@ -1,0 +1,67 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('../../assets/img/buildings-2862807_1920.jpg');">
+        <div class="filter"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                    <div class="card card-register text-center" style="background-color: white">
+                        <h3 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">New Admin</h3>
+                        <div class="card card-avatar form-group" style="height: 130px;width: 130px;left: 28.5%">
+                            <a type="profile">
+                                <img id="profileImage" [src]="url" class="img-rounded img-responsive img-raised"
+                                />
+                                <input id="selectFile" type="file" name="selectFile" placeholder="Photo"
+                                       (change)="readUrl($event)"
+                                       required="" value="upload" #img/>
+                            </a>
+                        </div>
+                        <form class="register-form">
+
+                            <div class="content" style="padding-right: 20px">
+
+                                <div class="input-group">
+										<span class="input-group-text">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                    <input #adminName id="adminName" name="adminName" type="text" class="form-control"
+                                           placeholder="User Name...">
+                                </div>
+
+                                <div class="input-group">
+										<span class="input-group-text">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                    <input #adminEmail id="adminEmail" name="adminEmail" type="text"
+                                           placeholder="Email..." class="form-control"/>
+                                </div>
+                                <div class="input-group">
+										<span class="input-group-text">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                    <input #adminPassword id="adminPassword" name="adminPassword" type="password"
+                                           placeholder="Password..."
+                                           class="form-control"/>
+                                </div>
+                                <div class="input-group">
+										<span class="input-group-text">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                    <input #reenterPassword type="password" placeholder="Re Enter Password..."
+                                           class="form-control"/>
+                                </div>
+                                <div class="input-group">
+
+                                </div>
+
+                                <button (click)="newAdmin()"
+                                        class="btn btn-facebook"
+                                        style="left: 38.5%" value="upload">Register
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

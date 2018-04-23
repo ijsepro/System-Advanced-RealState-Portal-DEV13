@@ -17,6 +17,8 @@ import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
 import {ForgetPasswordService} from "./services/forget-password.service";
 import {HttpModule} from "@angular/http";
+import { NewAdminRegistrationComponent } from './new-admin-registration/new-admin-registration.component';
+import {AdminService} from './services/admin.service';
 
 @NgModule({
     declarations: [
@@ -27,7 +29,8 @@ import {HttpModule} from "@angular/http";
         SidebarComponent,
         NotificationComponent,
         DashboardComponent,
-        ForgetPasswordComponent
+        ForgetPasswordComponent,
+        NewAdminRegistrationComponent
     ],
     imports: [
         BrowserModule,
@@ -40,7 +43,8 @@ import {HttpModule} from "@angular/http";
         HomeModule
     ],
     providers: [
-        ForgetPasswordService
+        ForgetPasswordService,
+        AdminService
     ],
     bootstrap: [AppComponent]
 })

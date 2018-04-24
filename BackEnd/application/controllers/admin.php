@@ -35,7 +35,7 @@ class Admin extends CI_Controller
 				$result = $this->admin_model->insert([
 					'adminUsername' => $_POST['adminName'],
 					'adminemail' => $_POST['adminEmail'],
-					'adminpassword' => $_POST['adminPassword'],
+					'adminpassword' => hash('Edifices123', $_POST['adminPassword']),
 					'adminprofilepicture' => $target_file,
 				]);
 				echo $result;

@@ -20,6 +20,7 @@ import {HttpModule} from "@angular/http";
 import { NewAdminRegistrationComponent } from './new-admin-registration/new-admin-registration.component';
 import {AdminService} from './services/admin.service';
 import { NewAdminComponent } from './new-admin/new-admin.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
 
 @NgModule({
     declarations: [
@@ -32,7 +33,8 @@ import { NewAdminComponent } from './new-admin/new-admin.component';
         DashboardComponent,
         ForgetPasswordComponent,
         NewAdminRegistrationComponent,
-        NewAdminComponent
+        NewAdminComponent,
+        ResetPasswordComponent
     ],
     imports: [
         BrowserModule,

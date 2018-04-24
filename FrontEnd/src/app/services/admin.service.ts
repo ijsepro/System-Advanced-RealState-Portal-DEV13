@@ -13,6 +13,6 @@ export class AdminService {
     }
 
     sendEmail(formdata) {
-        return this.http.post('http://localhost/BackEnd/Edifices/Backend/index.php/admin/sendEmail', formdata);
+        return this.http.post('http://localhost/MyServer/AREP/index.php/admin/sendEmail', formdata);
     }
 }

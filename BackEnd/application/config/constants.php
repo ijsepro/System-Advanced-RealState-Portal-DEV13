@@ -1,6 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+define('Edifices','DTTMEdifices123');
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace

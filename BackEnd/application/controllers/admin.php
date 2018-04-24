@@ -31,11 +31,12 @@ class Admin extends CI_Controller
 		if ($uploadOK == 0) {
 			echo "Sorry";
 		} else {
+			$password = $_POST['adminPassword'];
 			if (move_uploaded_file($_FILES['selectFile']["tmp_name"], $target_file)) {
 				$result = $this->admin_model->insert([
 					'adminUsername' => $_POST['adminName'],
 					'adminemail' => $_POST['adminEmail'],
-					'adminpassword' => hash('Edifices123', $_POST['adminPassword']),
+					'adminpassword' => hash('sha256', $password . Edifices),
 					'adminprofilepicture' => $target_file,
 				]);
 				echo $result;

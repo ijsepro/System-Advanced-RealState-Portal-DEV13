@@ -44,4 +44,29 @@ class Admin extends CI_Controller
 			}
 		}
 	}
+
+	public function sendEmail()
+	{
+		$userName = $_POST["userName"];
+		$userEmail = $_POST["userEmail"];
+		$adminUserName = $_POST["adminUserName"];
+		$adminID = $this->admin_model->findAdmin($adminUserName);
+		if ($adminID != null) {
+			$result = $this->admin_model->newAdmin([
+				'newAdminUserName' => $userName,
+				'newAdminEmail' => $userEmail,
+				'adminID' => $adminID,
+
+			]);
+			if ($result == 1) {
+				$resultMail = $this->admin_model->sendMail($userEmail, $userName);
+				echo $resultMail;
+			} else {
+				echo "Please Try Again";
+			}
+		} else {
+			echo "You are not and admin to authorise a new one ";
+		}
+
+	}
 }

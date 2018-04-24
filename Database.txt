@@ -10,3 +10,11 @@ create table admin (
 	adminProfilePicture varchar(100),
 	constraint primary key(adminID)	
 );
+create table newAdmin(
+	newAdminID int not null AUTO_INCREMENT,
+	newAdminUserName varchar(10)not null,
+	newAdminEmail varchar(100)not null,
+	adminID int not null,
+	constraint primary key(newAdminId),
+	constraint foreign key(adminID) references admin(adminID)
+);

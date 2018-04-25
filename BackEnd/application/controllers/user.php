@@ -13,92 +13,84 @@ header('Access-Control-Allow-Headers, Content-Type');
 class User extends CI_Controller
 {
 
-    public function __construct()
-    {
-        parent:: __construct();
-        $this->load->model('user_model');
-    }
+	public function __construct()
+	{
+		parent:: __construct();
+		$this->load->model('user_model');
+	}
 
-    function checkUser($email)
-    {
+	function sendMail($email = '')
+	{
+		$userID = null;
+		$token = null;
+		$status = null;
 
-        $data = $this->user_model->checkUser($email);
-        print_r($data);
+		if ($this->user_model->checkUser($email) == "true") {
+			$userID = $this->user_model->userID($email);
+			$token = $this->user_model->generateRandomString();
 
-    }
+			$data = array(
+				'userID' => $userID,
+				'token' => $token
+			);
+			$query = $this->db->insert('recovery_keys', $data);
 
-    function userID($email = '')
-    {
-
-        $data = $this->user_model->userID($email);
-        print_r($data);
-
-    }
-
-
-    function generateRandomString($length = 20)
-    {
-        $data = $this->user_model->generateRandomString($length = 20);
-        print_r($data);
-    }
+			if ($query) {
+				$send_mail = $this->user_model->sendMail($email, $token);
 
 
-    function sendMail($email = '')
-    {
-        $userID = null;
-        $token = null;
-        $status = null;
-
-        if ($this->user_model->checkUser($email) == "true") {
-            $userID = $this->user_model->userID($email);
-            $token = $this->user_model->generateRandomString();
-
-            $data = array(
-                'userID' => $userID,
-                'token' => $token
-            );
-            $query = $this->db->insert('recovery_keys', $data);
-
-            if ($query) {
-                $send_mail = $this->user_model->sendMail($email, $token);
+				if ($send_mail === 'success') {
+					$status = 'A mail with recovery instruction has sent to your email.';
+				} else {
+					$status = 'There is something wrong.';
+				}
 
 
-                if ($send_mail === 'success') {
-                    $status = 'A mail with recovery instruction has sent to your email.';
-                } else {
-                    $status = 'There is something wrong.';
-                }
+			} else {
+				$status = 'There is something wrong.';
+			}
 
+		} else {
+			$status = "This email doesn't exist in our database.";
+		}
 
-            } else {
-                $status = 'There is something wrong.';
-            }
+		$json = json_encode($status);
+		echo $json;
 
-        } else {
-            $status = "This email doesn't exist in our database.";
-        }
+	}
 
-        $json = json_encode($status);
-        echo $json;
+	public function updatePassword()
+	{
+		$securityCode = $_POST["securityCodee"];
+		$newPassword = $_POST["newPasswordd"];
+		$rePassword = $_POST["rePasswordd"];
+		$userID = $this->user_model->getUserID($securityCode);
+		$rid = $this->user_model->getRID($securityCode);
 
-    }
+		$status = null;
 
-    function verifytoken($userID, $token)
-    {
-        $this->db->select('valid');
-        $query = $this->db->get_where('recovery_keys', ['userID' => $userID] && ['token' => $token]);
+		if ($userID != null) {
+			$result = $this->user_model->updatePassword($userID, [
+				'password' => $newPassword
+			]);
+			if ($result == 1) {
+				$setTokenUsed = $this->user_model->setTokenUsed($rid, [
+					'valid' => "0"
+				]);
+				if ($setTokenUsed == 1) {
+					$status = "Password updated sucessfully";
+				} else {
+					$status = "Please Try Again";
+				}
 
-        $row = mysqli_fetch_assoc($query);
+			} else {
+				$status = "Please Try Again";
+			}
+		} else {
+			$status = "You have enterd an invalid security code.";
+		}
 
-        if (mysqli_num_rows($query) > 0) {
-            if ($row['valid'] == 1) {
-                return 1;
-            } else {
-                return 0;
-            }
-        } else {
-            return 0;
-        }
-
-    }
+		$json = json_encode($status);
+		echo $json;
+	}
 }

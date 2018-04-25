@@ -21,6 +21,7 @@ import { NewAdminRegistrationComponent } from './new-admin-registration/new-admi
 import {AdminService} from './services/admin.service';
 import { NewAdminComponent } from './new-admin/new-admin.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import {ResetPasswordService} from './services/reset-password.service';
 
 @NgModule({
     declarations: [
@@ -48,7 +49,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
     ],
     providers: [
         ForgetPasswordService,
-        AdminService
+        AdminService,
+        ResetPasswordService
     ],
     bootstrap: [AppComponent]
 })

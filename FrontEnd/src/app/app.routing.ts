@@ -10,6 +10,7 @@ import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
 import {NewAdminComponent} from './new-admin/new-admin.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
+import {ConstructorProfileComponent} from './manage-constructor/constructor-profile/constructor-profile.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -23,6 +24,7 @@ const routes: Routes = [
             {path: 'dashboard', component: DashboardComponent},
             {path: 'notification', component: NotificationComponent},
             {path: 'architectures', component: ArchitectureOverviewComponent},
+            {path: 'constructors', component: ConstructorProfileComponent}
         ]
     },
 ];

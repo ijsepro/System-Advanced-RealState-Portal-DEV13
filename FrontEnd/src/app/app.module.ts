@@ -23,6 +23,7 @@ import { NewAdminComponent } from './new-admin/new-admin.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
 import {ResetPasswordService} from './services/reset-password.service';
+import { ConstructorProfileComponent } from './manage-constructor/constructor-profile/constructor-profile.component';
 
 @NgModule({
     declarations: [
@@ -37,7 +38,8 @@ import {ResetPasswordService} from './services/reset-password.service';
         NewAdminRegistrationComponent,
         NewAdminComponent,
         ResetPasswordComponent,
-        ArchitectureOverviewComponent
+        ArchitectureOverviewComponent,
+        ConstructorProfileComponent
     ],
     imports: [
         BrowserModule,

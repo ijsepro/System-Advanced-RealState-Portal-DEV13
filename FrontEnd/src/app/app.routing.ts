@@ -9,6 +9,7 @@ import {NotificationComponent} from './layout/notification/notification.componen
 import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
 import {NewAdminComponent} from './new-admin/new-admin.component';
+import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
         children: [
             {path: '', component: DashboardComponent},
             {path: 'dashboard', component: DashboardComponent},
-            {path: 'notification', component: NotificationComponent}
+            {path: 'notification', component: NotificationComponent},
+            {path: 'architectures', component: ArchitectureOverviewComponent},
         ]
     },
 ];

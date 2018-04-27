@@ -12,6 +12,7 @@ import {NewAdminComponent} from './new-admin/new-admin.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
 import {ConstructorProfileComponent} from './manage-constructor/constructor-profile/constructor-profile.component';
 import {ArchitectureProfileComponent} from './layout/architecture-profile/architecture-profile.component';
+import {ConstructorOverviewComponent} from './manage-constructor/constructor-overview/constructor-overview.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
             {path: 'dashboard', component: DashboardComponent},
             {path: 'notification', component: NotificationComponent},
             {path: 'architectures', component: ArchitectureOverviewComponent},
-            {path: 'constructors', component: ConstructorProfileComponent},
+            {path: 'constructors', component: ConstructorOverviewComponent},
+            {path: 'constructor-profile', component: ConstructorProfileComponent},
             {path: 'architecture-profile', component: ArchitectureProfileComponent}
         ]
     },

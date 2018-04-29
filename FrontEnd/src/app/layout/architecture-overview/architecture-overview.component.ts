@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ArchitectureService} from '../../services/architecture.service';
 
 @Component({
     selector: 'app-architecture-overview',
@@ -7,16 +8,20 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ArchitectureOverviewComponent implements OnInit {
 
-    constructor() {
+    constructor(private service: ArchitectureService) {
     }
 
     ngOnInit() {
     }
 
     dropdown() {
-        alert("Working");
+        this.service.getArchitectures().subscribe(res => {
+            let s = res.json();
+            console.log(s['adminID']);
+        });
     }
+
     search() {
-        alert("Search");
+        alert('Search');
     }
 }

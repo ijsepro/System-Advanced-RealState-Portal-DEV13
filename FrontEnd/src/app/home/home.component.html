@@ -1,0 +1,44 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('../../assets/img/buildings-2862807_1920.jpg');">
+        <div class="filter"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                    <div class="card card-register text-center" style="background-color: white">
+                        <h3 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">LogIN</h3>
+                        <form class="register-form">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Email"
+                                           aria-describedby="basic-addon1" name="email" id="email">
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-lock"></i>
+                                        </span>
+                                    </div>
+                                    <input type="password" class="form-control" placeholder="Password"
+                                           aria-describedby="basic-addon1" name="password" id="password">
+                                </div>
+                                <div class="input-group">
+                                    <button type="submit" class="btn btn-primary btn-block" (click)="signIn()">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="forgot">
+                            <a href="#" routerLink="/forget-password" class="btn btn-link" style="color: purple">Forgot
+                                password?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

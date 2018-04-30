@@ -27,6 +27,8 @@ import { ConstructorProfileComponent } from './manage-constructor/constructor-pr
 import { ArchitectureProfileComponent } from './layout/architecture-profile/architecture-profile.component';
 import { ConstructorOverviewComponent } from './manage-constructor/constructor-overview/constructor-overview.component';
 import {ArchitectureService} from './services/architecture.service';
+import {AuthService} from './services/auth.service';
+import {AuthGuard} from './auth.guard';
 
 @NgModule({
     declarations: [
@@ -59,6 +61,8 @@ import {ArchitectureService} from './services/architecture.service';
     providers: [
         ForgetPasswordService,
         AdminService,
+        AuthService,
+        AuthGuard,
         ResetPasswordService,
         ArchitectureService
     ],

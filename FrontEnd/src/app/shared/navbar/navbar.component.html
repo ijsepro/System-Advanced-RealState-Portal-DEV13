@@ -1,9 +1,8 @@
 <!-- Navbar -->
 <nav class="navbar navbar-inverse navbar-expand-lg navbar-absolute fixed-top" role="navigation-demo">
-    <div class="container" style="background-color: #5f6060;color: white">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-translate">
-            <a class="navbar-brand" href="/" style="color: white">Dashboard</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
                     aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -12,7 +11,7 @@
             </button>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" style="color: #0b1011">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="#pablo" class="nav-link">
@@ -20,8 +19,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#pablo" class="nav-link">
-                        Wishlist
+                    <a href="" class="nav-link" data-toggle="modal" data-target="#exampleModal">
+                        Create New Admin
                     </a>
                 </li>
                 <li class="dropdown nav-item">
@@ -32,10 +31,10 @@
                         </div>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <h6 class="dropdown-header">Dropdown header</h6>
-                        <a href="#pablo" class="dropdown-item">Me</a>
-                        <a href="#pablo" class="dropdown-item">Settings and other stuff</a>
-                        <a href="#pablo" class="dropdown-item">Sign out</a>
+                        <h6 class="dropdown-header">Administrator Options</h6>
+                        <a href="" class="dropdown-item">Me</a>
+                        <a href="" class="dropdown-item" >Settings and other stuff</a>
+                        <a href="" class="dropdown-item" (click)="authService.logout()">Sign out</a>
                     </div>
                 </li>
             </ul>
@@ -44,4 +43,57 @@
     </div>
     <!-- /.container-->
 </nav>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">New Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form class="register-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="New Admin's UserName"
+                                   aria-describedby="basic-addon1" id="userName" name="userName" #userName>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="New Admin's Email"
+                                   aria-describedby="basic-addon1" name="userEmail" id="userEmail" #userEmail>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user-secret"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Your UserName"
+                                   aria-describedby="basic-addon1"  id="adminUserName" #adminUserName>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input-group">
+                            <button (click)="sendEmail()" type="button" class="btn btn-primary btn-block">Send
+                                Email
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 

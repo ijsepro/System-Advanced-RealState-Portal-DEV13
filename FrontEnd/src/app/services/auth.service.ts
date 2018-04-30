@@ -1,24 +1,37 @@
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class AuthService {
 
-  constructor() { }
+  private url = "http://localhost/IntellijIDEA/AREP/BackEnd/index.php/login";
+  private loggedInStatus=JSON.parse(localStorage.getItem('loggedIn') || 'false');
+
+  constructor(private http:Http) { }
 
     login(credentials) {
-        // return this.http.post('/api/authenticate', JSON.stringify(credentials))
-        //     .map(response => {
-        //         const result = response.json();
-        //
-        //         if (result && result.token) {
-        //             localStorage.setItem('token', result.token);
-        //
-        //             const jwt = new JwtHelper();
-        //             this.currentUser = jwt.decodeToken(localStorage.getItem('token'));
-        //
-        //             return true;
-        //         }
-        //         else return false;
-        //     });
+        return this.http.post(this.url,credentials).map(response=>{
+          if((response.json()).success){
+              return true;
+          } else{
+            return false;
+          }
+        });
     }
+
+    logout() {
+        localStorage.removeItem('loggedIn');
+    }
+
+
+    setLoggedIn(value:boolean){
+      this.loggedInStatus=value;
+      localStorage.setItem('loggedIn','true');
+    }
+
+    isLoggedIn(){
+        return JSON.parse(localStorage.getItem('loggedIn') || this.loggedInStatus.toString());
+    }
+
 }

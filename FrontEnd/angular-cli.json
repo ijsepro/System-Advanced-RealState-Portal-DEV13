@@ -22,7 +22,6 @@
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "styles.css",
         "assets/sass/paper-kit.scss",
-        "assets/css/material-kit.css",
         "assets/css/demo.css",
         "assets/css/nucleo-icons.css"
       ],

@@ -13,6 +13,7 @@ import {ArchitectureOverviewComponent} from './layout/architecture-overview/arch
 import {ConstructorProfileComponent} from './manage-constructor/constructor-profile/constructor-profile.component';
 import {ArchitectureProfileComponent} from './layout/architecture-profile/architecture-profile.component';
 import {ConstructorOverviewComponent} from './manage-constructor/constructor-overview/constructor-overview.component';
+import {AuthGuard} from './auth.guard';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -20,7 +21,7 @@ const routes: Routes = [
     {path: 'forget-password', component: ForgetPasswordComponent},
     {path: 'new-admin', component: NewAdminComponent},
     {
-        path: 'layout', component: LayoutComponent,
+        path: 'layout', component: LayoutComponent,canActivate: [AuthGuard],
         children: [
             {path: '', component: DashboardComponent},
             {path: 'dashboard', component: DashboardComponent},
@@ -32,17 +33,6 @@ const routes: Routes = [
         ]
     },
 ];
-
-
-// const routes: Routes = [
-//     { path: '', loadChildren: './layout/layout.module#LayoutModule'},
-//     { path: 'login', loadChildren: './login/login.module#LoginModule' },
-//     { path: 'signup', loadChildren: './signup/signup.module#SignupModule' },
-//     { path: 'error', loadChildren: './server-error/server-error.module#ServerErrorModule' },
-//     { path: 'access-denied', loadChildren: './access-denied/access-denied.module#AccessDeniedModule' },
-//     { path: 'not-found', loadChildren: './not-found/not-found.module#NotFoundModule' },
-//     { path: '**', redirectTo: 'not-found' }
-// ];
 
 @NgModule({
     imports: [

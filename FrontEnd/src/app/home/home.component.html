@@ -6,21 +6,16 @@
                 <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
                     <div class="card card-register text-center" style="background-color: white">
                         <h3 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">LogIN</h3>
-                        <div class="card card-avatar" style="height: 130px;width: 130px;left: 28.5%">
-                            <img class="img-rounded img-responsive img-raised"
-                                 src="../../assets/img/faces/kaci-baum-2.jpg"/>
-                        </div>
                         <form class="register-form">
-
                             <div class="form-group">
-                                <div class="form-group input-group">
+                                <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text">
                                             <i class="fa fa-envelope"></i>
                                         </span>
                                     </div>
                                     <input type="text" class="form-control" placeholder="Email"
-                                           aria-describedby="basic-addon1">
+                                           aria-describedby="basic-addon1" name="email" id="email">
                                 </div>
                                 <br>
                                 <div class="input-group">
@@ -30,11 +25,10 @@
                                         </span>
                                     </div>
                                     <input type="password" class="form-control" placeholder="Password"
-                                           aria-describedby="basic-addon1">
+                                           aria-describedby="basic-addon1" name="password" id="password">
                                 </div>
                                 <div class="input-group">
-                                    <button routerLink="/layout" type="button" class="btn btn-primary btn-block">Login
-                                    </button>
+                                    <button type="submit" class="btn btn-primary btn-block" (click)="signIn()">Login</button>
                                 </div>
                             </div>
                         </form>

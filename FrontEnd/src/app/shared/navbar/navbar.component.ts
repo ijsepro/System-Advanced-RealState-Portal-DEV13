@@ -1,5 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
+import {AuthService} from '../../services/auth.service';
+import {AdminService} from '../../services/admin.service';
 
 @Component({
     selector: 'app-navbar',
@@ -10,7 +12,7 @@ export class NavbarComponent implements OnInit {
     private toggleButton: any;
     private sidebarVisible: boolean;
 
-    constructor(public location: Location, private element : ElementRef) {
+    constructor(public location: Location, private element : ElementRef,private authService:AuthService,private service: AdminService) {
         this.sidebarVisible = false;
     }
 
@@ -56,6 +58,22 @@ export class NavbarComponent implements OnInit {
         else {
             return false;
         }
+    }
+
+    sendEmail() {
+        const formdata = new FormData();
+        const userName = this.element.nativeElement.querySelector('#userName').value;
+        const userEmail = this.element.nativeElement.querySelector('#userEmail').value;
+        const adminUserName = this.element.nativeElement.querySelector('#adminUserName').value;
+        formdata.append('userName', userName);
+        formdata.append('userEmail', userEmail);
+        formdata.append('adminUserName', adminUserName);
+
+        this.service.sendEmail(formdata).subscribe(
+            resp => {
+                alert(resp.json());
+            }
+        )
     }
 
 }

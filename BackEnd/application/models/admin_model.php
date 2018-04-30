@@ -43,5 +43,27 @@ class Admin_model extends CI_Model
 
 		return 'success';
 	}
+
+	public function checkAdmin($email, $password)
+	{
+		$query = $this->db->select('adminusername')->where(['adminPassword' => $password])->where(['adminEmail' => $email])->get('admin');
+		if ($query->num_rows() == 1) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+
+	public function read_user_information($email) {
+
+		$query = $this->db->select('adminId')->where(['adminEmail' => $email])->get('admin');
+
+		if ($query->num_rows() == 1) {
+			return $query->result();
+		} else {
+			return false;
+		}
+	}
+
 }
 

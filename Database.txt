@@ -9,7 +9,8 @@ create table admin (
 	adminPassword varchar(100)not null,
 	adminProfilePicture varchar(100),
 	constraint primary key(adminID)	
-);
+) ENGINE=InnoDB;
+
 create table newAdmin(
 	newAdminID int not null AUTO_INCREMENT,
 	newAdminUserName varchar(10)not null,
@@ -17,4 +18,12 @@ create table newAdmin(
 	adminID int not null,
 	constraint primary key(newAdminId),
 	constraint foreign key(adminID) references admin(adminID)
-);
+) ENGINE=InnoDB;
+
+create table recovery_keys (
+  rid int(11) NOT NULL AUTO_INCREMENT,
+  userID int(11) NOT NULL,
+  token varchar(50) NOT NULL,
+  valid tinyint(4) NOT NULL DEFAULT '1',
+  PRIMARY KEY (rid)
+) ENGINE=InnoDB;

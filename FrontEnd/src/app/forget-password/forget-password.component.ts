@@ -26,10 +26,10 @@ export class ForgetPasswordComponent implements OnInit {
         return this.form.get('email');
     }
 
-    sendMail(input: HTMLInputElement) {
+    sendPasswordResetMail(input: HTMLInputElement) {
         let emaill = input.value;
 
-        this.service.sendMail(emaill)
+        this.service.sendPasswordResetMail(emaill)
             .subscribe(response => {
 
                 alert(response.json());

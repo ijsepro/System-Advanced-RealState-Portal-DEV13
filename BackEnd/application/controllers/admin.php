@@ -19,6 +19,81 @@ class Admin extends CI_Controller
 
 	}
 
+	function sendPasswordResetMail($email = '')
+	{
+		$userID = null;
+		$token = null;
+		$status = null;
+
+		if ($this->admin_model->checkUser($email) == "true") {
+			$userID = $this->admin_model->userID($email);
+			$token = $this->admin_model->generateRandomString();
+
+			$data = array(
+				'userID' => $userID,
+				'token' => $token
+			);
+			$query = $this->db->insert('recovery_keys', $data);
+
+			if ($query) {
+				$send_mail = $this->admin_model->sendPasswordResetMail($email, $token);
+
+
+				if ($send_mail === 'success') {
+					$status = 'A mail with recovery instruction has sent to your email.';
+				} else {
+					$status = 'There is something wrong.';
+				}
+
+
+			} else {
+				$status = 'There is something wrong.';
+			}
+
+		} else {
+			$status = "This email doesn't exist in our database.";
+		}
+
+		$json = json_encode($status);
+		echo $json;
+
+	}
+
+	public function updatePassword()
+	{
+		$securityCode = $_POST["securityCodee"];
+		$newPassword = $_POST["newPasswordd"];
+		$rePassword = $_POST["rePasswordd"];
+		$userID = $this->admin_model->getUserID($securityCode);
+		$rid = $this->admin_model->getRID($securityCode);
+
+		$status = null;
+
+		if ($userID != null) {
+			$result = $this->admin_model->updatePassword($userID, [
+				'adminPassword' => $newPassword
+			]);
+			if ($result == 1) {
+				$setTokenUsed = $this->admin_model->setTokenUsed($rid, [
+					'valid' => "0"
+				]);
+				if ($setTokenUsed == 1) {
+					$status = "Password updated sucessfully";
+				} else {
+					$status = "Please Try Again";
+				}
+
+			} else {
+				$status = "Please Try Again";
+			}
+		} else {
+			$status = "You have enterd an invalid security code.";
+		}
+
+		$json = json_encode($status);
+		echo $json;
+	}
+
 	public function insert()
 	{
 		$target_dir = "C:\wamp64\www\BackEnd\AREP\Uploads/";

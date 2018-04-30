@@ -9,4 +9,15 @@
 class Home extends CI_Controller
 {
 
+    public function index()
+    {
+        $query = $this->db->get('admin');
+        $json = json_encode($query->result());
+        echo $json;
+    }
+
+    public function test()
+    {
+        echo "cdsdfg";
+    }
 }

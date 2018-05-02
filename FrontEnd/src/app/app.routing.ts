@@ -21,15 +21,19 @@ const routes: Routes = [
     {path: 'forget-password', component: ForgetPasswordComponent},
     {path: 'new-admin', component: NewAdminComponent},
     {
-        path: 'layout', component: LayoutComponent,canActivate: [AuthGuard],
+        path: 'layout', component: LayoutComponent, canActivate: [AuthGuard],
         children: [
             {path: '', component: DashboardComponent},
             {path: 'dashboard', component: DashboardComponent},
             {path: 'notification', component: NotificationComponent},
-            {path: 'architectures', component: ArchitectureOverviewComponent},
+            {
+                path: 'architectures', component: ArchitectureOverviewComponent,
+                children: [
+                    {path: 'architecture-profile', component: ArchitectureProfileComponent}
+                ]
+            },
             {path: 'constructors', component: ConstructorOverviewComponent},
-            {path: 'constructor-profile', component: ConstructorProfileComponent},
-            {path: 'architecture-profile', component: ArchitectureProfileComponent}
+            {path: 'constructor-profile', component: ConstructorProfileComponent}
         ]
     },
 ];

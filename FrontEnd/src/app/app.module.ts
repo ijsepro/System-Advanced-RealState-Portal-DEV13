@@ -15,20 +15,21 @@ import {SidebarComponent} from './layout/sidebar/sidebar.component';
 import {NotificationComponent} from './layout/notification/notification.component';
 import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
-import {ForgetPasswordService} from "./services/forget-password.service";
-import {HttpModule} from "@angular/http";
-import { NewAdminRegistrationComponent } from './new-admin-registration/new-admin-registration.component';
+import {ForgetPasswordService} from './services/forget-password.service';
+import {HttpModule} from '@angular/http';
+import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
 import {AdminService} from './services/admin.service';
-import { NewAdminComponent } from './new-admin/new-admin.component';
-import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import {NewAdminComponent} from './new-admin/new-admin.component';
+import {ResetPasswordComponent} from './reset-password/reset-password.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
 import {ResetPasswordService} from './services/reset-password.service';
-import { ConstructorProfileComponent } from './manage-constructor/constructor-profile/constructor-profile.component';
-import { ArchitectureProfileComponent } from './layout/architecture-profile/architecture-profile.component';
-import { ConstructorOverviewComponent } from './manage-constructor/constructor-overview/constructor-overview.component';
+import {ConstructorProfileComponent} from './manage-constructor/constructor-profile/constructor-profile.component';
+import {ArchitectureProfileComponent} from './layout/architecture-profile/architecture-profile.component';
+import {ConstructorOverviewComponent} from './manage-constructor/constructor-overview/constructor-overview.component';
 import {ArchitectureService} from './services/architecture.service';
 import {AuthService} from './services/auth.service';
 import {AuthGuard} from './auth.guard';
+import {StarRatingModule} from 'angular-star-rating';
 
 @NgModule({
     declarations: [
@@ -56,7 +57,8 @@ import {AuthGuard} from './auth.guard';
         HttpModule,
         ReactiveFormsModule,
         AppRoutingModule,
-        HomeModule
+        HomeModule,
+        StarRatingModule.forRoot()
     ],
     providers: [
         ForgetPasswordService,

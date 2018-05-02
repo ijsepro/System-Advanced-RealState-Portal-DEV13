@@ -1,22 +1,23 @@
-import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import {Injectable} from '@angular/core';
+import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class AuthService {
 
-  private url = "http://localhost/MyServer/Edifices/index.php/login";
-  private loggedInStatus=JSON.parse(localStorage.getItem('loggedIn') || 'false');
+    private url = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/login';
+    private loggedInStatus = JSON.parse(localStorage.getItem('loggedIn') || 'false');
 
-  constructor(private http:Http) { }
+    constructor(private http: Http) {
+    }
 
     login(credentials) {
-        return this.http.post(this.url,credentials).map(response=>{
-          if((response.json()).success){
-              return true;
-          } else{
-            return false;
-          }
+        return this.http.post(this.url, credentials).map(response => {
+            if ((response.json()).success) {
+                return true;
+            } else {
+                return false;
+            }
         });
     }
 
@@ -25,12 +26,12 @@ export class AuthService {
     }
 
 
-    setLoggedIn(value:boolean){
-      this.loggedInStatus=value;
-      localStorage.setItem('loggedIn','true');
+    setLoggedIn(value: boolean) {
+        this.loggedInStatus = value;
+        localStorage.setItem('loggedIn', 'true');
     }
 
-    isLoggedIn(){
+    isLoggedIn() {
         return JSON.parse(localStorage.getItem('loggedIn') || this.loggedInStatus.toString());
     }
 

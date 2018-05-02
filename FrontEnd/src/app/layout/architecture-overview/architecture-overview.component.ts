@@ -7,21 +7,30 @@ import {ArchitectureService} from '../../services/architecture.service';
     styleUrls: ['./architecture-overview.component.scss']
 })
 export class ArchitectureOverviewComponent implements OnInit {
+    architectures: any [];
 
     constructor(private service: ArchitectureService) {
+        this.getArchitectures();
     }
 
     ngOnInit() {
     }
 
     dropdown() {
-        this.service.getArchitectures().subscribe(res => {
-            let s = res.json();
-            console.log(s['adminID']);
-        });
+        // this.service.getArchitectures().subscribe(res => {
+        //     let s = res.json();
+        //     console.log(s);
+        // });
+        // this.getArchitectures();
     }
 
     search() {
         alert('Search');
+    }
+
+    getArchitectures() {
+        this.service.getArchitectures().subscribe(res => {
+            this.architectures = res.json();
+        });
     }
 }

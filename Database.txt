@@ -78,3 +78,68 @@ create table recovery_keys (
   valid tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (rid)
 ) ENGINE=InnoDB;
+
+create table Constructor(
+	ConstructorID int(11) not null AUTO_INCREMENT,
+	AdminID int(11) not null,
+	ConstructorName varchar(10)not null,
+	ConstructorEmail varchar(100)not null,
+	ConstructorRole varchar(100)not null,
+	ConstructorStatus varchar(100)not null,
+	ConstructorWork varchar(100)not null,
+	ConstructorProfilePicture varchar(100),
+	constraint primary key(ConstructorID),
+	constraint foreign key(AdminID) references admin(adminID)
+) ENGINE=InnoDB;
+
+create table Constructors(
+	ConstructorID int not null AUTO_INCREMENT,
+	ConstructorName varchar(50)not null,
+	ConstructoreEmail varchar(50)not null,
+	ConstructorProfilePicture varchar(100)not null,
+	ConstructorWorksCount int not null,
+	ConstructorRatings double not null,
+	adminID int not null,
+	constraint primary key(ConstructorID),
+	constraint foreign key(adminID) references admin(adminID)
+)ENGINE=InnoDB;
+insert into Constructors values(
+	0,
+	'Dinuka',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	12,
+	3.5,
+	1);
+insert into Constructors values(
+	0,
+	'Thisal',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
+insert into Constructors values(
+	0,
+	'Kushan',
+	'kushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
+insert into Constructors values(
+	0,
+	'Thisaru',
+	'thisaru@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
+insert into Constructors values(
+	0,
+	'Madushan',
+	'madushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);

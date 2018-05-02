@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class AuthService {
 
-    private url = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/login';
+    private url = 'http://localhost/MyServer/Edifices/index.php/login';
     private loggedInStatus = JSON.parse(localStorage.getItem('loggedIn') || 'false');
 
     constructor(private http: Http) {

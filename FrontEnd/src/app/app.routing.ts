@@ -10,9 +10,9 @@ import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
 import {NewAdminComponent} from './new-admin/new-admin.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
-import {ConstructorProfileComponent} from './manage-constructor/constructor-profile/constructor-profile.component';
+import {ConstructorProfileComponent} from './layout/constructor-profile/constructor-profile.component';
 import {ArchitectureProfileComponent} from './layout/architecture-profile/architecture-profile.component';
-import {ConstructorOverviewComponent} from './manage-constructor/constructor-overview/constructor-overview.component';
+import {ConstructorOverviewComponent} from './layout/constructor-overview/constructor-overview.component';
 import {AuthGuard} from './auth.guard';
 
 const routes: Routes = [
@@ -32,8 +32,12 @@ const routes: Routes = [
                     {path: 'architecture-profile', component: ArchitectureProfileComponent}
                 ]
             },
-            {path: 'constructors', component: ConstructorOverviewComponent},
-            {path: 'constructor-profile', component: ConstructorProfileComponent}
+            {
+                path: 'constructors', component: ConstructorOverviewComponent,
+                children: [
+                    {path: 'constructor-profile', component: ConstructorProfileComponent}
+                ]
+            }
         ]
     },
 ];

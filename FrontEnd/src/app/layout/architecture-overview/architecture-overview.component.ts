@@ -10,10 +10,10 @@ export class ArchitectureOverviewComponent implements OnInit {
     architectures: any [];
 
     constructor(private service: ArchitectureService) {
-        this.getArchitectures();
     }
 
     ngOnInit() {
+        this.getArchitectures();
     }
 
     dropdown() {

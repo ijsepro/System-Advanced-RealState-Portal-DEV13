@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {ConstructorOverviewService} from '../../services/constructor-overview.service';
 
 @Component({
     selector: 'app-constructor-overview',
@@ -7,10 +8,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class ConstructorOverviewComponent implements OnInit {
 
-    constructor() {
+    constructors: any[];
+
+    constructor(private service: ConstructorOverviewService) {
     }
 
     ngOnInit() {
+        this.getConstructors();
     }
 
     dropdown() {
@@ -18,6 +22,12 @@ export class ConstructorOverviewComponent implements OnInit {
     }
 
     search() {
+        alert('Search');
+    }
 
+    getConstructors() {
+        this.service.getConstructors().subscribe(res => {
+            this.constructors = res.json();
+        });
     }
 }

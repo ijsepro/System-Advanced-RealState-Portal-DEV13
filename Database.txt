@@ -19,6 +19,57 @@ create table newAdmin(
 	constraint primary key(newAdminId),
 	constraint foreign key(adminID) references admin(adminID)
 ) ENGINE=InnoDB;
+create table architecture(
+	architectureID int not null AUTO_INCREMENT,	
+	architectureName varchar(50)not null,
+	architectureEmail varchar(50)not null,
+	architectureProfilePicture varchar(100)not null,
+	architectureWorksCount int not null,
+	architectureRatings double not null,
+	adminID int not null,
+	constraint primary key(architectureID),
+	constraint foreign key(adminID) references admin(adminID)
+)ENGINE=InnoDB;
+insert into architecture values(
+	0,
+	'Dinuka',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	12,
+	3.5,
+	1);
+insert into architecture values(
+	0,
+	'Thisal',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
+insert into architecture values(
+	0,
+	'Kushan',
+	'kushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
+insert into architecture values(
+	0,
+	'Thisaru',
+	'thisaru@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
+insert into architecture values(
+	0,
+	'Madushan',
+	'madushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	102,
+	5.0,
+	1);
 
 create table recovery_keys (
   rid int(11) NOT NULL AUTO_INCREMENT,

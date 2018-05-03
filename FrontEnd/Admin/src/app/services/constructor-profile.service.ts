@@ -4,13 +4,18 @@ import {Http} from '@angular/http';
 @Injectable()
 export class ConstructorProfileService {
 
-    private url = 'http://localhost/BackEnd/Edifices/Admin/BackEnd/index.php/constructor/getConstructor';
+    private getConstructorUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/getConstructor';
+    private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
 
     constructor(private http: Http) {
 
     }
 
     getConstructor(cName) {
-        return this.http.post(this.url + '/' + cName, cName);
+        return this.http.post(this.getConstructorUrl + '/' + cName, cName);
+    }
+
+    getConstructorWorks(conid) {
+        return this.http.post(this.getWorksUrl + '/' + conid, conid);
     }
 }

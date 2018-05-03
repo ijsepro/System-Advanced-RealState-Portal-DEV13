@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/System-Advanced-RealState-Portal-DEV13.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/System-Advanced-RealState-Portal-DEV13.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BackEnd/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/application/models/constructor_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/application/models/constructor_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Database.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-profile.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-profile.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/forget-password.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/forget-password.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/reset-password.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/reset-password.service.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,48 +26,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/BackEnd/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="sidebar.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html">
+      <file leaf-file-name="work.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="28" column="72" lean-forward="true" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navbar.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="material-kit.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="6496" column="41" lean-forward="true" selection-start-line="6496" selection-start-column="41" selection-end-line="6496" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="architecture-profile.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -93,7 +65,6 @@
         <option value="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" />
         <option value="$PROJECT_DIR$/BackEnd/application/models/architecture_model.php" />
         <option value="$PROJECT_DIR$/BackEnd/application/controllers/architecture.php" />
-        <option value="$PROJECT_DIR$/Database.txt" />
         <option value="$PROJECT_DIR$/FrontEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/src/styles.scss" />
         <option value="$PROJECT_DIR$/FrontEnd/src/styles.css" />
@@ -110,14 +81,19 @@
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/application/config/database.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-profile.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/forget-password.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/reset-password.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-overview/constructor-overview.component.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/application/models/constructor_model.php" />
+        <option value="$PROJECT_DIR$/Database.txt" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.html" />
+        <option value="$PROJECT_DIR$/BackEnd/application/controllers/work.php" />
       </list>
     </option>
   </component>
@@ -146,12 +122,14 @@
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,74 +151,9 @@
             <path>
               <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
               <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="navbar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,29 +161,29 @@
       </pane>
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Templates/New folder (2)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BackEnd" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\node_modules\tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/FrontEnd/Admin/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\assets" />
-      <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\BackEnd" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\app\shared" />
       <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
       <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\layout" />
       <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\assets" />
+      <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\BackEnd" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -310,12 +223,12 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="Edifices" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache My Server" start_url="/IntellijIDEA/BackEnd/BackEnd">
+    <configuration name="Edifices" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache My Server" start_url="/MyServer/Edifices/BackEnd/">
       <method>
         <option name="FtpUpload" enabled="true">
-          <server_id>799f654c-122f-485d-b359-9626a78eb2f8</server_id>
-          <server_name>Apache Web Server</server_name>
-          <path>D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\BackEnd</path>
+          <server_id>5549be96-5b22-42d7-acfd-9b370be8c11d</server_id>
+          <server_name>Apache My Server</server_name>
+          <path>D:\STUDYING\GIT\Clone\System-Advanced-RealState-Portal-DEV13\BackEnd</path>
         </option>
       </method>
     </configuration>
@@ -393,12 +306,12 @@
       <workItem from="1525318992129" duration="319000" />
       <workItem from="1525320075977" duration="1252000" />
       <workItem from="1525321414501" duration="232000" />
-      <workItem from="1525322291241" duration="4954000" />
+      <workItem from="1525322183849" duration="5930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74061000" />
+    <option name="totallyTimeSpent" value="75037000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -410,7 +323,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -418,18 +331,18 @@
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.32792208" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32750398" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32792208" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32750398" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.32792208" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27598828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2793177" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -474,7 +387,6 @@
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/reset-password.service.ts" />
     <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/user.php" />
     <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/home.php" />
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/architecture_model.php" />
     <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/architecture.php" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/forget-password.service.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/assets/images/star-rating.icons.svg" />
@@ -496,36 +408,56 @@
     <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
     <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
     <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts">
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        <state relative-caret-position="261">
+          <caret line="66" column="70" lean-forward="true" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="43" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Database.txt">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1622">
-          <caret line="137" column="32" lean-forward="true" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
+        <state relative-caret-position="119">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/forget-password.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="59" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/reset-password.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="102">
+          <caret line="6" column="62" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -535,7 +467,7 @@
     <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -545,69 +477,85 @@
     <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <caret line="10" column="64" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/placeholder.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/fog-low.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/daniel-olahh.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-overview/architecture-overview.component.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-overview/constructor-overview.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-982" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="20357" column="17" lean-forward="true" selection-start-line="20357" selection-start-column="17" selection-end-line="20357" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/node_modules/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6077" column="1" selection-start-line="6077" selection-start-column="1" selection-end-line="6077" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="6496" column="41" lean-forward="true" selection-start-line="6496" selection-start-column="41" selection-end-line="6496" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" column="72" lean-forward="true" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+        <state relative-caret-position="373">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html">
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/constructor_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+        <state relative-caret-position="119">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/architecture_model.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="156" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-profile.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-overview/constructor-overview.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="49" column="82" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="36" column="101" selection-start-line="36" selection-start-column="101" selection-end-line="36" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/constructor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="34" lean-forward="true" selection-start-line="8" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
         </state>
       </provider>
     </entry>

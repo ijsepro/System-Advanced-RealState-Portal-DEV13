@@ -80,66 +80,99 @@ create table recovery_keys (
 ) ENGINE=InnoDB;
 
 create table Constructor(
-	ConstructorID int(11) not null AUTO_INCREMENT,
-	AdminID int(11) not null,
-	ConstructorName varchar(10)not null,
-	ConstructorEmail varchar(100)not null,
-	ConstructorRole varchar(100)not null,
-	ConstructorStatus varchar(100)not null,
-	ConstructorWork varchar(100)not null,
-	ConstructorProfilePicture varchar(100),
-	constraint primary key(ConstructorID),
-	constraint foreign key(AdminID) references admin(adminID)
-) ENGINE=InnoDB;
-
-create table Constructors(
 	ConstructorID int not null AUTO_INCREMENT,
 	ConstructorName varchar(50)not null,
-	ConstructoreEmail varchar(50)not null,
+	ConstructorEmail varchar(50)not null,
 	ConstructorProfilePicture varchar(100)not null,
+	ConstructorRole varchar(100)not null,
+	ConstructorStatus varchar(100)not null,
 	ConstructorWorksCount int not null,
 	ConstructorRatings double not null,
 	adminID int not null,
 	constraint primary key(ConstructorID),
 	constraint foreign key(adminID) references admin(adminID)
 )ENGINE=InnoDB;
-insert into Constructors values(
+
+insert into Constructor values(
 	0,
 	'Dinuka',
 	'athisaldinuka3@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Constructor',
+	'Im Doint Whats Best For You...',
 	12,
 	3.5,
 	1);
-insert into Constructors values(
+insert into Constructor values(
 	0,
 	'Thisal',
 	'athisaldinuka3@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Constructor',
+	'Im Doint Whats Best For You...',
 	102,
 	5.0,
 	1);
-insert into Constructors values(
+insert into Constructor values(
 	0,
 	'Kushan',
 	'kushan@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	5.0,
-	1);
-insert into Constructors values(
+	'An Unique Constructor',
+    	'Im Doint Whats Best For You...',
+    	102,
+    	5.0,
+    	1);
+insert into Constructor values(
 	0,
 	'Thisaru',
 	'thisaru@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	5.0,
-	1);
-insert into Constructors values(
+	'An Unique Constructor',
+    	'Im Doint Whats Best For You...',
+    	102,
+    	5.0,
+    	1);
+insert into Constructor values(
 	0,
 	'Madushan',
 	'madushan@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	5.0,
-	1);
+	'An Unique Constructor',
+    	'Im Doint Whats Best For You...',
+    	102,
+    	5.0,
+    	1);
+
+
+create table Work(
+     WorkID int not null AUTO_INCREMENT,
+     ConstructorID int not null,
+     WorkName varchar(100)not null,
+     WorkPicture varchar(100)not null,
+     WorkRating double not null,
+     constraint primary key(WorkID),
+     constraint foreign key(ConstructorID) references constructor(ConstructorID)
+)ENGINE=InnoDB;
+
+insert into Work values(
+    0,
+    1,
+    'Build House',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     4
+);
+insert into Work values(
+    0,
+    1,
+    'Build Buiding',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     3
+);
+insert into Work values(
+    0,
+    1,
+    'Build Piramid',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     5
+);

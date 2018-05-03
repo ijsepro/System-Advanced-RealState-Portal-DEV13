@@ -10,7 +10,7 @@ class Constructor_model extends CI_Model
 {
 	public function getAll()
 	{
-		$query = $this->db->get('constructors');
+		$query = $this->db->get('constructor');
 		return json_encode($query->result());
 	}
 

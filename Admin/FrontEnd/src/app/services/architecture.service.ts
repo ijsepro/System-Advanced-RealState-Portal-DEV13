@@ -8,7 +8,7 @@ export class ArchitectureService {
     }
 
     getArchitectures() {
-        return this.http.get('http://localhost/MyServer/Edifices/index.php/architecture/architectures');
+        return this.http.get('http://localhost/BackEnd/Edifices/Admin/BackEnd/index.php/architecture/architectures');
     }
 
 }

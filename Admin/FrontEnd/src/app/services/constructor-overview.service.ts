@@ -8,7 +8,7 @@ export class ConstructorOverviewService {
     }
 
     getConstructors() {
-        return this.http.get('http://localhost/MyServer/Edifices/index.php/constructor/constructors');
+        return this.http.get('http://localhost/BackEnd/Edifices/Admin/BackEnd/index.php/constructor/constructors');
     }
 
 }

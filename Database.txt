@@ -20,7 +20,7 @@ create table newAdmin(
 	constraint foreign key(adminID) references admin(adminID)
 ) ENGINE=InnoDB;
 create table architecture(
-	architectureID int not null AUTO_INCREMENT,	
+	architectureID int not null AUTO_INCREMENT,
 	architectureName varchar(50)not null,
 	architectureEmail varchar(50)not null,
 	architectureProfilePicture varchar(100)not null,
@@ -44,7 +44,7 @@ insert into architecture values(
 	'athisaldinuka3@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
 	102,
-	5.0,
+	2.0,
 	1);
 insert into architecture values(
 	0,
@@ -52,7 +52,7 @@ insert into architecture values(
 	'kushan@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
 	102,
-	5.0,
+	1.0,
 	1);
 insert into architecture values(
 	0,
@@ -60,7 +60,7 @@ insert into architecture values(
 	'thisaru@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
 	102,
-	5.0,
+	4.0,
 	1);
 insert into architecture values(
 	0,
@@ -172,6 +172,37 @@ insert into Work values(
 insert into Work values(
     0,
     1,
+    'Build Piramid',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     5
+);
+create table ArchitectureWork(
+     WorkID int not null AUTO_INCREMENT,
+     architectureID int not null,
+     WorkName varchar(100)not null,
+     WorkPicture varchar(100)not null,
+     WorkRating double not null,
+     constraint primary key(WorkID),
+     constraint foreign key(architectureID) references architecture(architectureID)
+)ENGINE=InnoDB;
+
+insert into ArchitectureWork values(
+    0,
+    6,
+    'Build House',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     4
+);
+insert into ArchitectureWork values(
+    0,
+    7,
+    'Build Buiding',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     3
+);
+insert into ArchitectureWork values(
+    0,
+    8,
     'Build Piramid',
     '../../../assets/img/faces/kaci-baum-2.jpg',
      5

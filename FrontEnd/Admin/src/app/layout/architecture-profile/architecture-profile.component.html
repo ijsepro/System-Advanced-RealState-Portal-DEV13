@@ -5,18 +5,19 @@
                  style="background-image: url('../../../assets/img/profiles/city.jpg'); height: 20rem"></div>
             <div class="main main-raised">
                 <div class="profile-content">
-                    <div class="container">
+                    <div class="container" *ngFor="let architecture of selectedArchitecture">
                         <div class="row">
                             <div class="col-md-6 ml-auto mr-auto">
                                 <div class="profile">
                                     <div class="avatar" style="text-align: center">
-                                        <img src="../../../assets/img/profiles/faces/christian.jpg" alt="Circle Image"
+                                        <img [src]="architecture.architectureProfilePicture" alt="Circle Image"
                                              class="img-raised rounded-circle img-fluid"
                                              style="width: 15rem;height: 15rem; margin-top: -5rem">
                                     </div>
                                     <div class="name">
-                                        <h3 class="title" style="text-align: center">Christian Louboutin</h3>
-                                        <h6 style="text-align: center">Designer</h6>
+                                        <h3 class="title" style="text-align: center">
+                                            {{architecture.architectureName}}</h3>
+                                        <!--<h6 style="text-align: center">{{architecture.ConstructorRole}}</h6>-->
                                         <div style="text-align: center">
                                             <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i
                                                     class="fa fa-dribbble"></i></a>
@@ -30,38 +31,26 @@
                             </div>
                         </div>
                         <div class="description text-center">
-                            <p>An artist of considerable range, Chet Faker &#x2014; the name taken by Melbourne-raised,
-                                Brooklyn-based Nick Murphy &#x2014; writes, performs and records all of his own music,
-                                giving it a warm, intimate feel with a solid groove structure. </p>
+                            <!--<p>{{architecture.ConstructorStatus}} </p>-->
                         </div>
                         <div class="row">
                             <div class="col-md-6 ml-auto mr-auto">
                                 <div class="profile-tabs">
-                                    <ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" href="#studio" role="tab" data-toggle="tab">
-                                                <i class="material-icons">camera</i> Studio
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#works" role="tab" data-toggle="tab">
-                                                <i class="material-icons">palette</i> Work
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#favorite" role="tab" data-toggle="tab">
-                                                <i class="material-icons">favorite</i> Favorite
-                                            </a>
-                                        </li>
-                                    </ul>
+                                    <div class="nav nav-pills nav-pills-icons justify-content-center">
+                                        <div class="nav-item">
+                                            <div class="nav-link">
+                                                <i class="material-icons">palette</i> Work's I Have Done ...
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row" style="margin-top: -15rem">
-                            <div class="col-md-4">
+                            <div class="col-md-4" *ngFor="let work of selectedWorks">
                                 <div class="card card-header"
                                      style="text-align: center; background-color: #0b3251; color: white">
-                                    <h6>Name</h6>
+                                    <h6>{{work.WorkName}}</h6>
                                 </div>
                                 <div class="card card-body">
                                     <div class="row">
@@ -69,79 +58,23 @@
                                         <div class="col-md-8">
                                             <img class="img-rounded img-responsive img-raised"
                                                  style="width: 150px; height: 150px"
-                                                 src="../../../assets/img/faces/kaci-baum-2.jpg"/>
-                                        </div>
-                                        <div class="col-md-2"></div>
-                                    </div>
-
-                                    <div class="card-body">
-                                        <h4 class="card-title">Daily Sales</h4>
-                                        <p class="card-category">
-                                            <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
-                                            increase in
-                                            today sales.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">access_time</i> updated 4 minutes ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-header"
-                                     style="text-align: center; background-color: #0b3251; color: white">
-                                    <h6>Name</h6>
-                                </div>
-                                <div class="card card-body">
-                                    <div class="row">
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-8">
-                                            <img class="img-rounded img-responsive img-raised"
-                                                 style="width: 150px; height: 150px"
-                                                 src="../../../assets/img/faces/kaci-baum-2.jpg"/>
+                                                 [src]="work.WorkPicture"/>
                                         </div>
                                         <div class="col-md-2"></div>
                                     </div>
                                     <div class="card-body">
-                                        <h4 class="card-title">Daily Sales</h4>
+                                        <!--<h4 class="card-title">Works Done -: {{work.ConstructorWorksCount}}</h4>-->
                                         <p class="card-category">
-                                            <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
+                                            <star-rating-comp [starType]="'svg'" [disabled]="this"
+                                                              [rating]="work.WorkRatings"></star-rating-comp>
+                                            <span class="text-success"><i class="fa fa-long-arrow-up"></i>{{work.WorkRatings}}</span>
                                             increase in
-                                            today sales.</p>
+                                            today sales.
+                                        </p>
                                     </div>
                                     <div class="card-footer">
                                         <div class="stats">
-                                            <i class="material-icons">access_time</i> updated 4 minutes ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="card card-header"
-                                     style="text-align: center; background-color: #0b3251; color: white">
-                                    <h6>Name</h6>
-                                </div>
-                                <div class="card card-body">
-                                    <div class="row">
-                                        <div class="col-md-2"></div>
-                                        <div class="col-md-8">
-                                            <img class="img-rounded img-responsive img-raised"
-                                                 style="width: 150px; height: 150px"
-                                                 src="../../../assets/img/faces/kaci-baum-2.jpg"/>
-                                        </div>
-                                        <div class="col-md-2"></div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h4 class="card-title">Daily Sales</h4>
-                                        <p class="card-category">
-                                            <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span>
-                                            increase in
-                                            today sales.</p>
-                                    </div>
-                                    <div class="card-footer">
-                                        <div class="stats">
-                                            <i class="material-icons">access_time</i> updated 4 minutes ago
+                                            <i class="material-icons">access_time</i> online 4 minutes ago
                                         </div>
                                     </div>
                                 </div>

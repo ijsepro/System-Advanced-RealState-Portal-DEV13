@@ -23,4 +23,10 @@ class Architecture extends CI_Controller
 		$architectures = $this->architecture_model->getAll();
 		echo $architectures;
 	}
+
+	public function getArchitecture($aName = '')
+	{
+		$architectureName = $this->architecture_model->getArchitecture($aName);
+		echo $architectureName;
+	}
 }

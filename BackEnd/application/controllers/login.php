@@ -19,7 +19,7 @@ class login extends CI_Controller
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
 
-		$result = $this->admin_model->checkAdmin($email, $password);
+		$result = $this->admin_model->checkAdmin($email, hash('sha256', $password . Edifices));
 
 		if ($result == TRUE) {
 

@@ -19,9 +19,15 @@ class Work extends CI_Controller
 		$this->load->model('work_model');
 	}
 
-	public function getConstructorWorks($conid='')
+	public function getConstructorWorks($conid = '')
 	{
 		$works = $this->work_model->getConstructorWorks($conid);
+		echo $works;
+	}
+
+	public function getArchitectureWorks($arcid = '')
+	{
+		$works = $this->work_model->getArchitectureWorks($arcid);
 		echo $works;
 	}
 }

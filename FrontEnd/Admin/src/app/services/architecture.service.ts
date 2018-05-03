@@ -8,7 +8,14 @@ export class ArchitectureService {
     }
 
     getArchitectures() {
-        return this.http.get('http://localhost/MyServer/Edifices/BackEnd/index.php/architecture/architectures');
+        return this.http.get('http://localhost/BackEnd/Edifices/BackEnd/index.php/architecture/architectures');
     }
 
+    getArchitecture(aName) {
+        return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/architecture/getArchitecture' + '/' + aName, aName);
+    }
+
+    getArchitectureWorks(arcid) {
+        return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/work/getArchitectureWorks' + '/' + arcid, arcid);
+    }
 }

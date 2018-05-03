@@ -13,4 +13,13 @@ class Architecture_model extends CI_Model
 		$query = $this->db->get('architecture');
 		return json_encode($query->result());
 	}
+
+	public function getArchitecture($aName = '')
+	{
+		$this->db->select('*');
+		$query = $this->db->get_where('Architecture', ['architectureName' => $aName]);
+
+		return json_encode($query->result());
+	}
+
 }

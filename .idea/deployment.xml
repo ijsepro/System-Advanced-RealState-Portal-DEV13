@@ -2,10 +2,10 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="Apache web server">
+      <paths name="Apache Web Server">
         <serverdata>
           <mappings>
-            <mapping deploy="Edifices" local="$PROJECT_DIR$" web="/Edifices" />
+            <mapping deploy="BackEnd" local="$PROJECT_DIR$" web="/BackEnd" />
           </mappings>
         </serverdata>
       </paths>

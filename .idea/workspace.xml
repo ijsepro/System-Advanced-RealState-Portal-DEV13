@@ -2,556 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/.editorconfig" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/BackEnd.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/Database" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/cache/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/autoload.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/config.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/constants.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/database.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/doctypes.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/foreign_chars.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/hooks.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/memcached.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/migration.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/mimes.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/profiler.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/routes.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/smileys.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/config/user_agents.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/controllers/admin.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/controllers/architecture.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/controllers/constructor.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/controllers/home.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/controllers/login.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/core/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/helpers/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/hooks/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/language/english/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/language/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/libraries/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/logs/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/models/admin_model.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/models/architecture_model.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/models/constructor_model.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/models/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/third_party/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/cli/error_404.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/cli/error_db.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/cli/error_exception.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/cli/error_general.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/cli/error_php.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/cli/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/html/error_404.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/html/error_db.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/html/error_exception.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/html/error_general.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/html/error_php.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/html/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/errors/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/application/views/welcome_message.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/composer.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/contributing.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/index.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/license.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/readme.rst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/.htaccess" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Benchmark.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/CodeIgniter.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Common.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Config.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Controller.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Exceptions.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Hooks.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Input.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Loader.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Log.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Model.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Output.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Router.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Security.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/URI.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/Utf8.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/compat/hash.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/compat/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/compat/mbstring.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/compat/password.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/compat/standard.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/core/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB_cache.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB_query_builder.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/DB_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/cubrid/cubrid_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/cubrid/cubrid_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/cubrid/cubrid_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/cubrid/cubrid_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/cubrid/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/ibase/ibase_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/ibase/ibase_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/ibase/ibase_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/ibase/ibase_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/ibase/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mssql/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mssql/mssql_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mssql/mssql_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mssql/mssql_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mssql/mssql_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysql/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysql/mysql_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysql/mysql_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysql/mysql_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysql/mysql_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysqli/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysqli/mysqli_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysqli/mysqli_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysqli/mysqli_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/mysqli/mysqli_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/oci8/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/oci8/oci8_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/oci8/oci8_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/oci8/oci8_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/oci8/oci8_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/odbc/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/odbc/odbc_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/odbc/odbc_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/odbc/odbc_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/odbc/odbc_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/pdo_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/pdo_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/pdo_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/pdo_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_4d_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_4d_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_cubrid_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_cubrid_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_dblib_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_dblib_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_firebird_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_firebird_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_ibm_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_ibm_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_informix_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_informix_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_mysql_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_mysql_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_oci_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_oci_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_odbc_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_odbc_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_pgsql_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_pgsql_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_sqlite_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_sqlite_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/pdo/subdrivers/pdo_sqlsrv_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/postgre/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/postgre/postgre_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/postgre/postgre_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/postgre/postgre_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/postgre/postgre_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite/sqlite_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite/sqlite_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite/sqlite_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite/sqlite_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite3/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite3/sqlite3_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite3/sqlite3_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite3/sqlite3_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlite3/sqlite3_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlsrv/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlsrv/sqlsrv_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlsrv/sqlsrv_forge.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlsrv/sqlsrv_result.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/drivers/sqlsrv/sqlsrv_utility.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/database/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/fonts/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/fonts/texb.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/array_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/captcha_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/cookie_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/date_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/directory_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/download_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/email_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/file_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/form_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/html_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/inflector_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/language_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/number_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/path_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/security_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/smiley_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/string_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/text_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/typography_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/url_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/helpers/xml_helper.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/calendar_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/date_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/db_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/email_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/form_validation_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/ftp_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/imglib_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/migration_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/number_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/pagination_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/profiler_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/unit_test_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/english/upload_lang.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/language/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/Cache.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/Cache_apc.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/Cache_dummy.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/Cache_file.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/Cache_memcached.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/Cache_redis.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/Cache_wincache.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/drivers/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cache/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Calendar.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Cart.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Email.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Encrypt.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Encryption.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Form_validation.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Ftp.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Image_lib.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Javascript.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Javascript/Jquery.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Javascript/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Migration.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Pagination.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Parser.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Profiler.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/Session.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/SessionHandlerInterface.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/Session_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/drivers/Session_database_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/drivers/Session_files_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/drivers/Session_memcached_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/drivers/Session_redis_driver.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/drivers/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Session/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Table.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Trackback.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Typography.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Unit_test.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Upload.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/User_agent.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Xmlrpc.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Xmlrpcs.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/Zip.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/BackEnd/system/libraries/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/.gitignore" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/CHANGELOG.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/Frontend.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/LICENSE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/angular-cli.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/e2e/app.e2e-spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/e2e/app.po.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/e2e/tsconfig.e2e.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/karma.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/package-lock.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/package.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/protractor.conf.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/proxyconfig.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/app.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/app.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/app.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/app.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/app.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/app.routing.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/auth.guard.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/auth.guard.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/forget-password/forget-password.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/forget-password/forget-password.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/forget-password/forget-password.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/forget-password/forget-password.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/home/home.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/home/home.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/home/home.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/home/home.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/home/home.module.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-overview/architecture-overview.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-overview/architecture-overview.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-overview/architecture-overview.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-overview/architecture-overview.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-profile/architecture-profile.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-profile/architecture-profile.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-profile/architecture-profile.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/architecture-profile/architecture-profile.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-overview/constructor-overview.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-overview/constructor-overview.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-overview/constructor-overview.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-overview/constructor-overview.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-profile/constructor-profile.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-profile/constructor-profile.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-profile/constructor-profile.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/constructor-profile/constructor-profile.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/dashboard/dashboard.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/dashboard/dashboard.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/dashboard/dashboard.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/dashboard/dashboard.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/layout.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/layout.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/layout.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/layout.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/notification/notification.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/notification/notification.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/notification/notification.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/notification/notification.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/sidebar/sidebar.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/sidebar/sidebar.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/sidebar/sidebar.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/layout/sidebar/sidebar.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin/new-admin.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin/new-admin.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin/new-admin.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/new-admin/new-admin.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/reset-password/reset-password.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/reset-password/reset-password.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/reset-password/reset-password.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/reset-password/reset-password.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/admin.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/admin.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/architecture.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/architecture.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/forget-password.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/forget-password.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/reset-password.service.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/reset-password.service.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/footer/footer.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/footer/footer.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/footer/footer.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/footer/footer.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/navbar/navbar.component.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/navbar/navbar.component.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/navbar/navbar.component.spec.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/app/shared/navbar/navbar.component.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/css/demo.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/css/material-dashboard.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/css/material-kit.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/css/material-kit.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/css/nucleo-icons.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/nucleo-icons.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/nucleo-icons.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/nucleo-icons.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/nucleo-icons.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/FontAwesome.otf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/fontawesome-webfont.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/fontawesome-webfont.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/fontawesome-webfont.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/fontawesome-webfont.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/fontawesome-webfont.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/glyphicons-halflings-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/glyphicons-halflings-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/glyphicons-halflings-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/fonts/profile/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/images/star-rating.icons.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/angular2-logo-white.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/angular2-logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/antoine-barres.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/apple-icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/bruno-abatti.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/buildings-2862807_1920.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/clouds.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/creative-tim-white-slim2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/daniel-olahh.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/daniel-olahs.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/examples/landing-page.JPG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/examples/profile-page.JPG" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/fabio-mangione.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/faces/ayo-ogunseinde-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/faces/clem-onojeghuo-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/faces/clem-onojeghuo-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/faces/erik-lucatero-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/faces/joe-gardner-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/faces/kaci-baum-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/federico-beccari.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/fog-low.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/ilya-yakover.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/joshua-stannard.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/login-image.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/new_logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/placeholder.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/bg.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/bg2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/bg3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/city.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/avatar.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/camp.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/card-profile1-square.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/card-profile2-square.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/card-profile4-square.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/card-profile5-square.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/card-profile6-square.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/christian.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/kendall.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/faces/marc.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/apple-icon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/bg7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/city.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/blog8.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-blog8.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-product1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-product2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-product3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-product4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-profile1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-profile2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-profile4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-profile5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-profile6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-profile7.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-project1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-project2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-project3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-project4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-project5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/card-project6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/city.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/clark-street-merc.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/clem-onojegaw.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/clem-onojeghuo.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/clem-onojeghuou.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/color1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/color2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/color3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/cynthia-del-rio.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/darren-coleshill.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/dolce.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/ecommerce-header.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/ecommerce-tips2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/gucci.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/mariya-georgieva.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/office1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/office2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/office3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/office4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/office5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/olu-eletu.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/product1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/product2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/product3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/product4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/profile_city.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/slim-emcee-ug-the-poet-truth_from_africa_photography.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/studio-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/studio-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/studio-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/studio-4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/studio-5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/suit-1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/suit-2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/suit-3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/suit-4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/suit-5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/suit-6.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/examples/tom-ford.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/favicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/landing.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/free/profile.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/profiles/profile_city.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/soroush-karimi.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/img/uriel-soberanes.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_alerts.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_bootstrap-switch.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_buttons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_cards.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_carousel.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_checkbox-radio.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_collapse.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_dropdown.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_examples.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_footers.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_icons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_images.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_inputs.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_labels.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_misc.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_mixins.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_modal.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_navbars.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_progress-bars.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_responsive.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_sections.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_sliders.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_social-buttons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_tabs-navs-pagination.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_tooltips-and-popovers.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_typography.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/_variables.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_buttons.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_inputs.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_labels.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_navbars.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_popovers.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_tabs.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_transparency.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/mixins/_vendor-prefixes.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/assets/sass/paper-kit/plugins/_datetimepicker.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/environments/environment.prod.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/environments/environment.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/main.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/polyfills.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/styles.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/styles.scss" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/test.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/tsconfig.app.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/tsconfig.spec.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/src/typings.d.ts" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/tsconfig.json" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Admin/FrontEnd/tslint.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BackEnd/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/application/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -560,17 +24,55 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/BackEnd/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="sidebar.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="28" column="72" lean-forward="true" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navbar.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material-kit.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="6496" column="41" lean-forward="true" selection-start-line="6496" selection-start-column="41" selection-end-line="6496" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="architecture-profile.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -592,7 +94,6 @@
         <option value="$PROJECT_DIR$/BackEnd/application/models/architecture_model.php" />
         <option value="$PROJECT_DIR$/BackEnd/application/controllers/architecture.php" />
         <option value="$PROJECT_DIR$/Database.txt" />
-        <option value="$PROJECT_DIR$/BackEnd/application/config/database.php" />
         <option value="$PROJECT_DIR$/FrontEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/src/styles.scss" />
         <option value="$PROJECT_DIR$/FrontEnd/src/styles.css" />
@@ -609,6 +110,14 @@
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/application/config/database.php" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" />
       </list>
     </option>
   </component>
@@ -618,9 +127,12 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/FrontEnd/Admin/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/FrontEnd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/Admin/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
@@ -629,28 +141,16 @@
       <server host="localhost" id="48096f98-8fcf-4c8f-86e8-558163393ed7" name="Apache My Server" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="745" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -658,6 +158,89 @@
             <path>
               <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
               <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="navbar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="sidebar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -671,7 +254,7 @@
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Admin/BackEnd" />
+    <property name="last_opened_file_path" value="D:/Templates/New folder (2)" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\node_modules\tslint" />
@@ -679,14 +262,15 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
-      <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\layout" />
-      <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\assets" />
       <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\BackEnd" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\app\shared" />
+      <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
+      <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\layout" />
+      <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -703,28 +287,14 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
-      <option name="HEIGHT" value="0" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -734,33 +304,22 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration name="Edifices" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache My Server" start_url="/BackEnd/Edifices/Admin/BackEnd/">
+    <configuration name="Edifices" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache My Server" start_url="/IntellijIDEA/BackEnd/BackEnd">
       <method>
         <option name="FtpUpload" enabled="true">
-          <server_id>adf9a119-37e2-4b26-9a3d-5ae16339b458</server_id>
-          <server_name>Apache web server</server_name>
-          <path>D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\Admin\BackEnd</path>
+          <server_id>799f654c-122f-485d-b359-9626a78eb2f8</server_id>
+          <server_name>Apache Web Server</server_name>
+          <path>D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\BackEnd</path>
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -773,17 +332,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -796,9 +359,6 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -833,11 +393,12 @@
       <workItem from="1525318992129" duration="319000" />
       <workItem from="1525320075977" duration="1252000" />
       <workItem from="1525321414501" duration="232000" />
+      <workItem from="1525322291241" duration="4954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69107000" />
+    <option name="totallyTimeSpent" value="74061000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,37 +410,39 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32750398" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32750398" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27598828" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -897,24 +460,8 @@
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/admin.php" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/admin.service.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/app.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/home/home.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/admin.service.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/home/home.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/layout/layout.component.html" />
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/config.php" />
-    <entry file="file://$PROJECT_DIR$/BackEnd/.htaccess" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/new-admin/new-admin.component.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/new-admin/new-admin.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.html" />
     <entry file="file://$PROJECT_DIR$/BackEnd/application/config/constants.php" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/app.component.html" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/layout/dashboard/dashboard.component.html" />
@@ -930,7 +477,6 @@
     <entry file="file://$PROJECT_DIR$/BackEnd/application/models/architecture_model.php" />
     <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/architecture.php" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/forget-password.service.ts" />
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/database.php" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/assets/images/star-rating.icons.svg" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/app.module.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/node_modules/angular-star-rating/assets/scss/star-rating.scss" />
@@ -944,59 +490,124 @@
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/app.routing.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/layout/architecture-overview/architecture-overview.component.html" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/architecture.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Admin/BackEnd/application/config/database.php">
+    <entry file="file://$PROJECT_DIR$/Admin/BackEnd/application/config/database.php" />
+    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/admin.service.ts" />
+    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/architecture.service.ts" />
+    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
+    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
+    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="23" lean-forward="false" selection-start-line="79" selection-start-column="23" selection-end-line="79" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="64" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/admin.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="79" lean-forward="false" selection-start-line="15" selection-start-column="79" selection-end-line="15" selection-end-column="79" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/architecture.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="67" lean-forward="false" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Database.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="797">
-          <caret line="144" column="7" lean-forward="false" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="1622">
+          <caret line="137" column="32" lean-forward="true" selection-start-line="137" selection-start-column="32" selection-end-line="137" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="76" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/placeholder.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/fog-low.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/daniel-olahh.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-overview/architecture-overview.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-982" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="20357" column="17" lean-forward="true" selection-start-line="20357" selection-start-column="17" selection-end-line="20357" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/node_modules/bootstrap/dist/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6077" column="1" selection-start-line="6077" selection-start-column="1" selection-end-line="6077" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="6496" column="41" lean-forward="true" selection-start-line="6496" selection-start-column="41" selection-end-line="6496" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="28" column="72" lean-forward="true" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#3;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="84" selection-start-line="1" selection-start-column="84" selection-end-line="1" selection-end-column="84" />
         </state>
       </provider>
     </entry>

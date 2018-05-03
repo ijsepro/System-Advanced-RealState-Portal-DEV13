@@ -11,7 +11,7 @@ import {FooterComponent} from './shared/footer/footer.component';
 
 import {HomeModule} from './home/home.module';
 import {LayoutComponent} from './layout/layout.component';
-import {SidebarComponent} from './layout/sidebar/sidebar.component';
+import {SidebarComponent} from './shared/sidebar/sidebar.component';
 import {NotificationComponent} from './layout/notification/notification.component';
 import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';

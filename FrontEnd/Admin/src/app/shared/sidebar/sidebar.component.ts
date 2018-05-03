@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {LayoutComponent} from "../layout.component";
-import {DashboardComponent} from "../dashboard/dashboard.component";
+import {LayoutComponent} from "../../layout/layout.component";
+import {DashboardComponent} from "../../layout/dashboard/dashboard.component";
 
 // declare interface RouteInfo {
 //     path: string;

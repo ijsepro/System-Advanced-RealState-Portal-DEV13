@@ -96,7 +96,7 @@ class Admin extends CI_Controller
 
 	public function insert()
 	{
-		$target_dir = "C:\wamp64\www\BackEnd\AREP\Uploads/";
+		$target_dir = "C:\wamp64\www\MyServer\AREP\Uploads/";
 		$target_file = $target_dir . basename($_FILES["selectFile"]["name"]);
 		$uploadOK = 1;
 		if (file_exists($target_file)) {

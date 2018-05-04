@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ConstructorProfileService} from '../../services/constructor-profile.service';
+import {ConstructorService} from '../../services/constructor.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
     selector: 'app-constructor-profile',
@@ -11,25 +12,27 @@ export class ConstructorProfileComponent implements OnInit {
     selectedConstructor: any[];
     selectedWorks: any[];
 
-    constructor(private service: ConstructorProfileService) {
+    constructor(private service: ConstructorService, private router: Router, private route: ActivatedRoute) {
     }
 
     ngOnInit() {
-        this.getConstructor();
-        this.getConstructorWorks();
+        this.route.queryParams.subscribe(parms => {
+            let name = parms['name'];
+            this.getConstructor(name);
+        });
     }
 
-    getConstructor() {
-        let cName = 'Kushan';
-
-        this.service.getConstructor(cName)
+    getConstructor(name: String) {
+        this.service.getConstructor(name)
             .subscribe(response => {
                 this.selectedConstructor = response.json();
+                for (let constructor of this.selectedConstructor) {
+                    this.getConstructorWorks(constructor['ConstructorID']);
+                }
             });
     }
 
-    getConstructorWorks() {
-        let conid = 1;
+    getConstructorWorks(conid: number) {
 
         this.service.getConstructorWorks(conid)
             .subscribe(response => {

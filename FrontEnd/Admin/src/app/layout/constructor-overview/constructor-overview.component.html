@@ -37,7 +37,8 @@
                 </div>
             </div>
             <div class="row">
-                <a routerLink="constructor-profile" class="col-md-4" *ngFor="let constrcutor of constructors">
+                <a *ngFor="let constrcutor of constructors" (click)="getConstructor(constrcutor.ConstructorName)"
+                   class="col-md-4">
                     <div class="card card-header" style="text-align: center; background-color: #0b3251; color: white">
                         <h6>{{constrcutor.ConstructorName}}</h6>
                     </div>

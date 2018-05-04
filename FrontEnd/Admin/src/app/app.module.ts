@@ -30,8 +30,7 @@ import {ArchitectureService} from './services/architecture.service';
 import {AuthService} from './services/auth.service';
 import {AuthGuard} from './auth.guard';
 import {StarRatingModule} from 'angular-star-rating';
-import {ConstructorProfileService} from './services/constructor-profile.service';
-import {ConstructorOverviewService} from './services/constructor-overview.service';
+import {ConstructorService} from './services/constructor.service';
 
 @NgModule({
     declarations: [
@@ -69,8 +68,7 @@ import {ConstructorOverviewService} from './services/constructor-overview.servic
         AuthGuard,
         ResetPasswordService,
         ArchitectureService,
-        ConstructorProfileService,
-        ConstructorOverviewService
+        ConstructorService,
     ],
     bootstrap: [AppComponent]
 })

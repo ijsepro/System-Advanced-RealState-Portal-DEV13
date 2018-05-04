@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {ConstructorOverviewService} from '../../services/constructor-overview.service';
+import {ConstructorService} from '../../services/constructor.service';
+import {NavigationExtras, Router} from '@angular/router';
 
 @Component({
     selector: 'app-constructor-overview',
@@ -10,7 +11,7 @@ export class ConstructorOverviewComponent implements OnInit {
 
     constructors: any[];
 
-    constructor(private service: ConstructorOverviewService) {
+    constructor(private service: ConstructorService, private router: Router) {
     }
 
     ngOnInit() {
@@ -23,6 +24,15 @@ export class ConstructorOverviewComponent implements OnInit {
 
     search() {
         alert('Search');
+    }
+
+    getConstructor(name) {
+        let navigationExtras: NavigationExtras = {
+            queryParams: {
+                'name': name
+            }
+        };
+        this.router.navigate(['/layout/constructors/constructor-profile'], navigationExtras)
     }
 
     getConstructors() {

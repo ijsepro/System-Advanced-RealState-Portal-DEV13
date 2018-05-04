@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="row">
-                <a (click)="getArchitecture(architecture.architectureName)" class="col-md-4"
-                   *ngFor="let architecture of architectures">
+                <a *ngFor="let architecture of architectures" (click)="getArchitecture(architecture.architectureName)"
+                   class="col-md-4">
                     <div class="card card-header" style="text-align: center; background-color: #0b3251; color: white">
                         <h6>{{architecture.architectureName}}</h6>
                     </div>

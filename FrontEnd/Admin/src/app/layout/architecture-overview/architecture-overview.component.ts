@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ArchitectureService} from '../../services/architecture.service';
+import {NavigationExtras, Router} from '@angular/router';
 
 @Component({
     selector: 'app-architecture-overview',
@@ -9,7 +10,8 @@ import {ArchitectureService} from '../../services/architecture.service';
 export class ArchitectureOverviewComponent implements OnInit {
     architectures: any [];
 
-    constructor(private service: ArchitectureService) {
+    constructor(private service: ArchitectureService, private router: Router) {
+
     }
 
     ngOnInit() {
@@ -26,6 +28,15 @@ export class ArchitectureOverviewComponent implements OnInit {
 
     search() {
         alert('Search');
+    }
+
+    getArchitecture(name) {
+        let navigationExtras: NavigationExtras = {
+            queryParams: {
+                'name': name
+            }
+        };
+        this.router.navigate(['/layout/architectures/architecture-profile'], navigationExtras)
     }
 
     getArchitectures() {

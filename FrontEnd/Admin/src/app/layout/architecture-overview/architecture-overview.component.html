@@ -37,7 +37,8 @@
                 </div>
             </div>
             <div class="row">
-                <a routerLink="architecture-profile" class="col-md-4" *ngFor="let architecture of architectures">
+                <a (click)="getArchitecture(architecture.architectureName)" class="col-md-4"
+                   *ngFor="let architecture of architectures">
                     <div class="card card-header" style="text-align: center; background-color: #0b3251; color: white">
                         <h6>{{architecture.architectureName}}</h6>
                     </div>
@@ -54,7 +55,8 @@
                         <div class="card-body">
                             <h4 class="card-title">Works Done -: {{architecture.architectureWorksCount}}</h4>
                             <p class="card-category">
-                                <star-rating-comp [starType]="'svg'" [disabled]="this"  [rating]="architecture.architectureRatings"></star-rating-comp>
+                                <star-rating-comp [starType]="'svg'" [disabled]="this"
+                                                  [rating]="architecture.architectureRatings"></star-rating-comp>
                                 <span class="text-success"><i class="fa fa-long-arrow-up"></i>{{architecture.architectureRatings}}</span>
                                 increase in
                                 today sales.

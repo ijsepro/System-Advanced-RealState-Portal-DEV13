@@ -8,24 +8,24 @@ import {LayoutComponent} from './layout/layout.component';
 import {NotificationComponent} from './layout/notification/notification.component';
 import {DashboardComponent} from './layout/dashboard/dashboard.component';
 import {ForgetPasswordComponent} from './forget-password/forget-password.component';
-import {NewAdminComponent} from './new-admin/new-admin.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
 import {ConstructorProfileComponent} from './layout/constructor-profile/constructor-profile.component';
 import {ArchitectureProfileComponent} from './layout/architecture-profile/architecture-profile.component';
 import {ConstructorOverviewComponent} from './layout/constructor-overview/constructor-overview.component';
 import {AuthGuard} from './auth.guard';
+import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'forget-password', component: ForgetPasswordComponent},
-    {path: 'new-admin', component: NewAdminComponent},
     {
         path: 'layout', component: LayoutComponent, canActivate: [AuthGuard],
         children: [
             {path: '', component: DashboardComponent},
             {path: 'dashboard', component: DashboardComponent},
             {path: 'notification', component: NotificationComponent},
+            {path: 'app-new-admin-registration', component: NewAdminRegistrationComponent},
             {
                 path: 'architectures', component: ArchitectureOverviewComponent,
                 children: [

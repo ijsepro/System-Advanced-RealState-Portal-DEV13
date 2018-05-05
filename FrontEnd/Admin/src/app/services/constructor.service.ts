@@ -4,8 +4,8 @@ import {Http} from '@angular/http';
 @Injectable()
 export class ConstructorService {
 
-    private getConstructorUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/getConstructor';
-    private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
+    private getConstructorUrl = 'http://localhost/IntellijIDEA/BackEnd/BackEnd/index.php/constructor/getConstructor';
+    private getWorksUrl = 'http://localhost/IntellijIDEA/BackEnd/BackEnd/index.php/work/getConstructorWorks';
 
     constructor(private http: Http) {
 
@@ -20,6 +20,6 @@ export class ConstructorService {
     }
 
     getConstructors() {
-        return this.http.get('http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/constructors');
+        return this.http.get('http://localhost/IntellijIDEA/BackEnd/BackEnd/index.php/constructor/constructors');
     }
 }

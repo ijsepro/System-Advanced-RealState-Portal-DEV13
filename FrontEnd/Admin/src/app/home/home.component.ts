@@ -40,6 +40,7 @@ export class HomeComponent implements OnInit {
                     this.router.navigate(['/layout']);
                     this.authService.setLoggedIn(true);
                 } else{
+                    this.invalidLogin=true;
                     this.router.navigate(['/home']);
                 }
             });

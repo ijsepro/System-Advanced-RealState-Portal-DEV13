@@ -19,7 +19,6 @@ import {ForgetPasswordService} from './services/forget-password.service';
 import {HttpModule} from '@angular/http';
 import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
 import {AdminService} from './services/admin.service';
-import {NewAdminComponent} from './new-admin/new-admin.component';
 import {ResetPasswordComponent} from './reset-password/reset-password.component';
 import {ArchitectureOverviewComponent} from './layout/architecture-overview/architecture-overview.component';
 import {ResetPasswordService} from './services/reset-password.service';
@@ -43,7 +42,6 @@ import {ConstructorService} from './services/constructor.service';
         DashboardComponent,
         ForgetPasswordComponent,
         NewAdminRegistrationComponent,
-        NewAdminComponent,
         ResetPasswordComponent,
         ArchitectureOverviewComponent,
         ConstructorProfileComponent,

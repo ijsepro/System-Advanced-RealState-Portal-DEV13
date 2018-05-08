@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { Pk2AngularCliFreePage } from './app.po';
 
-describe('guru-new-able App', () => {
-  let page: AppPage;
+describe('pk2-angular-cli-free App', () => {
+  let page: Pk2AngularCliFreePage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new Pk2AngularCliFreePage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });

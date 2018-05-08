@@ -2,19 +2,277 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/config/database.php" afterPath="$PROJECT_DIR$/BackEnd/application/config/database.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/package-lock.json" afterPath="$PROJECT_DIR$/FrontEnd/Admin/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/package.json" afterPath="$PROJECT_DIR$/FrontEnd/Admin/package.json" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/package-lock.json" afterPath="$PROJECT_DIR$/FrontEnd/Client/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/package.json" afterPath="$PROJECT_DIR$/FrontEnd/Client/package.json" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/e2e/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/e2e/app.e2e-spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/e2e/app.po.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/e2e/app.po.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/e2e/tsconfig.e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/e2e/tsconfig.e2e.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/karma.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/karma.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/protractor.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/breadcrumbs/breadcrumbs.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/breadcrumbs/breadcrumbs.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/breadcrumbs/breadcrumbs.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/title/title.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/auth/auth.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/authentication.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/login/with-bg-image/with-bg-image.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/login/with-bg-image/with-bg-image.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/login/with-bg-image/with-bg-image.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/registration/with-social/with-social.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/registration/with-social/with-social.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/registration/with-social/with-social.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/dashboard/dashboard-default/dashboard-default.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/dashboard/dashboard-default/dashboard-default.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/dashboard/dashboard-default/dashboard-default.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/dashboard/dashboard-default/dashboard-default.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/map/google-map/google-map.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/map/google-map/google-map.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/map/google-map/google-map.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/map/google-map/google-map.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/simple-page/simple-page.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/simple-page/simple-page.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/simple-page/simple-page.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/simple-page/simple-page.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/advance/notifications/notifications.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/advance/notifications/notifications.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/advance/notifications/notifications.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/advance/notifications/notifications.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/basic.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/basic.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/button/button.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/button/button.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/button/button.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/button/button.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/typography/typography.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/typography/typography.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/typography/typography.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/basic/typography/typography.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/tables/bootstrap-table/basic-bootstrap/basic-bootstrap.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/tables/bootstrap-table/basic-bootstrap/basic-bootstrap.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/tables/bootstrap-table/basic-bootstrap/basic-bootstrap.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/ui-elements/tables/bootstrap-table/basic-bootstrap/basic-bootstrap.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/accordion.directive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/accordion.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/accordionanchor.directive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/accordionanchor.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/accordionlink.directive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/accordionlink.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/accordion/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card-animation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card-animation.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card-refresh.directive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card-refresh.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card-toggle.directive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card-toggle.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card.component.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/card/card.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/element/data-filter.pipe.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/element/select-option.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/fullscreen/toggle-fullscreen.directive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/fullscreen/toggle-fullscreen.directive.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/menu-items/menu-items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/menu-items/menu-items.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/scroll/scroll.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/shared.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-chasing-dots.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-cube-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-double-bounce.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-line-material.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-rotating-plane.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-spinner-pulse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-three-bounce.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-wandering-cubes.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkit-css/sk-wave.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinkits.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinner.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinner.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinner.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/amcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/ammap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/continentsLow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/gauge.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/light.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/serial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/amchart/worldLow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/echart/echarts-all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/flot/jquery.flot.categories.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/flot/jquery.flot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/flot/jquery.flot.pie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/knob/jquery.knob.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/knob/knob-custom-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/radial/radial.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/charts/waterball/createWaterBall-jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/100k.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/basic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/company.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/crm-contact.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/fullscreen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/issue-list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/data/task-list.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/icofont/css/icofont.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/icofont/css/icofont.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/icofont/fonts/icofont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/icofont/fonts/icofont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/icofont/fonts/icofont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/icofont/fonts/icofont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/icon/svg-animated/svg-weather.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/auth/Logo-small-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/auth/aa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/auth/logo-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/auth/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/avatar-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/chat-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/commingsoon/cs-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/commingsoon/cs-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/details_close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/details_open.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/error/error-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/error/error-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/error/error-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/error/error-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/error/error-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/flags/ENGLISH.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/flags/FRANCE.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/flags/PORTO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/flags/SPAIN.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/logo-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/mega-menu/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/mega-menu/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/mega-menu/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/mega-menu/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/mega-menu/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/mega-menu/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/modal/overflow.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/pattern9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/slider/slider7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/task/task-u1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/task/task-u2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/task/task-u3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/task/task-u4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/tooltip/Euclid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/tooltip/shape1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/tooltip/tooltip1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/card/card-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/card/card-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/card/card-img3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/img-round1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/img-round2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/img-round3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/img-round4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/inverse-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-card/inverse-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/bg-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/contact-user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/follower/f-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/follower/f-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/follower/f-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/follower/f-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/follower/f-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/user-profile/user-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/widget/group-user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/widget/icon-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/widget/icon-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/widget/icon-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/widget/icon-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/images/widget/user-blur-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/jquery.vmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/jquery.vmap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/jqvmap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/jqvmap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/continents/jquery.vmap.africa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/continents/jquery.vmap.asia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/continents/jquery.vmap.australia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/continents/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/continents/jquery.vmap.north-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/continents/jquery.vmap.south-america.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.algeria.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.argentina.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.brazil.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.canada.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.croatia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.europe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.france.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.germany.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.greece.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.indonesia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.iran.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.iraq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.new_regions_france.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.russia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.serbia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.tunisia.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.turkey.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.ukraine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.usa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/jq-vmap/maps/jquery.vmap.world.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/pages/treeview/icon-tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/pages/treeview/jquery.tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/pages/treeview/throbber.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/pages/treeview/treeview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/typings.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/typings.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/tslint.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,59 +281,18 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/BackEnd/composer.json</pharConfigPath>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="user-registration.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.html">
+      <file leaf-file-name="app.routing.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="-241">
+              <caret column="7" selection-start-column="7" selection-end-column="7" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="93" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="93" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-registration.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="223" column="6" lean-forward="true" selection-start-line="223" selection-start-column="6" selection-end-line="223" selection-end-column="6" />
-              <folding>
-                <element signature="n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-admin-registration.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/new-admin-registration/new-admin-registration.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="16" column="83" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="16" selection-end-column="83" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,25 +300,33 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.dropdown-menu</find>
+      <find>gu</find>
+      <find>logo</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.ts" />
-        <option value="$PROJECT_DIR$/BackEnd/application/config/constants.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/src/app/new-admin-registration/new-admin-registration.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/src/app/home/home.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/src/app/layout/architecture-profile/architecture-profile.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/application/models/arcitecture_model.php" />
+        <option value="$PROJECT_DIR$/BackEnd/application/models/architecture_model.php" />
+        <option value="$PROJECT_DIR$/BackEnd/application/controllers/architecture.php" />
+        <option value="$PROJECT_DIR$/Database.txt" />
         <option value="$PROJECT_DIR$/FrontEnd/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/src/styles.scss" />
         <option value="$PROJECT_DIR$/FrontEnd/src/styles.css" />
@@ -118,34 +343,35 @@
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-profile.service.ts" />
-        <option value="$PROJECT_DIR$/Database.txt" />
-        <option value="$PROJECT_DIR$/BackEnd/application/models/architecture_model.php" />
-        <option value="$PROJECT_DIR$/BackEnd/application/models/work_model.php" />
-        <option value="$PROJECT_DIR$/BackEnd/application/controllers/architecture.php" />
-        <option value="$PROJECT_DIR$/BackEnd/application/controllers/work.php" />
-        <option value="$PROJECT_DIR$/BackEnd/application/controllers/login.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-overview/architecture-overview.component.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-overview/architecture-overview.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-kit.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/navbar/navbar.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/application/config/database.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" />
+        <option value="$PROJECT_DIR$/BackEnd/.gitignore" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/home/home.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/new-admin-registration/new-admin-registration.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/title/title.component.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/index.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/breadcrumbs/breadcrumbs.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.css" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/overview/overview.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/styles.css" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" />
       </list>
     </option>
   </component>
@@ -161,7 +387,8 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/FrontEnd/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/Admin/package.json" />
+      <path value="$PROJECT_DIR$/FrontEnd/Client/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
@@ -170,31 +397,19 @@
       <server host="localhost" id="48096f98-8fcf-4c8f-86e8-558163393ed7" name="Apache My Server" />
     </servers>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-231" />
-    <option name="y" value="98" />
-    <option name="width" value="1356" />
-    <option name="height" value="768" />
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,182 +426,40 @@
               <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
               <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
               <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="new-admin-registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="overview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard" type="462c0819:PsiDirectoryNode" />
-              <item name="dashboard-default" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="profile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-              <item name="user-registration" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Extra-Test/guru-able-angular-4-lite/guru-lite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../maven3" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\node_modules\tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="C:/Program Files/nodejs/node" />
-    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/FrontEnd/Admin/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\images" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\images\auth" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app\pages\user" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app\layout" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app\pages" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\app\shared" />
       <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
       <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\layout" />
-      <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\assets" />
-      <recent name="D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\BackEnd" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -403,28 +476,14 @@
   </component>
   <component name="RunManager">
     <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
-      <option name="HEIGHT" value="0" />
-      <module />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" />
@@ -434,33 +493,22 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
-      <envs />
       <patterns />
     </configuration>
-    <configuration name="Edifices" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache My Server" start_url="/BackEnd/Edifices/BackEnd/">
+    <configuration name="Edifices" type="PhpWebAppRunConfigurationType" factoryName="PHP Web Application" server_name="Apache My Server" start_url="/IntellijIDEA/BackEnd/BackEnd">
       <method>
         <option name="FtpUpload" enabled="true">
-          <server_id>adf9a119-37e2-4b26-9a3d-5ae16339b458</server_id>
-          <server_name>Apache web server</server_name>
-          <path>D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\BackEnd</path>
+          <server_id>799f654c-122f-485d-b359-9626a78eb2f8</server_id>
+          <server_name>Apache Web Server</server_name>
+          <path>D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\BackEnd</path>
         </option>
       </method>
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="SUITE_NAME" />
@@ -473,17 +521,21 @@
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
         <value defaultName="singleModule" />
       </option>
       <option name="USE_DEFAULT_REPORTERS" value="false" />
       <option name="PROPERTIES_FILE" />
-      <envs />
       <properties />
       <listeners />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
@@ -496,9 +548,6 @@
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -532,25 +581,19 @@
       <workItem from="1525277887323" duration="1236000" />
       <workItem from="1525318992129" duration="319000" />
       <workItem from="1525320075977" duration="1252000" />
-      <workItem from="1525321414501" duration="4733000" />
-      <workItem from="1525341461895" duration="7810000" />
-      <workItem from="1525370981774" duration="756000" />
-      <workItem from="1525437356353" duration="2675000" />
-      <workItem from="1525440692701" duration="735000" />
-      <workItem from="1525449095726" duration="4381000" />
-      <workItem from="1525495591895" duration="1690000" />
-      <workItem from="1525529427634" duration="3525000" />
-      <workItem from="1525577228007" duration="2182000" />
-      <workItem from="1525620113253" duration="3760000" />
-      <workItem from="1525627579743" duration="243000" />
-      <workItem from="1525666801927" duration="4281000" />
-      <workItem from="1525703661258" duration="8574000" />
-      <workItem from="1525746920225" duration="708000" />
+      <workItem from="1525321414501" duration="232000" />
+      <workItem from="1525322291241" duration="5810000" />
+      <workItem from="1525331115690" duration="258000" />
+      <workItem from="1525488245828" duration="5302000" />
+      <workItem from="1525494276261" duration="17608000" />
+      <workItem from="1525665846913" duration="20405000" />
+      <workItem from="1525758666250" duration="5485000" />
+      <workItem from="1525802913436" duration="1567000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114928000" />
+    <option name="totallyTimeSpent" value="130242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,42 +605,74 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2859304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.290938" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Remote Host" order="3" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18155198" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32750398" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/FrontEnd/Client/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -611,324 +686,309 @@
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd/src/app/services/architecture.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Admin/BackEnd/application/config/database.php" />
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/admin.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/architecture.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-profile.service.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-overview.service.ts" />
-    <entry file="file://$PROJECT_DIR$/Database.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="208" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/constructor_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/constructor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/architecture_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor-profile.service.ts" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/architecture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="31" column="48" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-overview/architecture-overview.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="38" column="93" lean-forward="false" selection-start-line="38" selection-start-column="77" selection-end-line="38" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="68" lean-forward="false" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="27" column="51" lean-forward="false" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/work_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-overview/architecture-overview.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/config/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="73" lean-forward="false" selection-start-line="15" selection-start-column="73" selection-end-line="15" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="18" column="73" lean-forward="false" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="61" lean-forward="false" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="128" lean-forward="false" selection-start-line="98" selection-start-column="128" selection-end-line="98" selection-end-column="128" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AREP.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="31" lean-forward="false" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="23" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinner.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/breadcrumbs/breadcrumbs.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-993">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/angular-cli.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-840">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="663">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/auth/auth.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="32" column="23" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/new-admin-registration/new-admin-registration.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="9" column="54" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="54" />
+        <state relative-caret-position="2397">
+          <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
           <folding>
-            <element signature="e#0#60#0" expanded="false" />
-            <element signature="n#!!block;n#readUrl#0;n#NewAdminRegistrationComponent#0" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/dashboard/dashboard-default/dashboard-default.component.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1136">
-          <caret line="36" column="6" lean-forward="false" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/profile/profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="93" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="93" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="128" column="2" lean-forward="false" selection-start-line="128" selection-start-column="2" selection-end-line="128" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/new-admin-registration/new-admin-registration.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="16" column="83" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="16" selection-end-column="83" />
+        <state relative-caret-position="680">
+          <caret line="43" column="29" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="29" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="223" column="6" lean-forward="true" selection-start-line="223" selection-start-column="6" selection-end-line="223" selection-end-column="6" />
+        <state relative-caret-position="2142">
+          <caret line="126" column="56" lean-forward="true" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="172" lean-forward="true" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="79" lean-forward="true" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/authentication.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="68" lean-forward="true" selection-start-line="45" selection-start-column="68" selection-end-line="45" selection-end-column="68" />
           <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/constructor.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/forget-password/forget-password.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/models/admin_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="74" column="37" lean-forward="true" selection-start-line="74" selection-start-column="37" selection-end-line="74" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="36" column="30" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="99" column="9" lean-forward="true" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="24" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/forget-password/forget-password.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="33" column="45" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/scss/icons/font-awesome/css/font-awesome.css" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/less/icons/font-awesome/css/font-awesome.css" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/css/helper.css" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/css/spinners.css" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/README.md" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/title/title.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/shared/menu-items/menu-items.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2848">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/shared/spinner/spinner.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-400">
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="64" selection-start-line="4" selection-start-column="64" selection-end-line="4" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-349" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/new-admin-registration/new-admin-registration.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="42" column="21" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/new-admin-registration/new-admin-registration.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="56" column="52" selection-start-line="56" selection-start-column="52" selection-end-line="56" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/simple-page/simple-page.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-836">
+          <caret line="19400" column="40" selection-start-line="19400" selection-start-column="40" selection-end-line="19400" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2907">
+          <caret line="172" selection-start-line="172" selection-end-line="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/constructor-profile/constructor-profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/user/user-registration/user-registration.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/admin/admin.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="126" column="56" selection-start-line="126" selection-start-column="56" selection-end-line="126" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/pages/authentication/authentication.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/overview/overview.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="137" column="42" selection-start-line="137" selection-start-column="42" selection-end-line="137" selection-end-column="42" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>

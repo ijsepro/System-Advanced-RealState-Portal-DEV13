@@ -13,6 +13,7 @@ import {BreadcrumbsComponent} from './layout/admin/breadcrumbs/breadcrumbs.compo
 import {TitleComponent} from './layout/admin/title/title.component';
 import {AuthComponent} from './layout/auth/auth.component';
 import { OverviewComponent } from './layout/overview/overview.component';
+import { UserRegistrationComponent } from './pages/user/user-registration/user-registration.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { OverviewComponent } from './layout/overview/overview.component';
     BreadcrumbsComponent,
     TitleComponent,
     AuthComponent,
-    OverviewComponent
+    OverviewComponent,
+    UserRegistrationComponent
   ],
   imports: [
     BrowserModule,

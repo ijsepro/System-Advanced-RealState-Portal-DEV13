@@ -2,18 +2,14 @@
 <project version="4">
   <component name="PublishConfigData">
     <serverData>
-      <paths name="Apache My Server">
+      <paths name="Apache web server">
         <serverdata>
           <mappings>
             <mapping deploy="Edifices" local="$PROJECT_DIR$" web="/Edifices" />
           </mappings>
-        </serverdata>
-      </paths>
-      <paths name="Apache Server">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/BackEnd/application/config/database.php" />
+          </excludedPaths>
         </serverdata>
       </paths>
     </serverData>

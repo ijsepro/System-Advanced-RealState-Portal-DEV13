@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Created by IntelliJ IDEA.
+ * User: DinukaX4
+ * Date: 4/23/2018
+ * Time: 9:55 PM
+ */
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods:GET,POST');
 header('Access-Control-Allow-Headers, Content-Type');
@@ -91,7 +96,7 @@ class Admin extends CI_Controller
 
 	public function insert()
 	{
-		$target_dir = "C:\wamp64\www\IntellijIDEA\BackEnd\BackEnd\Uploads";
+		$target_dir = "D:\GDSE 42\Group Project\Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\assets\images/";
 		$target_file = $target_dir . basename($_FILES["selectFile"]["name"]);
 		$uploadOK = 1;
 		if (file_exists($target_file)) {

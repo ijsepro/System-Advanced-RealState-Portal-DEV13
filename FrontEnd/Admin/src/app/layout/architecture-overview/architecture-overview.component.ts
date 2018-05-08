@@ -36,7 +36,7 @@ export class ArchitectureOverviewComponent implements OnInit {
                 'name': name
             }
         };
-        this.router.navigate(['/layout/architectures/architecture-profile'], navigationExtras)
+        this.router.navigate(['/layout/architectures/banker-profile'], navigationExtras)
     }
 
     getArchitectures() {

@@ -14,7 +14,7 @@ import {ArchitectureProfileComponent} from './layout/architecture-profile/archit
 import {ConstructorOverviewComponent} from './layout/constructor-overview/constructor-overview.component';
 import {AuthGuard} from './auth.guard';
 import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
-import {BankerOvervireComponent} from './layout/banker-overvire/banker-overvire.component';
+import {BankerOverviewComponent} from './layout/banker-overview/banker-overview.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -30,7 +30,7 @@ const routes: Routes = [
             {
                 path: 'architectures', component: ArchitectureOverviewComponent,
                 children: [
-                    {path: 'architecture-profile', component: ArchitectureProfileComponent}
+                    {path: 'banker-profile', component: ArchitectureProfileComponent}
                 ]
             },
 
@@ -40,7 +40,7 @@ const routes: Routes = [
                     {path: 'constructor-profile', component: ConstructorProfileComponent}
                 ]
             },
-            {path:'bankers',component:BankerOvervireComponent}
+            {path:'bankers',component:BankerOverviewComponent}
         ]
     },
 ];

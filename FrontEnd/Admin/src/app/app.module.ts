@@ -30,7 +30,8 @@ import {AuthService} from './services/auth.service';
 import {AuthGuard} from './auth.guard';
 import {StarRatingModule} from 'angular-star-rating';
 import {ConstructorService} from './services/constructor.service';
-import { BankerOvervireComponent } from './layout/banker-overvire/banker-overvire.component';
+import {BankerOverviewComponent} from './layout/banker-overview/banker-overview.component';
+import {BankerService} from './services/banker.service';
 
 @NgModule({
     declarations: [
@@ -48,7 +49,7 @@ import { BankerOvervireComponent } from './layout/banker-overvire/banker-overvir
         ConstructorProfileComponent,
         ArchitectureProfileComponent,
         ConstructorOverviewComponent,
-        BankerOvervireComponent
+        BankerOverviewComponent
     ],
     imports: [
         BrowserModule,
@@ -69,6 +70,7 @@ import { BankerOvervireComponent } from './layout/banker-overvire/banker-overvir
         ResetPasswordService,
         ArchitectureService,
         ConstructorService,
+        BankerService
     ],
     bootstrap: [AppComponent]
 })

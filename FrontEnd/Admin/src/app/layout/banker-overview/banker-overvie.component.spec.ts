@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BankerOvervireComponent } from './banker-overvire.component';
+import { BankerOverviewComponent } from './banker-overview.component';
 
-describe('BankerOvervireComponent', () => {
-  let component: BankerOvervireComponent;
-  let fixture: ComponentFixture<BankerOvervireComponent>;
+describe('BankerOverviewComponent', () => {
+  let component: BankerOverviewComponent;
+  let fixture: ComponentFixture<BankerOverviewComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BankerOvervireComponent ]
+      declarations: [ BankerOverviewComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BankerOvervireComponent);
+    fixture = TestBed.createComponent(BankerOverviewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

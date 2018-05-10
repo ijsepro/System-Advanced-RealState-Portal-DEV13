@@ -1,0 +1,52 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">New Admin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <form class="register-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="New Admin's UserName"
+                                   aria-describedby="basic-addon1" id="userName" name="userName" #userName>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="New Admin's Email"
+                                   aria-describedby="basic-addon1" name="userEmail" id="userEmail" #userEmail>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user-secret"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Your UserName"
+                                   aria-describedby="basic-addon1"  id="adminUserName" #adminUserName>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="input-group">
+                            <button (click)="sendEmail()" type="button" class="btn btn-primary btn-block">Send
+                                Email
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

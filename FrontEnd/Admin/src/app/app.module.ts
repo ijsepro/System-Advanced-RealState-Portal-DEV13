@@ -30,6 +30,7 @@ import {AuthService} from './services/auth.service';
 import {AuthGuard} from './auth.guard';
 import {StarRatingModule} from 'angular-star-rating';
 import {ConstructorService} from './services/constructor.service';
+import { BankerOverviewComponent } from './layout/banker-overview/banker-overview.component';
 
 @NgModule({
     declarations: [
@@ -46,7 +47,8 @@ import {ConstructorService} from './services/constructor.service';
         ArchitectureOverviewComponent,
         ConstructorProfileComponent,
         ArchitectureProfileComponent,
-        ConstructorOverviewComponent
+        ConstructorOverviewComponent,
+        BankerOverviewComponent
     ],
     imports: [
         BrowserModule,

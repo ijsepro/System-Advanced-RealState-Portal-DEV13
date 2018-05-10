@@ -42,7 +42,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                        Sing IN
+                        Log In
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link" data-toggle="modal" data-target="#exampleModalSingUp">
+                        Sing Up
                     </a>
                 </li>
                 <li class="nav-item" *ngIf="!isDocumentation()">
@@ -70,7 +75,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">Sing IN</h5>
+                <h5 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">Log In</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -82,7 +87,7 @@
                                             <i class="fa fa-envelope"></i>
                                         </span>
                             </div>
-                            <input type="text" class="form-control" placeholder="New Admin's Email"
+                            <input type="text" class="form-control" placeholder="User Email"
                                    aria-describedby="basic-addon1" name="userEmail" id="userEmail" #userEmail>
                         </div>
                         <br>
@@ -99,13 +104,12 @@
                         <br>
                         <div class="row">
                             <div class="col-md-4">
-                                <button type="button" class="btn btn-info">SingIN</button>
                             </div>
                             <div class="col-md-4">
                             </div>
                             <div class="col-md-4">
-                                <button type="button" class="btn btn-success">
-                                    SingUP
+                                <button type="button" class="btn btn-info">
+                                    Login
                                 </button>
                             </div>
                         </div>
@@ -115,3 +119,78 @@
         </div>
     </div>
 </div>
+
+
+<div class="modal fade" id="exampleModalSingUp" tabindex="-1" role="dialog" data-backdrop="static"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <div class="modal-header">
+                <h5 class="title" style="font-family: 'Calibri';font-weight: bold;color: #4e6773">Register</h5>
+
+                <form class="register-form">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-envelope"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="User Name"
+                                   aria-describedby="basic-addon1" name="userName" id="userName" #userEmail>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user-secret"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="user Email"
+                                   aria-describedby="basic-addon1" id="newUserEmail" #password>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user-secret"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="user password"
+                                   aria-describedby="basic-addon1" id="userPassword" #password>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-user-secret"></i>
+                                        </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="re-enter password"
+                                   aria-describedby="basic-addon1" id="reEnterPassword" #password>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-info">
+                                    Register
+                                </button>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-success">
+                                    Become a member
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+

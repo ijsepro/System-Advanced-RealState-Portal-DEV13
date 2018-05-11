@@ -30,6 +30,7 @@ create table architecture(
 	constraint primary key(architectureID),
 	constraint foreign key(adminID) references admin(adminID)
 )ENGINE=InnoDB;
+
 insert into architecture values(
 	0,
 	'Dinuka',

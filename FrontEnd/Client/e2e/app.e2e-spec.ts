@@ -1,14 +1,14 @@
-import { Pk2AngularCliFreePage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('pk2-angular-cli-free App', () => {
-  let page: Pk2AngularCliFreePage;
+describe('client App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new Pk2AngularCliFreePage();
+    page = new AppPage();
   });
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!');
   });
 });

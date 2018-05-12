@@ -9,7 +9,7 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "logo.png"
       ],
       "index": "index.html",
       "main": "main.ts",
@@ -24,7 +24,10 @@
       ],
       "scripts": [
         "../src/assets/js/core/jquery.min.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.min.js"
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "../src/assets/js/core/popper.min.js",
+        "../src/assets/js/bootstrap-material-design.js",
+        "../src/assets/js/material-kit.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

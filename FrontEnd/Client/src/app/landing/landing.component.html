@@ -1,8 +1,10 @@
-<nav class="navbar navbar-color-on-scroll bg-warning fixed-top  navbar-expand-lg " color-on-scroll="100" id="sectionsNav">
+<nav class="navbar navbar-color-on-scroll bg-warning fixed-top  navbar-expand-lg " color-on-scroll="100"
+     id="sectionsNav">
   <div class="container">
     <div class="navbar-translate">
       <a class="navbar-brand" href="#">EDIFICES</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false"
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <span class="navbar-toggler-icon"></span>
         <span class="navbar-toggler-icon"></span>
@@ -21,25 +23,279 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="material-icons"></i>Sign Up
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">
+            <i class="material-icons"></i>Log In
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
-            <i class="material-icons"></i>Log In
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">
+            <i class="material-icons"></i>Sing up
           </a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<div class="page-header header-filter" data-parallax="true" style=" background-image: url('../../assets/img/kit/profile_city.jpg'); ">
+<div class="modal fade" id="loginModal" tabindex="-1" role="">
+  <div class="modal-dialog modal-login" role="document">
+    <div class="modal-content">
+      <div class="card card-signup card-plain">
+        <div class="modal-header">
+          <div class="card-header card-header-primary text-center" style="width: 350px; height: 150px">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+              class="material-icons">clear</i></button>
+            <H5 class="card-title">Log in</H5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form class="form" method="" action="">
+            <div class="card-body">
+
+              <div class="form-group bmd-form-group">
+                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">face</i>
+                                    </span>
+                  <input type="text" class="form-control" placeholder="First Name...">
+                </div>
+              </div>
+
+              <div class="form-group bmd-form-group">
+                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">email</i>
+                                    </span>
+                  <input type="text" class="form-control" placeholder="Email...">
+                </div>
+              </div>
+
+              <div class="form-group bmd-form-group">
+                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="material-icons">lock_outline</i>
+                                    </span>
+                  <input type="password" placeholder="Password..." class="form-control">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-signup" role="document">
+    <div class="modal-content">
+      <div class="card card-signup card-plain">
+        <div class="modal-header">
+          <div class="card-header card-header-primary text-center" style="width: 900px; height: 100px">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
+              class="material-icons">clear</i></button>
+            <H5 class="card-title">Register</H5>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form-wizard>
+            <wizard-step>
+              <div class="row">
+                <div class="col-md-4 col-ml-auto">
+                  <div class="card" style="width: 20rem;">
+                    <img class="card-img-top" [src]="url"
+                         alt="Card image cap">
+                    <span class="btn btn-raised btn-round btn-default btn-file">
+                          <span class="fileinput-new">Select image</span>
+                          <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"/>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-7 col-ml-auto">
+                  <br>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="User Name">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                           <i class="material-icons">
+                              email
+                           </i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Password">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Contact Number ">
+                  </div>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </wizard-step>
+            <wizard-step>
+              <div class="row">
+                <div class="col-md-3 col-ml-auto">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <button class="button button-primary">Architecture</button>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+                <div class="col-md-3 col-ml-auto">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <button class="button button-primary">Architecture</button>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+                <div class="col-md-3 col-ml-auto">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <button class="button button-primary">Architecture</button>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+                <div class="col-md-3 col-ml-auto">
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <button class="button button-primary">Architecture</button>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </wizard-step>
+            <wizard-step>
+              <div class="row">
+                <div class="col-md-2 col-ml-auto"></div>
+                <div class="col-md-8 col-ml-auto">
+                  <br>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Company Name">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                           <i class="material-icons">
+                              email
+                           </i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Status">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Extra Curriculum's">
+                  </div>
+                  <br>
+                  <br>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Official Number ">
+                  </div>
+                  <br>
+                  <br>
+                </div>
+                <div class="col-md-2 col-ml-auto"></div>
+              </div>
+            </wizard-step>
+          </form-wizard>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-header header-filter" data-parallax="true"
+     style=" background-image: url('../../assets/img/kit/profile_city.jpg'); ">
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <h1 class="title">Your Life Story Starts With Us.</h1>
-        <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text here. Add here all the information that can make you or your product create the first impression.</h4>
+        <h4>Every landing page needs a small description after the big bold title, that&apos;s why we added this text
+          here. Add here all the information that can make you or your product create the first impression.</h4>
         <br>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-danger btn-raised btn-lg">
           <i class="fa fa-play"></i> Watch video
@@ -54,7 +310,9 @@
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
           <h2 class="title">Let&apos;s talk product</h2>
-          <h5 class="description">This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
+          <h5 class="description">This is the paragraph where you can write more details about your product. Keep you
+            user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise
+            he wouldn&apos;t scroll to get here. Add a button if you want the user to see more.</h5>
         </div>
       </div>
       <div class="features">
@@ -65,7 +323,8 @@
                 <i class="material-icons">chat</i>
               </div>
               <h4 class="info-title">Free Chat</h4>
-              <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+              <p>Divide details about your product or agency work into parts. Write a few lines about each one. A
+                paragraph describing a feature will be enough.</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -74,7 +333,8 @@
                 <i class="material-icons">verified_user</i>
               </div>
               <h4 class="info-title">Verified Users</h4>
-              <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+              <p>Divide details about your product or agency work into parts. Write a few lines about each one. A
+                paragraph describing a feature will be enough.</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -83,7 +343,8 @@
                 <i class="material-icons">fingerprint</i>
               </div>
               <h4 class="info-title">Fingerprint</h4>
-              <p>Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough.</p>
+              <p>Divide details about your product or agency work into parts. Write a few lines about each one. A
+                paragraph describing a feature will be enough.</p>
             </div>
           </div>
         </div>
@@ -97,14 +358,16 @@
             <div class="team-player">
               <div class="card card-plain">
                 <div class="col-md-6 ml-auto mr-auto">
-                  <img src="../assets/img/kit/faces/avatar.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                  <img src="../assets/img/kit/faces/avatar.jpg" alt="Thumbnail Image"
+                       class="img-raised rounded-circle img-fluid">
                 </div>
                 <h4 class="card-title">Gigi Hadid
                   <br>
                   <small class="card-description text-muted">Model</small>
                 </h4>
                 <div class="card-body">
-                  <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <p class="card-description">You can write here details about one of your team members. You can give
+                    more details about what they do. Feel free to add some
                     <a href="#">links</a> for people to be able to follow them outside the site.</p>
                 </div>
                 <div class="card-footer justify-content-center">
@@ -119,14 +382,16 @@
             <div class="team-player">
               <div class="card card-plain">
                 <div class="col-md-6 ml-auto mr-auto">
-                  <img src="../assets/img/kit/faces/christian.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                  <img src="../assets/img/kit/faces/christian.jpg" alt="Thumbnail Image"
+                       class="img-raised rounded-circle img-fluid">
                 </div>
                 <h4 class="card-title">Christian Louboutin
                   <br>
                   <small class="card-description text-muted">Designer</small>
                 </h4>
                 <div class="card-body">
-                  <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <p class="card-description">You can write here details about one of your team members. You can give
+                    more details about what they do. Feel free to add some
                     <a href="#">links</a> for people to be able to follow them outside the site.</p>
                 </div>
                 <div class="card-footer justify-content-center">
@@ -140,14 +405,16 @@
             <div class="team-player">
               <div class="card card-plain">
                 <div class="col-md-6 ml-auto mr-auto">
-                  <img src="../assets/img/kit/faces/kendall.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
+                  <img src="../assets/img/kit/faces/kendall.jpg" alt="Thumbnail Image"
+                       class="img-raised rounded-circle img-fluid">
                 </div>
                 <h4 class="card-title">Kendall Jenner
                   <br>
                   <small class="card-description text-muted">Model</small>
                 </h4>
                 <div class="card-body">
-                  <p class="card-description">You can write here details about one of your team members. You can give more details about what they do. Feel free to add some
+                  <p class="card-description">You can write here details about one of your team members. You can give
+                    more details about what they do. Feel free to add some
                     <a href="#">links</a> for people to be able to follow them outside the site.</p>
                 </div>
                 <div class="card-footer justify-content-center">
@@ -165,7 +432,9 @@
       <div class="row">
         <div class="col-md-8 ml-auto mr-auto">
           <h2 class="text-center title">Work with us</h2>
-          <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few lines about each one and contact us about any further collaboration. We will responde get back to you in a couple of hours.</h4>
+          <h4 class="text-center description">Divide details about your product or agency work into parts. Write a few
+            lines about each one and contact us about any further collaboration. We will responde get back to you in a
+            couple of hours.</h4>
           <form class="contact-form">
             <div class="row">
               <div class="col-md-6">
@@ -226,3 +495,4 @@
     </nav>
   </div>
 </footer>
+

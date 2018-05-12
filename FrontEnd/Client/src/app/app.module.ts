@@ -7,6 +7,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { LandingComponent } from './landing/landing.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app.routing';
+import {FormWizardModule} from 'angular-wizard-form/dist';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {AppRoutingModule} from './app.routing';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormWizardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

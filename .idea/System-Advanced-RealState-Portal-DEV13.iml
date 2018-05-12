@@ -5,6 +5,8 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/BackEnd/application/dist" />
       <excludeFolder url="file://$MODULE_DIR$/BackEnd/application/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontEnd/Admin/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontEnd/Admin/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

@@ -8,17 +8,21 @@ import { LandingComponent } from './landing/landing.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app.routing';
 import {FormWizardModule} from 'angular-wizard-form/dist';
+import { ConstructorProfileComponent } from './layout/constructor/constructor-profile/constructor-profile.component';
+import {StarRatingModule} from 'angular-star-rating';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    LandingComponent
+    LandingComponent,
+    ConstructorProfileComponent
   ],
   imports: [
     BrowserModule,
     RouterModule,
+    StarRatingModule.forRoot(),
     AppRoutingModule,
     FormWizardModule
   ],

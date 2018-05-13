@@ -208,3 +208,15 @@ insert into ArchitectureWork values(
     '../../../assets/img/faces/kaci-baum-2.jpg',
      5
 );
+create table newUser(
+	newUserID int not null AUTO_INCREMENT,
+	newUserName varchar(100)not null,
+	newUserEmail varchar(100)not null,
+	newUserPassword varchar(100)not null,
+	newUserContactNumber varchar(100)not null,
+	newUserStatus varchar(100)not null,
+	newUserAbout varchar(100)not null,
+	newUserOfficialNum varchar(100)not null,
+	newUserPC varchar(100)not null,
+	constraint primary key(newUserID)
+);

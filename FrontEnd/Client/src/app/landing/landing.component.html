@@ -65,187 +65,202 @@
       </div>
       <form-wizard>
         <div class="card card-signup">
-          <h2 class="card-title text-center">Register</h2>
-          <div class="card-body">
-            <wizard-step>
-              <div class="row">
-                <div class="col-md-5 ml-auto">
-                  <label for="selectFile">
-                    <img class="img-raised rounded img-fluid" [src]="url"
-                         alt="Card image cap" style="width: 300px;height: 300px;cursor: pointer"
-                         data-toggle="tooltip" data-placement="left" title="Click Here To Upload Profile Picture" data-container="body">
-                  </label>
-                  <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)" style="display: none">
-                </div>
-                <div class="col-md-5 mr-auto">
-                  <form class="form" method="" action="">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
+          <form>
+            <h2 class="card-title text-center">Register</h2>
+            <div class="card-body">
+              <wizard-step>
+                <div class="row">
+                  <div class="col-md-5 ml-auto">
+                    <label for="selectFile">
+                      <img class="img-raised rounded img-fluid" [src]="url"
+                           alt="Card image cap" style="width: 300px;height: 300px;cursor: pointer"
+                           data-toggle="tooltip" data-placement="left" title="Click Here To Upload Profile Picture"
+                           data-container="body">
+                    </label>
+                    <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"
+                           style="display: none">
+                  </div>
+                  <div class="col-md-5 mr-auto">
+                    <form class="form" method="" action="">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
                         <span class="input-group-text">
                             <i class="material-icons">group</i>
                         </span>
+                        </div>
+                        <input id="userName" type="text" class="form-control" placeholder="User Name">
                       </div>
-                      <input type="text" class="form-control" placeholder="User Name">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
+                      <br>
+                      <br>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
                         <span class="input-group-text">
                            <i class="material-icons">
                               email
                            </i>
                         </span>
+                        </div>
+                        <input id="userEmail" type="text" class="form-control" placeholder="Email">
                       </div>
-                      <input type="text" class="form-control" placeholder="Email">
-                    </div>
+                      <br>
+                      <br>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                        </div>
+                        <input id="userPassword" type="text" class="form-control" placeholder="Password">
+                      </div>
+                      <br>
+                      <br>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                        <span class="input-group-text">
+                            <i class="material-icons">group</i>
+                        </span>
+                        </div>
+                        <input id="userContactNumber" type="text" class="form-control" placeholder="Contact Number ">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </wizard-step>
+              <wizard-step>
+                <div class="row">
+                  <div class="col-md-3 col-ml-auto">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="button button-primary">Architecture</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                  <div class="col-md-3 col-ml-auto">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="button button-primary">Architecture</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                  <div class="col-md-3 col-ml-auto">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="button button-primary">Architecture</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                  <div class="col-md-3 col-ml-auto">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="button button-primary">Architecture</button>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </div>
+                </div>
+              </wizard-step>
+              <wizard-step (onComplete)="register()">
+                <div class="row">
+                  <div class="col-md-2 col-ml-auto"></div>
+                  <div class="col-md-8 col-ml-auto">
+                    <br>
                     <br>
                     <br>
                     <div class="input-group">
                       <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Password">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Contact Number ">
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </wizard-step>
-            <wizard-step>
-              <div class="row">
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-              </div>
-            </wizard-step>
-            <wizard-step>
-              <div class="row">
-                <div class="col-md-2 col-ml-auto"></div>
-                <div class="col-md-8 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
       <span class="input-group-text">
       <i class="material-icons">group</i>
       </span>
+                      </div>
+                      <input id="companyName" type="text" class="form-control" placeholder="Company Name">
                     </div>
-                    <input type="text" class="form-control" placeholder="Company Name">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
+                    <br>
+                    <br>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
       <span class="input-group-text">
       <i class="material-icons">
       email
       </i>
       </span>
+                      </div>
+                      <input id="status" type="text" class="form-control" placeholder="Status">
                     </div>
-                    <input type="text" class="form-control" placeholder="Status">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
+                    <br>
+                    <br>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
       <span class="input-group-text">
       <i class="material-icons">group</i>
       </span>
+                      </div>
+                      <input id="aboutYou"  type="text" class="form-control" placeholder="About you">
                     </div>
-                    <input type="text" class="form-control" placeholder="Extra Curriculum's">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
+                    <br>
+                    <br>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
       <span class="input-group-text">
       <i class="material-icons">group</i>
       </span>
+                      </div>
+                      <input id="officialNumber" type="text" class="form-control" placeholder="Official Number ">
                     </div>
-                    <input type="text" class="form-control" placeholder="Official Number ">
+                    <br>
+                    <br>
                   </div>
-                  <br>
-                  <br>
+                  <div class="col-md-2 col-ml-auto"></div>
                 </div>
-                <div class="col-md-2 col-ml-auto"></div>
-              </div>
-            </wizard-step>
-          </div>
+              </wizard-step>
+            </div>
+          </form>
         </div>
+        <!--<div class="alert alert-danger">-->
+          <!--<div class="container">-->
+            <!--<div class="alert-icon">-->
+              <!--<i class="material-icons">error_outline</i>-->
+            <!--</div>-->
+            <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
+              <!--<span aria-hidden="true"><i class="material-icons">clear</i></span>-->
+            <!--</button>-->
+            <!--<b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...-->
+          <!--</div>-->
+        <!--</div>-->
       </form-wizard>
     </div>
   </div>

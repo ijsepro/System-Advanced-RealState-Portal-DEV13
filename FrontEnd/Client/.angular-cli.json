@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "assets/css/material-kit.css",
+        "assets/css/material-kit-pro.css",
         "styles.css"
       ],
       "scripts": [
@@ -27,6 +27,7 @@
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../src/assets/js/core/popper.min.js",
         "../src/assets/js/bootstrap-material-design.js",
+        "../src/assets/js/material-kit-pro.js",
         "../src/assets/js/material-kit.js"
       ],
       "environmentSource": "environments/environment.ts",

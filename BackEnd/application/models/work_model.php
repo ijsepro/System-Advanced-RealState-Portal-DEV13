@@ -11,7 +11,7 @@ class Work_model extends CI_Model
 	public function getConstructorWorks($conid = '')
 	{
 		$this->db->select('*');
-		$query = $this->db->get_where('work', ['ConstructorID' => $conid]);
+		$query = $this->db->get_where('ConstructorWork', ['ConstructorID' => $conid]);
 
 		return json_encode($query->result());
 	}

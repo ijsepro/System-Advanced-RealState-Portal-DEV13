@@ -12,6 +12,7 @@ import {ConstructorProfileComponent} from './layout/constructor/constructor-prof
 import {StarRatingModule} from 'angular-star-rating';
 import {UserRegistrationService} from './services/user-registration.service';
 import {HttpModule} from '@angular/http';
+import {ClientConstuctorService} from './services/client-constuctor.service';
 
 
 @NgModule({
@@ -30,7 +31,10 @@ import {HttpModule} from '@angular/http';
     HttpModule
 
   ],
-  providers: [UserRegistrationService],
+  providers: [
+    UserRegistrationService,
+    ClientConstuctorService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

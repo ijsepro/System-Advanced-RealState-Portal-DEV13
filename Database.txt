@@ -90,6 +90,14 @@ create table Constructor(
 	ConstructorWorksCount int not null,
 	ConstructorRatings double not null,
 	adminID int not null,
+	ConstructorGender varchar(50)not null,
+	ConstructorBirthday varchar(50)not null,
+	ConstructorMaritalStatus varchar(50)not null,
+	ConstructorLocation varchar(50)not null,
+	ConstructorMobile varchar(50)not null,
+	ConstructorFacebook varchar(50)not null,
+	ConstructorSkype varchar(50)not null,
+	ConstructorWeb varchar(50)not null,
 	constraint primary key(ConstructorID),
 	constraint foreign key(adminID) references admin(adminID)
 )ENGINE=InnoDB;
@@ -103,7 +111,17 @@ insert into Constructor values(
 	'Im Doint Whats Best For You...',
 	12,
 	3.5,
-	1);
+	1,
+	'Male',
+	'1996-11-04',
+	'In a relationship',
+	'Midigama',
+	'0771234567',
+	'www.facebook.com/DK96',
+	'www.skype.com/polla',
+	'www.edifices.com'
+);
+
 insert into Constructor values(
 	0,
 	'Thisal',
@@ -113,70 +131,113 @@ insert into Constructor values(
 	'Im Doint Whats Best For You...',
 	102,
 	5.0,
-	1);
+	1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
 insert into Constructor values(
 	0,
 	'Kushan',
 	'kushan@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
 	'An Unique Constructor',
-    	'Im Doint Whats Best For You...',
-    	102,
-    	5.0,
-    	1);
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
 insert into Constructor values(
 	0,
 	'Thisaru',
 	'thisaru@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
 	'An Unique Constructor',
-    	'Im Doint Whats Best For You...',
-    	102,
-    	5.0,
-    	1);
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
 insert into Constructor values(
 	0,
 	'Madushan',
 	'madushan@gmail.com',
 	'../../../assets/img/faces/kaci-baum-2.jpg',
 	'An Unique Constructor',
-    	'Im Doint Whats Best For You...',
-    	102,
-    	5.0,
-    	1);
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
 
-
-create table Work(
+create table ConstructorWork(
      WorkID int not null AUTO_INCREMENT,
      ConstructorID int not null,
      WorkName varchar(100)not null,
      WorkPicture varchar(100)not null,
      WorkRating double not null,
+     WorkDescrition varchar(50) not null,
      constraint primary key(WorkID),
      constraint foreign key(ConstructorID) references constructor(ConstructorID)
 )ENGINE=InnoDB;
 
-insert into Work values(
+insert into ConstructorWork values(
     0,
     1,
     'Build House',
     '../../../assets/img/faces/kaci-baum-2.jpg',
-     4
+     4,
+     'Iski Babare Rabaree... Disti Didin...'
 );
-insert into Work values(
+insert into ConstructorWork values(
     0,
     1,
     'Build Buiding',
     '../../../assets/img/faces/kaci-baum-2.jpg',
-     3
+     3,
+     'Iski Babare Rabaree... Disti Didin...'
 );
-insert into Work values(
+insert into ConstructorWork values(
     0,
     1,
     'Build Piramid',
     '../../../assets/img/faces/kaci-baum-2.jpg',
-     5
+     5,
+     'Iski Babare Rabaree... Disti Didin...'
 );
+
 create table ArchitectureWork(
      WorkID int not null AUTO_INCREMENT,
      architectureID int not null,

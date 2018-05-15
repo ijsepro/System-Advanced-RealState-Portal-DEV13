@@ -1,273 +1,19 @@
-<div class="modal fade" id="loginModal" tabindex="-1" role="">
-  <div class="modal-dialog modal-login" role="document">
-    <div class="modal-content">
-      <div class="card card-signup card-plain">
-        <div class="modal-header">
-          <div class="card-header card-header-primary text-center" style="width: 350px; height: 150px">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-              class="material-icons">clear</i></button>
-            <H5 class="card-title">Log in</H5>
-          </div>
-        </div>
-        <div class="modal-body">
-          <form class="form" method="" action="">
-            <div class="card-body">
-
-              <div class="form-group bmd-form-group">
-                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="material-icons">face</i>
-                                    </span>
-                  <input type="text" class="form-control" placeholder="First Name...">
-                </div>
-              </div>
-
-              <div class="form-group bmd-form-group">
-                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="material-icons">email</i>
-                                    </span>
-                  <input type="text" class="form-control" placeholder="Email...">
-                </div>
-              </div>
-
-              <div class="form-group bmd-form-group">
-                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="material-icons">lock_outline</i>
-                                    </span>
-                  <input type="password" placeholder="Password..." class="form-control">
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer justify-content-center">
-          <a href="#pablo" class="btn btn-primary btn-link btn-wd btn-lg">Get Started</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-signup" role="document">
-    <div class="modal-content">
-      <div class="card card-signup card-plain">
-        <div class="modal-header">
-          <div class="card-header card-header-primary text-center" style="width: 900px; height: 100px">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i
-              class="material-icons">clear</i></button>
-            <H5 class="card-title">Register</H5>
-          </div>
-        </div>
-        <div class="modal-body">
-          <form-wizard>
-            <wizard-step>
-              <div class="row">
-                <div class="col-md-4 col-ml-auto">
-                  <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" [src]="url"
-                         alt="Card image cap">
-                    <span class="btn btn-raised btn-round btn-default btn-file">
-                          <span class="fileinput-new">Select image</span>
-                          <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"/>
-                    </span>
-                  </div>
-                </div>
-                <div class="col-md-7 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="User Name">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                           <i class="material-icons">
-                              email
-                           </i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Password">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Contact Number ">
-                  </div>
-                  <br>
-                  <br>
-                </div>
-              </div>
-            </wizard-step>
-            <wizard-step>
-              <div class="row">
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-3 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <button class="button button-primary">Architecture</button>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                </div>
-              </div>
-            </wizard-step>
-            <wizard-step>
-              <div class="row">
-                <div class="col-md-2 col-ml-auto"></div>
-                <div class="col-md-8 col-ml-auto">
-                  <br>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Company Name">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                           <i class="material-icons">
-                              email
-                           </i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Status">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Extra Curriculum's">
-                  </div>
-                  <br>
-                  <br>
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="Official Number ">
-                  </div>
-                  <br>
-                  <br>
-                </div>
-                <div class="col-md-2 col-ml-auto"></div>
-              </div>
-            </wizard-step>
-          </form-wizard>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="page-header header-filter" data-parallax="true"
      style="background-image: url('../../../../assets/img/kit/city.jpg'); height: 25rem;"></div>
 <div class="profile-page">
   <div class="main main-raised">
     <div class="profile-content">
-      <div class="container" *ngFor="let constrcutor of selectedConstructor">
+      <div class="container">
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile">
               <div class="avatar">
-                <img [src]="constrcutor.ConstructorProfilePicture" alt="Circle Image"
+                <img src="../../../../assets/img/kit/faces/christian.jpg" alt="Circle Image"
                      class="img-raised rounded-circle img-fluid">
               </div>
               <div class="name">
-                <h3 class="title">{{constrcutor.ConstructorName}}</h3>
-                <h6>{{constrcutor.ConstructorRole}}</h6>
+                <h3 class="title">Kushan Dhananjala</h3>
+                <h6>Constructor</h6>
                 <a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>
                 <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#pablo" class="btn btn-just-icon btn-simple btn-pinterest"><i class="fa fa-pinterest"></i></a>
@@ -286,8 +32,37 @@
 
 
         <div class="description text-center">
-          <p>{{constrcutor.ConstructorStatus}}</p>
+          <p>An artist of considerable range, Chet Faker — the name taken by Melbourne-raised, Brooklyn-based Nick
+            Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid
+            groove structure. </p>
         </div>
+
+        <!--<div class="row">-->
+        <!--<div class="col-md-6 ml-auto mr-auto">-->
+        <!--<div class="profile-tabs">-->
+        <!--<ul class="nav nav-pills nav-pills-icons justify-content-center" role="tablist">-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link active" href="#work" role="tab" data-toggle="tab">-->
+        <!--<i class="material-icons">palette</i>-->
+        <!--Work-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#connections" role="tab" data-toggle="tab">-->
+        <!--<i class="material-icons">people</i>-->
+        <!--Connections-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--<li class="nav-item">-->
+        <!--<a class="nav-link" href="#media" role="tab" data-toggle="tab">-->
+        <!--<i class="material-icons">camera</i>-->
+        <!--Media-->
+        <!--</a>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
         <h3 align="center">
           <small>About Me</small>
@@ -335,31 +110,31 @@
                           <th scope="row">Full
                             Name
                           </th>
-                          <td>{{constrcutor.ConstructorName}}</td>
+                          <td>Josephine Villa</td>
                         </tr>
                         <tr>
                           <th scope="row">Gender
                           </th>
-                          <td>{{constrcutor.ConstructorGender}}</td>
+                          <td>Female</td>
                         </tr>
                         <tr>
                           <th scope="row">Birth
                             Date
                           </th>
-                          <td>{{constrcutor.ConstructorBirthday}}
+                          <td>October 25th, 1990
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">Marital
                             Status
                           </th>
-                          <td>{{constrcutor.ConstructorMaritalStatus}}</td>
+                          <td>Single</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             Location
                           </th>
-                          <td>{{constrcutor.ConstructorLocation}}</td>
+                          <td>New York, USA</td>
                         </tr>
                         </tbody>
                       </table>
@@ -374,32 +149,32 @@
                           </th>
                           <td><a href="#!"><span
                             class="__cf_email__"
-                            data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{constrcutor.ConstructorEmail}}</span></a>
+                            data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">[email&#160;protected]</span></a>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">Mobile
                             Number
                           </th>
-                          <td>{{constrcutor.ConstructorMobile}}
+                          <td>(0123) - 4567891
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">
-                            Facebook
+                            Twitter
                           </th>
-                          <td>{{constrcutor.ConstructorFacebook}}</td>
+                          <td>@xyz</td>
                         </tr>
                         <tr>
                           <th scope="row">Skype
                           </th>
-                          <td>{{constrcutor.ConstructorSkype}}</td>
+                          <td>demo.skype</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             Website
                           </th>
-                          <td><a href="#!">{{constrcutor.ConstructorWeb}}</a>
+                          <td><a href="#!">www.demo.com</a>
                           </td>
                         </tr>
                         </tbody>
@@ -464,13 +239,47 @@
 
               <div class="tab-pane" id="works">
                 <div class="row text-left">
-                  <div class="col-md-4" *ngFor="let work of selectedWorks">
+                  <div class="col-md-4">
                     <div class="card" style="width: 20rem;">
-                      <img class="card-img-top" [src]="work.WorkPicture" alt="Card image cap">
+                      <img class="card-img-top" src="../../../../assets/img/faces/avatar.jpg" alt="Card image cap">
                       <div class="card-body">
-                        <h4 class="card-title">{{work.WorkName}}</h4>
-                        <p class="card-text">{{work.WorkDescrition}}</p>
-                        <a href="#" class="btn btn-primary">View Work</a>
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="../../../../assets/img/faces/avatar.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="../../../../assets/img/faces/avatar.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card" style="width: 20rem;">
+                      <img class="card-img-top" src="../../../../assets/img/faces/avatar.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                          the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
                     </div>
                   </div>
@@ -631,6 +440,190 @@
             </div>
           </div>
         </div>
+
+        <!--<div class="tab-content tab-space" style="margin-left: 20%">-->
+        <!--<div class="tab-pane active work" id="work">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-9 col-md-offset-1">-->
+        <!--<h4 class="title">Latest Collections</h4>-->
+        <!--<div class="row collections">-->
+        <!--<div class="col-md-6">-->
+        <!--<div class="card card-background"-->
+        <!--style="background-image: url('../../../../assets/img/examples/chris4.jpg')">-->
+        <!--<a href="#pablo"></a>-->
+        <!--<div class="card-content">-->
+        <!--<label class="label label-primary">Spring 2016</label>-->
+        <!--<a href="#pablo">-->
+        <!--<h2 class="card-title">Stilleto</h2>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-6">-->
+        <!--<div class="card card-background"-->
+        <!--style="background-image: url('../../../../assets/img/examples/chris6.jpg')">-->
+        <!--<a href="#pablo"></a>-->
+        <!--<div class="card-content">-->
+        <!--<label class="label label-primary">Spring 2016</label>-->
+        <!--<a href="#pablo">-->
+        <!--<h2 class="card-title">High Heels</h2>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-6">-->
+        <!--<div class="card card-background"-->
+        <!--style="background-image: url('../../../../assets/img/examples/chris5.jpg')">-->
+        <!--<a href="#pablo"></a>-->
+        <!--<div class="card-content">-->
+        <!--<label class="label label-primary">Summer 2016</label>-->
+        <!--<a href="#pablo">-->
+        <!--<h2 class="card-title">Flats</h2>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-6">-->
+        <!--<div class="card card-background"-->
+        <!--style="background-image: url('../../../../assets/img/examples/chris1.jpg')">-->
+        <!--<a href="#pablo"></a>-->
+        <!--<div class="card-content">-->
+        <!--<label class="label label-primary">Winter 2015</label>-->
+        <!--<a href="#pablo">-->
+        <!--<h2 class="card-title">Men's Sneakers</h2>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-3 col-md-offset-1 stats">-->
+        <!--<h4 class="title">Stats</h4>-->
+        <!--<ul class="list-unstyled">-->
+        <!--<li><b>60</b> Products</li>-->
+        <!--<li><b>4</b> Collections</li>-->
+        <!--<li><b>331</b> Influencers</li>-->
+        <!--<li><b>1.2K</b> Likes</li>-->
+        <!--</ul>-->
+        <!--<hr/>-->
+        <!--<h4 class="title">About his Work</h4>-->
+        <!--<p class="description">French luxury footwear and fashion. The footwear has incorporated shiny,-->
+        <!--red-lacquered soles that have become his signature.</p>-->
+        <!--<hr/>-->
+        <!--<h4 class="title">Focus</h4>-->
+        <!--<span class="label label-primary">Footwear</span>-->
+        <!--<span class="label label-rose">Luxury</span>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="tab-pane connections" id="connections">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-4 col-md-offset-1">-->
+        <!--<div class="card card-profile card-plain">-->
+        <!--<div class="col-md-5">-->
+        <!--<div class="card-image">-->
+        <!--<a href="#pablo">-->
+        <!--<img class="img" src="../../../../assets/img/kit/faces/avatar.jpg"/>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-7">-->
+        <!--<div class="card-content">-->
+        <!--<h4 class="card-title">Gigi Hadid</h4>-->
+        <!--<h6 class="category text-muted">Model</h6>-->
+
+        <!--<p class="card-description">-->
+        <!--Don't be scared of the truth because we need to restart the human foundation in truth...-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-5">-->
+        <!--<div class="card card-profile card-plain">-->
+        <!--<div class="col-md-5">-->
+        <!--<div class="card-image">-->
+        <!--<a href="#pablo">-->
+        <!--<img class="img" src="../../../../assets/img/kit/faces/marc.jpg"/>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-7">-->
+        <!--<div class="card-content">-->
+        <!--<h4 class="card-title">Marc Jacobs</h4>-->
+        <!--<h6 class="category text-muted">Designer</h6>-->
+
+        <!--<p class="card-description">-->
+        <!--Don't be scared of the truth because we need to restart the human foundation in truth...-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-5 col-md-offset-1">-->
+        <!--<div class="card card-profile card-plain">-->
+        <!--<div class="col-md-5">-->
+        <!--<div class="card-image">-->
+        <!--<a href="#pablo">-->
+        <!--<img class="img" src="../../../../assets/img/faces/kendall.jpg"/>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-7">-->
+        <!--<div class="card-content">-->
+        <!--<h4 class="card-title">Kendall Jenner</h4>-->
+        <!--<h6 class="category text-muted">Model</h6>-->
+
+        <!--<p class="card-description">-->
+        <!--I love you like Kanye loves Kanye. Don't be scared of the truth.-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="col-md-5">-->
+        <!--<div class="card card-profile card-plain">-->
+        <!--<div class="col-md-5">-->
+        <!--<div class="card-image">-->
+        <!--<a href="#pablo">-->
+        <!--<img class="img" src="../../../../assets/img/faces/card-profile2-square.jpg"/>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-7">-->
+        <!--<div class="card-content">-->
+        <!--<h4 class="card-title">George West</h4>-->
+        <!--<h6 class="category text-muted">Model/DJ</h6>-->
+
+        <!--<p class="card-description">-->
+        <!--I love you like Kanye loves Kanye.-->
+        <!--</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="tab-pane text-center gallery" id="media">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-3 col-md-offset-3">-->
+        <!--<img src="../../../../assets/img/examples/chris4.jpg" class="img-rounded"/>-->
+        <!--<img src="../../../../assets/img/examples/chris6.jpg" class="img-rounded"/>-->
+        <!--</div>-->
+        <!--<div class="col-md-3">-->
+        <!--<img src="../../../../assets/img/examples/chris7.jpg" class="img-rounded"/>-->
+        <!--<img src="../../../../assets/img/examples/chris5.jpg" class="img-rounded"/>-->
+        <!--<img src="../../../../assets/img/examples/chris9.jpg" class="img-rounded"/>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
 
       </div>
 

@@ -4,10 +4,14 @@ import {BrowserModule} from '@angular/platform-browser';
 import {Routes, RouterModule} from '@angular/router';
 import {LandingComponent} from './landing/landing.component';
 import {ConstructorProfileComponent} from './layout/constructor/constructor-profile/constructor-profile.component';
+import {MainComponent} from './landing/main/main.component';
 
 const routes: Routes = [
-    {path: '', component: LandingComponent},
-    {path: 'profile', component: ConstructorProfileComponent}
+    {path: '', component: LandingComponent,children:
+        [
+          {path: '', component: MainComponent},
+          {path: 'profile', component: ConstructorProfileComponent}
+        ]},
 ];
 
 @NgModule({

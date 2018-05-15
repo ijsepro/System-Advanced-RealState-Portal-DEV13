@@ -12,6 +12,7 @@ import {ConstructorProfileComponent} from './layout/constructor/constructor-prof
 import {StarRatingModule} from 'angular-star-rating';
 import {UserRegistrationService} from './services/user-registration.service';
 import {HttpModule} from '@angular/http';
+import { MainComponent } from './landing/main/main.component';
 import {ClientConstuctorService} from './services/client-constuctor.service';
 
 
@@ -20,7 +21,8 @@ import {ClientConstuctorService} from './services/client-constuctor.service';
     AppComponent,
     LayoutComponent,
     LandingComponent,
-    ConstructorProfileComponent
+    ConstructorProfileComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,

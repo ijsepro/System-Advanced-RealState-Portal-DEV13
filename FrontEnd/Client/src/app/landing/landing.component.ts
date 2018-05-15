@@ -2,11 +2,13 @@ import {Component, ElementRef, OnInit} from '@angular/core';
 import {any} from 'codelyzer/util/function';
 import {UserRegistrationService} from '../services/user-registration.service';
 
+
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
+
 export class LandingComponent implements OnInit {
   url: any = '../../assets/img/kit/faces/card-profile2-square.jpg';
 
@@ -14,6 +16,7 @@ export class LandingComponent implements OnInit {
   }
 
   ngOnInit() {
+
   }
 
   readUrl(event: any) {

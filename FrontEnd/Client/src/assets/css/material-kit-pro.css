@@ -4995,45 +4995,45 @@ hr.on-light {
 }
 
 /*@media (-webkit-min-device-pixel-ratio: 0.75), (min--moz-device-pixel-ratio: 0.75), (-o-device-pixel-ratio: 3 / 4), (min-device-pixel-ratio: 0.75), (min-resolution: 0.75dppx), (min-resolution: 120dpi) {*/
-  /*hr {*/
-    /*height: 0.75px;*/
-  /*}*/
+/*hr {*/
+/*height: 0.75px;*/
+/*}*/
 /*}*/
 
 /*@media (-webkit-min-device-pixel-ratio: 1), (min--moz-device-pixel-ratio: 1), (-o-device-pixel-ratio: 1), (min-device-pixel-ratio: 1), (min-resolution: 1dppx), (min-resolution: 160dpi) {*/
-  /*hr {*/
-    /*height: 1px;*/
-  /*}*/
+/*hr {*/
+/*height: 1px;*/
+/*}*/
 /*}*/
 
 /*@media (-webkit-min-device-pixel-ratio: 1.33), (min--moz-device-pixel-ratio: 1.33), (-o-device-pixel-ratio: 133 / 100), (min-device-pixel-ratio: 1.33), (min-resolution: 1.33dppx), (min-resolution: 213dpi) {*/
-  /*hr {*/
-    /*height: 1.333px;*/
-  /*}*/
+/*hr {*/
+/*height: 1.333px;*/
+/*}*/
 /*}*/
 
 /*@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx), (min-resolution: 240dpi) {*/
-  /*hr {*/
-    /*height: 1.5px;*/
-  /*}*/
+/*hr {*/
+/*height: 1.5px;*/
+/*}*/
 /*}*/
 
 /*@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 380dpi) {*/
-  /*hr {*/
-    /*height: 2px;*/
-  /*}*/
+/*hr {*/
+/*height: 2px;*/
+/*}*/
 /*}*/
 
 /*@media (-webkit-min-device-pixel-ratio: 3), (min--moz-device-pixel-ratio: 3), (-o-device-pixel-ratio: 3 / 1), (min-device-pixel-ratio: 3), (min-resolution: 3dppx), (min-resolution: 480dpi) {*/
-  /*hr {*/
-    /*height: 3px;*/
-  /*}*/
+/*hr {*/
+/*height: 3px;*/
+/*}*/
 /*}*/
 
 /*@media (-webkit-min-device-pixel-ratio: 4), (min--moz-device-pixel-ratio: 4), (-o-device-pixel-ratio: 4 / 1), (min-device-pixel-ratio: 3), (min-resolution: 4dppx), (min-resolution: 640dpi) {*/
-  /*hr {*/
-    /*height: 4px;*/
-  /*}*/
+/*hr {*/
+/*height: 4px;*/
+/*}*/
 /*}*/
 
 .img-thumbnail {
@@ -5368,7 +5368,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 }
 
 /*.dropdownjs > ul > li:h > .close:hover:before {*/
-  /*opacity: .9;*/
+/*opacity: .9;*/
 /*}*/
 
 .dropdownjs::after {
@@ -6578,22 +6578,22 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
 
 /*.section-dark,*/
 /*.section-image {*/
-  /*background-color: #343434;*/
-  /*background-size: 200% 240%;*/
-  /*background: #232323;*/
-  /*background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
-  /*!* FF3.6+ *!*/
-  /*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #585858), color-stop(100%, #232323));*/
-  /*!* Chrome,Safari4+ *!*/
-  /*background: -webkit-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
-  /*!* Chrome10+,Safari5.1+ *!*/
-  /*background: -o-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
-  /*!* Opera 12+ *!*/
-  /*background: -ms-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
-  /*!* IE10+ *!*/
-  /*background: radial-gradient(ellipse at center, #585858 0%, #232323 100%);*/
-  /*!* W3C *!*/
-  /*background-size: 550% 450%;*/
+/*background-color: #343434;*/
+/*background-size: 200% 240%;*/
+/*background: #232323;*/
+/*background: -moz-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
+/*!* FF3.6+ *!*/
+/*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #585858), color-stop(100%, #232323));*/
+/*!* Chrome,Safari4+ *!*/
+/*background: -webkit-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
+/*!* Chrome10+,Safari5.1+ *!*/
+/*background: -o-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
+/*!* Opera 12+ *!*/
+/*background: -ms-radial-gradient(center, ellipse cover, #585858 0%, #232323 100%);*/
+/*!* IE10+ *!*/
+/*background: radial-gradient(ellipse at center, #585858 0%, #232323 100%);*/
+/*!* W3C *!*/
+/*background-size: 550% 450%;*/
 /*}*/
 
 .section-dark .title,

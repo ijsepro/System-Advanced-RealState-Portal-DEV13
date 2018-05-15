@@ -6,6 +6,8 @@ export class ClientConstuctorService {
 
   private getConstructorUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/getConstructor';
   private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
+  private getEducationUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/education/getConstructorEducation';
+  private getExperianceUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
 
   constructor(private http: Http) {
 
@@ -17,6 +19,14 @@ export class ClientConstuctorService {
 
   getConstructorWorks(conid) {
     return this.http.post(this.getWorksUrl + '/' + conid, conid);
+  }
+
+  getConstructorEducation(conid) {
+    return this.http.post(this.getEducationUrl + '/' + conid, conid);
+  }
+
+  getConstructorExperiance(conid) {
+    return this.http.post(this.getExperianceUrl + '/' + conid, conid);
   }
 
 }

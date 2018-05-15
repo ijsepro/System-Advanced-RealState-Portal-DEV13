@@ -281,3 +281,75 @@ create table newUser(
 	newUserPC varchar(100)not null,
 	constraint primary key(newUserID)
 );
+
+create table ConstructorEducation(
+     ConstructorEducationID int not null AUTO_INCREMENT,
+     ConstructorID int not null,
+     UniversityName varchar(50)not null,
+     YearRange varchar(50)not null,
+     Degree varchar(50)not null,
+     Description varchar(100) not null,
+     constraint primary key(ConstructorEducationID),
+     constraint foreign key(ConstructorID) references constructor(ConstructorID)
+)ENGINE=InnoDB;
+
+insert into ConstructorEducation values(
+    0,
+    2,
+    'IJSE',
+    '2017-2019',
+    'BCS',
+    'I studied at IJSE Galle Branch'
+);
+insert into ConstructorEducation values(
+    0,
+    2,
+    'University of Dublin',
+    '2017-2019',
+    'Master',
+    'I studied at University of Dublin'
+);
+insert into ConstructorEducation values(
+    0,
+    2,
+    'IJSE',
+    '2017-2019',
+    'BCS',
+    'I studied at IJSE Galle Branch'
+);
+
+create table ConstructorExperiance(
+     ConstructorExperianceID int not null AUTO_INCREMENT,
+     ConstructorID int not null,
+     CompanyName varchar(50)not null,
+     YearRange varchar(50)not null,
+     Post varchar(50)not null,
+     Description varchar(100) not null,
+     constraint primary key(ConstructorExperianceID),
+     constraint foreign key(ConstructorID) references constructor(ConstructorID)
+)ENGINE=InnoDB;
+
+insert into ConstructorExperiance values(
+    0,
+    2,
+    'WSO2',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at WSO2'
+);
+insert into ConstructorExperiance values(
+    0,
+    2,
+    'MIT',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at MIT'
+);
+insert into ConstructorExperiance values(
+    0,
+    2,
+    'Vertusa',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at Vertusa'
+);

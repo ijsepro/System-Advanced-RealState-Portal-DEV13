@@ -410,40 +410,24 @@
 
 
                 <h4 style="font-weight: bold">Education</h4>
-                <div class="row">
+                <div class="row text-left">
                   <div class="col-lg-12 col-xl-12">
                     <div class="table table-responsive table-primary">
                       <table class="table">
+                        <thead>
+                        <tr>
+                          <th style="font-size: 16px;font-weight: bold">University Name</th>
+                          <th style="font-size: 16px;font-weight: bold">Year</th>
+                          <th style="font-size: 16px;font-weight: bold">Degree</th>
+                          <th style="font-size: 16px;font-weight: bold">Description</th>
+                        </tr>
+                        </thead>
                         <tbody>
-                        <tr>
-                          <th scope="row">Full
-                            Name
-                          </th>
-                          <td>Josephine Villa</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gender
-                          </th>
-                          <td>Female</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Birth
-                            Date
-                          </th>
-                          <td>October 25th, 1990
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Marital
-                            Status
-                          </th>
-                          <td>Single</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            Location
-                          </th>
-                          <td>New York, USA</td>
+                        <tr *ngFor="let education of selectedEducation">
+                          <td>{{education.UniversityName}}</td>
+                          <td>{{education.YearRange}}</td>
+                          <td>{{education.Degree}}</td>
+                          <td>{{education.Description}}</td>
                         </tr>
                         </tbody>
                       </table>
@@ -451,41 +435,25 @@
                   </div>
                 </div>
 
-                <h4 style="font-weight: bold">Skills</h4>
+                <h4 style="font-weight: bold">Experiance</h4>
                 <div class="row">
                   <div class="col-lg-12 col-xl-12">
                     <div class="table table-responsive table-primary">
                       <table class="table">
+                        <thead>
+                        <tr>
+                          <th style="font-size: 16px;font-weight: bold">Company Name</th>
+                          <th style="font-size: 16px;font-weight: bold">Year</th>
+                          <th style="font-size: 16px;font-weight: bold">Post</th>
+                          <th style="font-size: 16px;font-weight: bold">Description</th>
+                        </tr>
+                        </thead>
                         <tbody>
-                        <tr>
-                          <th scope="row">Full
-                            Name
-                          </th>
-                          <td>Josephine Villa</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Gender
-                          </th>
-                          <td>Female</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Birth
-                            Date
-                          </th>
-                          <td>October 25th, 1990
-                          </td>
-                        </tr>
-                        <tr>
-                          <th scope="row">Marital
-                            Status
-                          </th>
-                          <td>Single</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">
-                            Location
-                          </th>
-                          <td>New York, USA</td>
+                        <tr *ngFor="let experiance of selectedExperiance">
+                          <td>{{experiance.CompanyName}}</td>
+                          <td>{{experiance.YearRange}}</td>
+                          <td>{{experiance.Post}}</td>
+                          <td>{{experiance.Description}}</td>
                         </tr>
                         </tbody>
                       </table>
@@ -516,26 +484,55 @@
                       <table class="table">
                         <thead>
                         <tr>
+                          <th>#</th>
                           <th>Name</th>
                           <th>Email</th>
                           <th>Mobile No</th>
+                          <th>Contact</th>
                         </tr>
                         </thead>
                         <tbody>
                         <tr>
+                          <td>1</td>
                           <td>John</td>
                           <td>john@example.com</td>
                           <td>123456789</td>
+                          <td class="td-actions">
+                            <button type="button" rel="tooltip" class="btn btn-info">
+                              <i class="material-icons">mail</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success">
+                              <i class="material-icons">call</i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
+                          <td>2</td>
                           <td>Mary</td>
                           <td>john@example.com</td>
                           <td>123456789</td>
+                          <td class="td-actions">
+                            <button type="button" rel="tooltip" class="btn btn-info">
+                              <i class="material-icons">mail</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success">
+                              <i class="material-icons">call</i>
+                            </button>
+                          </td>
                         </tr>
                         <tr>
+                          <td>3</td>
                           <td>July</td>
                           <td>john@example.com</td>
                           <td>123456789</td>
+                          <td class="td-actions">
+                            <button type="button" rel="tooltip" class="btn btn-info">
+                              <i class="material-icons">mail</i>
+                            </button>
+                            <button type="button" rel="tooltip" class="btn btn-success">
+                              <i class="material-icons">call</i>
+                            </button>
+                          </td>
                         </tr>
                         </tbody>
                       </table>
@@ -545,19 +542,135 @@
               </div>
 
               <div class="tab-pane" id="reviews">
-                <p>I think that&#x2019;s a responsibility that I have, to push possibilities, to show people, this
-                  is
-                  the level that things could be at. So when you get something that has the name Kanye West on it,
-                  it&#x2019;s
-                  supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up
-                  being worth billions of dollars, because I got the answers. I understand culture. I am the
-                  nucleus.</p>
+                <div class="row text-left">
+                  <div class="col-lg-12 col-xl-12">
+                    <div class="media-area">
+                      <h3 class="title text-center">2 Comments</h3>
+                      <div class="media">
+                        <a class="pull-left" href="#pablo">
+                          <div class="avatar">
+                            <img class="media-object" src="../../../../assets/img/faces/avatar.jpg" alt="..."/>
+                          </div>
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Tina Andrew
+                            <small>&middot; 7 minutes ago</small>
+                          </h4>
+                          <h6 class="text-muted"></h6>
+
+                          <p>Chance too good. God level bars. I'm so proud of @LifeOfDesiigner #1 song in the country.
+                            Panda! Don't be scared of the truth because we need to restart the human foundation in truth
+                            I stand with the most humility. We are so blessed!</p>
+                          <p>All praises and blessings to the families of people who never gave up on dreams. Don't
+                            forget, You're Awesome!</p>
+
+                          <div class="media-footer">
+                            <a href="#pablo" class="btn btn-danger btn-simple pull-right">
+                              <i class="material-icons">favorite</i> 243
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="media">
+                        <a class="pull-left" href="#pablo">
+                          <div class="avatar">
+                            <img class="media-object" alt="64x64" src="../../../../assets/img/faces/kendall.jpg">
+                          </div>
+                        </a>
+                        <div class="media-body">
+                          <h4 class="media-heading">Rosa Thompson
+                            <small>&middot; 2 Days Ago</small>
+                          </h4>
+
+                          <p>Hello guys, nice to have you on the platform! There will be a lot of great stuff coming
+                            soon. We will keep you posted for the latest news.</p>
+                          <p> Don't forget, You're Awesome!</p>
+
+                          <div class="media-footer">
+                            <a href="#pablo" class="btn btn-danger btn-simple pull-right">
+                              <i class="material-icons">favorite</i> 243
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pagination-area text-center" style="margin-left: 40%">
+                        <ul class="pagination">
+                          <li><a href="#pablo">&laquo;</a></li>
+                          <li><a href="#pablo">1</a></li>
+                          <li><a href="#pablo">2</a></li>
+                          <li class="active"><a href="#pablo">3</a></li>
+                          <li><a href="#pablo">4</a></li>
+                          <li><a href="#pablo">5</a></li>
+                          <li><a href="#pablo">&raquo;</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+                    <h4 class="text-left" style="font-weight: bold;margin-left: 5%">Post your comment</h4>
+                    <div class="media media-post">
+                      <a class="pull-left author" href="#pablo">
+                        <div class="avatar">
+                          <img class="media-object" alt="64x64" src="../../../../assets/img/faces/avatar.jpg">
+                        </div>
+                      </a>
+                      <div class="media-body">
+                        <textarea class="form-control" placeholder="Write some nice stuff or nothing..."
+                                  rows="6"></textarea>
+                        <div class="media-footer">
+                          <a href="#pablo" class="btn btn-primary btn-wd pull-right">Post Comment</a>
+                        </div>
+                      </div>
+                    </div> <!-- end media-post -->
+
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
       </div>
+
+      <div class="section section-contacts">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto">
+            <h3 class="text-center title">Want to work with me ?</h3>
+            <h4 class="text-center description">Fill the following details and leave a message for me. I will responde
+              get back to you in a couple of hours.</h4>
+            <form class="contact-form">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Name</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label class="bmd-label-floating">Your Email</label>
+                    <input type="email" class="form-control">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleMessage" class="bmd-label-floating">Your Message</label>
+                <textarea type="email" class="form-control" rows="4" id="exampleMessage"></textarea>
+              </div>
+              <div class="row">
+                <div class="col-md-4 ml-auto mr-auto text-center">
+                  <button class="btn btn-primary btn-raised">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </div>

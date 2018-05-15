@@ -11,6 +11,8 @@ export class ConstructorProfileComponent implements OnInit {
 
   selectedConstructor: any[];
   selectedWorks: any[];
+  selectedEducation: any[];
+  selectedExperiance: any[];
 
   constructor(private service: ClientConstuctorService, private router: Router, private route: ActivatedRoute) {
   }
@@ -26,6 +28,8 @@ export class ConstructorProfileComponent implements OnInit {
         this.selectedConstructor = response.json();
         for (let constructor of this.selectedConstructor) {
           this.getConstructorWorks(constructor['ConstructorID']);
+          this.getConstructorEducation(constructor['ConstructorID']);
+          this.getConstructorExperiance(constructor['ConstructorID']);
         }
       });
   }
@@ -35,6 +39,22 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorWorks(conid)
       .subscribe(response => {
         this.selectedWorks = response.json();
+      });
+  }
+
+  getConstructorEducation(conid: number) {
+
+    this.service.getConstructorEducation(conid)
+      .subscribe(response => {
+        this.selectedEducation = response.json();
+      });
+  }
+
+  getConstructorExperiance(conid: number) {
+
+    this.service.getConstructorExperiance(conid)
+      .subscribe(response => {
+        this.selectedExperiance = response.json();
       });
   }
 

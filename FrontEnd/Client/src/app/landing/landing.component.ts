@@ -1,6 +1,8 @@
 import {Component, ElementRef, OnInit} from '@angular/core';
 import {any} from 'codelyzer/util/function';
 import {UserRegistrationService} from '../services/user-registration.service';
+import {AppError} from '../common/app-error';
+import {NotFoundError} from '../common/not-found-error';
 
 
 @Component({
@@ -61,6 +63,12 @@ export class LandingComponent implements OnInit {
         alert('New User Registerd successfully')
       } else {
         alert('Error Registering user please try again.......')
+      }
+    }, (error: AppError) => {
+      if (error instanceof NotFoundError) {
+        alert(error.originalError);
+      } else {
+        throw error;
       }
     });
   }

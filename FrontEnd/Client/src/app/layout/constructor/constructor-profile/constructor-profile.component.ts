@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ClientConstuctorService} from '../../../services/client-constuctor.service';
+import {NotFoundError} from '../../../common/not-found-error';
 
 @Component({
   selector: 'app-constructor-profile',
@@ -25,13 +26,20 @@ export class ConstructorProfileComponent implements OnInit {
     let name = 'Kushan';
     this.service.getConstructor(name)
       .subscribe(response => {
-        this.selectedConstructor = response.json();
-        for (let constructor of this.selectedConstructor) {
-          this.getConstructorWorks(constructor['ConstructorID']);
-          this.getConstructorEducation(constructor['ConstructorID']);
-          this.getConstructorExperiance(constructor['ConstructorID']);
+          this.selectedConstructor = response.json();
+          for (let constructor of this.selectedConstructor) {
+            this.getConstructorWorks(constructor['ConstructorID']);
+            this.getConstructorEducation(constructor['ConstructorID']);
+            this.getConstructorExperiance(constructor['ConstructorID']);
+          }
+        }, (error: Response) => {
+          if (error instanceof NotFoundError) {
+            alert('Server has being temporary unavailable please try again shortly ');
+          } else {
+            throw error;
+          }
         }
-      });
+      );
   }
 
   getConstructorWorks(conid: number) {
@@ -39,6 +47,12 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorWorks(conid)
       .subscribe(response => {
         this.selectedWorks = response.json();
+      }, (error: Response) => {
+        if (error instanceof NotFoundError) {
+          alert('Server has being temporary unavailable please try again shortly ');
+        } else {
+          throw error;
+        }
       });
   }
 
@@ -47,6 +61,12 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorEducation(conid)
       .subscribe(response => {
         this.selectedEducation = response.json();
+      }, (error: Response) => {
+        if (error instanceof NotFoundError) {
+          alert('Server has being temporary unavailable please try again shortly ');
+        } else {
+          throw error;
+        }
       });
   }
 
@@ -55,6 +75,12 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorExperiance(conid)
       .subscribe(response => {
         this.selectedExperiance = response.json();
+      }, (error: Response) => {
+        if (error instanceof NotFoundError) {
+          alert('Server has being temporary unavailable please try again shortly ');
+        } else {
+          throw error;
+        }
       });
   }
 

@@ -1,5 +1,5 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import {ErrorHandler, NgModule} from '@angular/core';
 
 
 import {AppComponent} from './app.component';
@@ -12,8 +12,9 @@ import {ConstructorProfileComponent} from './layout/constructor/constructor-prof
 import {StarRatingModule} from 'angular-star-rating';
 import {UserRegistrationService} from './services/user-registration.service';
 import {HttpModule} from '@angular/http';
-import { MainComponent } from './landing/main/main.component';
+import {MainComponent} from './landing/main/main.component';
 import {ClientConstuctorService} from './services/client-constuctor.service';
+import {AppErrorHandler} from './common/app-error-handler';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import {ClientConstuctorService} from './services/client-constuctor.service';
   ],
   providers: [
     UserRegistrationService,
-    ClientConstuctorService
+    ClientConstuctorService,
+    {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]
 })

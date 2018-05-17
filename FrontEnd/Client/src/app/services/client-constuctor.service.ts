@@ -5,13 +5,15 @@ import {NotFoundError} from '../common/not-found-error';
 import {AppError} from '../common/app-error';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw'
+
 @Injectable()
 export class ClientConstuctorService {
 
-  private getConstructorUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/constructor/getConstructor';
-  private getWorksUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/work/getConstructorWorks';
-  private getEducationUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/education/getConstructorEducation';
-  private getExperianceUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
+  private getConstructorUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/getConstructor';
+  private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
+  private getEducationUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/education/getConstructorEducation';
+  private getExperianceUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
+  private getCommentsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getConstructorComments';
 
   constructor(private http: Http) {
 
@@ -37,7 +39,13 @@ export class ClientConstuctorService {
     return this.http.post(this.getExperianceUrl + '/' + conid, conid)
       .catch(this.handleError);
   }
-  private handleError(error: Response){
+
+  getConstructorComments(conid) {
+    return this.http.post(this.getCommentsUrl + '/' + conid, conid)
+      .catch(this.handleError);
+  }
+
+  private handleError(error: Response) {
     if (error.status === 0) {
       return Observable.throw(new NotFoundError(error.json()));
     } else {

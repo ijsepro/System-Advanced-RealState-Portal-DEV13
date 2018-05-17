@@ -11,6 +11,9 @@ create table admin (
 	constraint primary key(adminID)	
 ) ENGINE=InnoDB;
 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table newAdmin(
 	newAdminID int not null AUTO_INCREMENT,
 	newAdminUserName varchar(10)not null,
@@ -19,6 +22,9 @@ create table newAdmin(
 	constraint primary key(newAdminId),
 	constraint foreign key(adminID) references admin(adminID)
 ) ENGINE=InnoDB;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table architecture(
 	architectureID int not null AUTO_INCREMENT,
 	architectureName varchar(50)not null,
@@ -30,6 +36,8 @@ create table architecture(
 	constraint primary key(architectureID),
 	constraint foreign key(adminID) references admin(adminID)
 )ENGINE=InnoDB;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 insert into architecture values(
 	0,
@@ -79,6 +87,8 @@ create table recovery_keys (
   valid tinyint(4) NOT NULL DEFAULT '1',
   PRIMARY KEY (rid)
 ) ENGINE=InnoDB;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 create table Constructor(
 	ConstructorID int not null AUTO_INCREMENT,
@@ -202,6 +212,8 @@ insert into Constructor values(
     'www.edifices.com'
 );
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table ConstructorWork(
      WorkID int not null AUTO_INCREMENT,
      ConstructorID int not null,
@@ -238,6 +250,8 @@ insert into ConstructorWork values(
      'Iski Babare Rabaree... Disti Didin...'
 );
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table ArchitectureWork(
      WorkID int not null AUTO_INCREMENT,
      architectureID int not null,
@@ -269,6 +283,9 @@ insert into ArchitectureWork values(
     '../../../assets/img/faces/kaci-baum-2.jpg',
      5
 );
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table newUser(
 	newUserID int not null AUTO_INCREMENT,
 	newUserName varchar(100)not null,
@@ -280,7 +297,9 @@ create table newUser(
 	newUserOfficialNum varchar(100)not null,
 	newUserPC varchar(100)not null,
 	constraint primary key(newUserID)
-);
+) ENGINE=InnoDB;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 create table ConstructorEducation(
      ConstructorEducationID int not null AUTO_INCREMENT,
@@ -318,6 +337,8 @@ insert into ConstructorEducation values(
     'I studied at IJSE Galle Branch'
 );
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table ConstructorExperiance(
      ConstructorExperianceID int not null AUTO_INCREMENT,
      ConstructorID int not null,
@@ -352,4 +373,70 @@ insert into ConstructorExperiance values(
     '2020-2025',
     'Seniour Software Engineer',
     'I work at Vertusa'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+create table ConstructorClients(
+     ClientID int not null AUTO_INCREMENT,
+     ConstructorID int not null,
+     ClientName varchar(100) not null,
+     constraint primary key(ClientID),
+     constraint foreign key(ConstructorID) references constructor(ConstructorID)
+)ENGINE=InnoDB;
+
+insert into ConstructorClients values(
+    0,
+    2,
+    'Dinuka Lakshitha'
+);
+
+insert into ConstructorClients values(
+    0,
+    2,
+    'Thisaru Hiruni'
+);
+
+insert into ConstructorClients values(
+    0,
+    2,
+    'Thusara Kushi'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+create table ConstructorComments(
+     CommentID int not null AUTO_INCREMENT,
+     ConstructorID int not null,
+     ClientID int not null,
+     WorkID int,
+     Commment varchar(100) not null,
+     constraint primary key(CommentID),
+     constraint foreign key(ConstructorID) references Constructor(ConstructorID),
+     constraint foreign key(ClientID) references ConstructorClients(ClientID),
+     constraint foreign key(WorkID) references ConstructorWork(WorkID)
+)ENGINE=InnoDB;
+
+insert into ConstructorComments values(
+    0,
+    2,
+    1,
+    1,
+    'Ado meka fatta wedakne'
+);
+
+insert into ConstructorComments values(
+    0,
+    2,
+    1,
+    NULL,
+    'Such a creative constructor'
+);
+
+insert into ConstructorComments values(
+    0,
+    2,
+    1,
+    2,
+    'This is an owesome work'
 );

@@ -14,6 +14,7 @@ export class ConstructorProfileComponent implements OnInit {
   selectedWorks: any[];
   selectedEducation: any[];
   selectedExperiance: any[];
+  selectedComments: any[];
 
   constructor(private service: ClientConstuctorService, private router: Router, private route: ActivatedRoute) {
   }
@@ -31,6 +32,7 @@ export class ConstructorProfileComponent implements OnInit {
             this.getConstructorWorks(constructor['ConstructorID']);
             this.getConstructorEducation(constructor['ConstructorID']);
             this.getConstructorExperiance(constructor['ConstructorID']);
+            this.getConstructorComments(constructor['ConstructorID']);
           }
         }, (error: Response) => {
           if (error instanceof NotFoundError) {
@@ -75,6 +77,21 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorExperiance(conid)
       .subscribe(response => {
         this.selectedExperiance = response.json();
+        console.log(response.json());
+      }, (error: Response) => {
+        if (error instanceof NotFoundError) {
+          alert('Server has being temporary unavailable please try again shortly ');
+        } else {
+          throw error;
+        }
+      });
+  }
+
+  getConstructorComments(conid: number) {
+
+    this.service.getConstructorComments(conid)
+      .subscribe(response => {
+        this.selectedComments = response.json();
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
           alert('Server has being temporary unavailable please try again shortly ');

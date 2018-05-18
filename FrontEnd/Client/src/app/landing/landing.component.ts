@@ -3,6 +3,7 @@ import {any} from 'codelyzer/util/function';
 import {UserRegistrationService} from '../services/user-registration.service';
 import {AppError} from '../common/app-error';
 import {NotFoundError} from '../common/not-found-error';
+import {ToastrService} from 'ngx-toastr';
 
 
 @Component({
@@ -14,7 +15,7 @@ import {NotFoundError} from '../common/not-found-error';
 export class LandingComponent implements OnInit {
   url: any = '../../assets/img/kit/faces/card-profile2-square.jpg';
 
-  constructor(private elem: ElementRef, private service: UserRegistrationService) {
+  constructor(private elem: ElementRef, private service: UserRegistrationService, private toastr: ToastrService) {
   }
 
   ngOnInit() {
@@ -31,6 +32,10 @@ export class LandingComponent implements OnInit {
 
       reader.readAsDataURL(event.target.files[0]);
     }
+  }
+
+  Success() {
+    this.toastr.success('Hello world!', 'Toastr fun!');
   }
 
   register() {
@@ -60,13 +65,16 @@ export class LandingComponent implements OnInit {
 
     this.service.registerUser(formData).subscribe(res => {
       if (res.json() === 1) {
-        alert('New User Registerd successfully')
+        this.toastr.success('Registerd')
       } else {
         alert('Error Registering user please try again.......')
       }
     }, (error: AppError) => {
       if (error instanceof NotFoundError) {
-        alert(error.originalError);
+        this.toastr.warning('Please Try Again Shortly', 'server Error', {
+          progressBar: true,
+          positionClass: 'toast-top-center'
+        });
       } else {
         throw error;
       }

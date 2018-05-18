@@ -15,7 +15,9 @@ import {HttpModule} from '@angular/http';
 import {MainComponent} from './landing/main/main.component';
 import {ClientConstuctorService} from './services/client-constuctor.service';
 import {AppErrorHandler} from './common/app-error-handler';
-
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CommonModule} from '@angular/common';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,10 @@ import {AppErrorHandler} from './common/app-error-handler';
     StarRatingModule.forRoot(),
     AppRoutingModule,
     FormWizardModule,
-    HttpModule
+    HttpModule,
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot(),
 
   ],
   providers: [

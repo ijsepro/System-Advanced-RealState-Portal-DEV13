@@ -25,7 +25,7 @@ const routes: Routes = [
             {path: '', component: DashboardComponent},
             {path: 'dashboard', component: DashboardComponent},
             {path: 'notification', component: NotificationComponent},
-            {path: 'app-new-admin-registration', component: NewAdminRegistrationComponent},
+            {path: 'appnew', component: NewAdminRegistrationComponent},
             {
                 path: 'architectures', component: ArchitectureOverviewComponent,
                 children: [

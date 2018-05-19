@@ -3,7 +3,7 @@ import {Http} from '@angular/http';
 
 @Injectable()
 export class AdminService {
-    private url = 'http://localhost/MyServer/Edifices/BackEnd/index.php/admin/insert/';
+    private url = 'http://localhost/IntellijIDEA/BackEnd/BackEnd/index.php/admin/insert/';
 
     constructor(private http: Http) {
     }

@@ -352,7 +352,7 @@ create table ConstructorExperiance(
 
 insert into ConstructorExperiance values(
     0,
-    2,
+    6,
     'WSO2',
     '2020-2025',
     'Seniour Software Engineer',
@@ -360,7 +360,7 @@ insert into ConstructorExperiance values(
 );
 insert into ConstructorExperiance values(
     0,
-    2,
+    7,
     'MIT',
     '2020-2025',
     'Seniour Software Engineer',
@@ -368,7 +368,7 @@ insert into ConstructorExperiance values(
 );
 insert into ConstructorExperiance values(
     0,
-    2,
+    8,
     'Vertusa',
     '2020-2025',
     'Seniour Software Engineer',
@@ -387,19 +387,19 @@ create table ConstructorClients(
 
 insert into ConstructorClients values(
     0,
-    2,
+    6,
     'Dinuka Lakshitha'
 );
 
 insert into ConstructorClients values(
     0,
-    2,
+    7,
     'Thisaru Hiruni'
 );
 
 insert into ConstructorClients values(
     0,
-    2,
+    8,
     'Thusara Kushi'
 );
 
@@ -419,24 +419,24 @@ create table ConstructorComments(
 
 insert into ConstructorComments values(
     0,
-    2,
-    1,
+    6,
+    4,
     1,
     'Ado meka fatta wedakne'
 );
 
 insert into ConstructorComments values(
     0,
-    2,
-    1,
+    7,
+    5,
     NULL,
     'Such a creative constructor'
 );
 
 insert into ConstructorComments values(
     0,
-    2,
-    1,
+    8,
+    6,
     2,
     'This is an owesome work'
 );

@@ -77,7 +77,6 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorExperiance(conid)
       .subscribe(response => {
         this.selectedExperiance = response.json();
-        console.log(response.json());
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
           alert('Server has being temporary unavailable please try again shortly ');

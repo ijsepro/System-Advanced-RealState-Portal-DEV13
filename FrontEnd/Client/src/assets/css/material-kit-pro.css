@@ -3446,23 +3446,23 @@ fieldset[disabled] .navbar .btn-link:focus {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
-.dropdown .dropdown-menu,
-.dropup:not(.bootstrap-select) .dropdown-menu,
-.dropdown-menu.bootstrap-datetimepicker-widget {
-  -webkit-transition: all 150ms linear;
-  -moz-transition: all 150ms linear;
-  -o-transition: all 150ms linear;
-  -ms-transition: all 150ms linear;
-  transition: all 150ms linear;
-  -webkit-transform: translate3d(0, -20px, 0);
-  -moz-transform: translate3d(0, -20px, 0);
-  -o-transform: translate3d(0, -20px, 0);
-  -ms-transform: translate3d(0, -20px, 0);
-  transform: translate3d(0, -20px, 0);
-  visibility: hidden;
-  display: block;
-  opacity: 0;
-}
+/*.dropdown .dropdown-menu,*/
+/*.dropup:not(.bootstrap-select) .dropdown-menu,*/
+/*.dropdown-menu.bootstrap-datetimepicker-widget {*/
+  /*-webkit-transition: all 150ms linear;*/
+  /*-moz-transition: all 150ms linear;*/
+  /*-o-transition: all 150ms linear;*/
+  /*-ms-transition: all 150ms linear;*/
+  /*transition: all 150ms linear;*/
+  /*-webkit-transform: translate3d(0, -20px, 0);*/
+  /*-moz-transform: translate3d(0, -20px, 0);*/
+  /*-o-transform: translate3d(0, -20px, 0);*/
+  /*-ms-transform: translate3d(0, -20px, 0);*/
+  /*transform: translate3d(0, -20px, 0);*/
+  /*visibility: hidden;*/
+  /*display: block;*/
+  /*opacity: 0;*/
+/*}*/
 
 .dropdown.open .dropdown-menu,
 .dropdown-menu.bootstrap-datetimepicker-widget.open {

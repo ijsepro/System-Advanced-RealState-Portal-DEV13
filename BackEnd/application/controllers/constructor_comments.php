@@ -24,4 +24,10 @@ class Constructor_comments extends CI_Controller
 		$comments = $this->constructor_comments_model->getConstructorComments($conid);
 		echo $comments;
 	}
+
+	public function getConstructorJoinComments($conid = 2)
+	{
+		$comments = $this->constructor_comments_model->getConstructorJoinComments($conid);
+		echo $comments;
+	}
 }

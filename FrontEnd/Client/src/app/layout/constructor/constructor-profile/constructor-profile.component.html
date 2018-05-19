@@ -281,6 +281,34 @@
             <button class="btn btn-fab btn-primary" rel="tooltip" title="Message this user" style="margin-left: 10%">
               <i class="material-icons">message</i>
             </button>
+
+            <div rel="tooltip" title="Notifications" style="margin-top: -11.2%;margin-left: 38.5%">
+              <ul class="navbar-nav ml-auto" style="position: absolute">
+                <li class="dropdown nav-item">
+                  <a href="" class=" nav-link" data-toggle="dropdown">
+                    <div style="background-color: #9c27b0;height: 56.5px;width: 56.5px;border-radius: 50%">
+                      <i class="material-icons" style="margin-top: 29%;margin-left: 29%;color: white">notifications_active</i>
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-with-icons dropdown-menu-right" style="border: 3px solid #b3b3b3">
+                    <li class="dropdown-item row" style="cursor: pointer;border-bottom: 4px solid #9c27b0"
+                        *ngFor="let comments of selectedComments">
+                      <img class="col-md-2" style="height: 40px;width: 40px;margin-left: -4%"
+                           [src]="comments.WorkPicture">
+                      <div class="col-md-8 text-left" style="font-size: 16px">
+                        {{comments.ClientName}}
+                        commented on your {{comments.WorkName}} <br> work
+                      </div>
+                    </li>
+                    <li class="divider" style="background-color: #b3b3b3;height: 3px"></li>
+                    <li class="dropdown-header text-center"
+                        style="cursor: pointer;font-size: 15px;color: #0b75c9;font-weight: bold"><< SeeMore >>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </div>
 

@@ -5,22 +5,23 @@
                  style="background-image: url('../../../assets/img/profiles/city.jpg'); height: 20rem"></div>
             <div class="main main-raised">
                 <div class="profile-content">
-                    <div class="container"  *ngFor="let constrcutor of selectedConstructor">
+                    <div class="container" *ngFor="let constrcutor of selectedConstructor">
                         <div class="row">
                             <div class="col-md-6 ml-auto mr-auto">
                                 <div class="profile">
                                     <div class="avatar" style="text-align: center">
                                         <img [src]="constrcutor.ConstructorProfilePicture" alt="Circle Image"
-                                             class="img-raised rounded-circle img-fluid" style="width: 15rem;height: 15rem; margin-top: -5rem">
+                                             class="img-raised rounded-circle img-fluid"
+                                             style="width: 15rem;height: 15rem; margin-top: -5rem">
                                     </div>
 
                                     <div style="margin-left: 38.5%; margin-top: -6%;position: fixed">
                                         <ul class="navbar-nav ml-auto" style=";position: absolute; z-index: 1">
                                             <li class="dropdown nav-item">
                                                 <a href="" class=" nav-link" data-toggle="dropdown">
-                                                    <div style="background-color: purple;height: 60px;width: 60px;border-radius: 50%">
+                                                    <div style="background-color: #9c27b0;height: 60px;width: 60px;border-radius: 50%">
                                                         <i class="material-icons"
-                                                           style="margin-top: 30%;margin-left: 30%">menu</i>
+                                                           style="margin-top: 30%;margin-left: 30%;color: white">menu</i>
                                                     </div>
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-with-icons dropdown-menu-right"
@@ -47,7 +48,8 @@
                                     </div>
 
                                     <div class="name">
-                                        <h3 class="title" style="text-align: center">{{constrcutor.ConstructorName}}</h3>
+                                        <h3 class="title" style="text-align: center">
+                                            {{constrcutor.ConstructorName}}</h3>
                                         <h6 style="text-align: center">{{constrcutor.ConstructorRole}}</h6>
                                         <div style="text-align: center">
                                             <a href="#pablo" class="btn btn-just-icon btn-link btn-dribbble"><i
@@ -80,7 +82,8 @@
 
                         <div class="row" style="margin-top: -15rem">
                             <div class="col-md-4" *ngFor="let work of selectedWorks">
-                                <div class="card card-header" style="text-align: center; background-color: #0b3251; color: white">
+                                <div class="card card-header"
+                                     style="text-align: center; background-color: #0b3251; color: white">
                                     <h6>{{work.WorkName}}</h6>
                                 </div>
                                 <div class="card card-body">

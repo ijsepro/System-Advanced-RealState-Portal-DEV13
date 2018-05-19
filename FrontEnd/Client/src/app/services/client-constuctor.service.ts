@@ -13,7 +13,7 @@ export class ClientConstuctorService {
   private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
   private getEducationUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/education/getConstructorEducation';
   private getExperianceUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
-  private getCommentsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getConstructorComments';
+  private getCommentsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getconstructorjoincomments';
 
   constructor(private http: Http) {
 
@@ -41,6 +41,11 @@ export class ClientConstuctorService {
   }
 
   getConstructorComments(conid) {
+    return this.http.post(this.getCommentsUrl + '/' + conid, conid)
+      .catch(this.handleError);
+  }
+
+  getConstructorCommentsClients(conid) {
     return this.http.post(this.getCommentsUrl + '/' + conid, conid)
       .catch(this.handleError);
   }

@@ -21,13 +21,12 @@
       "styles": [
         "../src/assets/css/material-kit.css",
         "../src/assets/css/material-kit-pro.css",
-        "styles.css",
-        "node_modules/ngx-toastr/toastr.css"
+        "styles.css"
       ],
       "scripts": [
-        "../src/assets/js/core/jquery.min.js",
+        "../node_modules/jquery/dist/jquery.slim.min.js",
+        "../node_modules/popper.js/dist/umd/popper.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "../src/assets/js/core/popper.min.js",
         "../src/assets/js/bootstrap-material-design.js",
         "../src/assets/js/material-kit.js"
       ],

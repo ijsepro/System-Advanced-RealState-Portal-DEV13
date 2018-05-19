@@ -1,6 +1,6 @@
 import {Component, ElementRef, OnInit} from '@angular/core';
 import {AdminService} from '../services/admin.service';
-
+import { ToastrService } from 'ngx-toastr';
 @Component({
     selector: 'app-new-admin-registration',
     templateUrl: './new-admin-registration.component.html',
@@ -10,7 +10,7 @@ export class NewAdminRegistrationComponent implements OnInit {
     url: any = '../../../assets/img/faces/avatar.jpg';
     admin: any = [];
 
-    constructor(private service: AdminService, private elem: ElementRef) {
+    constructor(private service: AdminService, private elem: ElementRef,private toastr: ToastrService) {
     }
 
     ngOnInit() {
@@ -43,9 +43,9 @@ export class NewAdminRegistrationComponent implements OnInit {
         this.service.registerAdmin(formData)
             .subscribe(res => {
                 if (res.json() === 1) {
-                    alert('New Admin Has Being Autherized')
+                    this.toastr.success('Registered', '');
                 } else {
-                    alert('Error Autherizing  New Admin')
+                    this.toastr.error('Error!!!', '');
                 }
             });
 

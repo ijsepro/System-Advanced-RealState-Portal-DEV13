@@ -3,7 +3,7 @@ import {Http} from '@angular/http';
 
 @Injectable()
 export class AdminService {
-    private url = 'http://localhost/MyServer/Edifices/BackEnd/index.php/admin/insert/';
+    private url = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/admin/insert/';
 
     constructor(private http: Http) {
     }
@@ -13,6 +13,6 @@ export class AdminService {
     }
 
     sendEmail(formdata) {
-        return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/admin/sendEmail', formdata);
+        return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/admin/sendEmail', formdata);
     }
 }

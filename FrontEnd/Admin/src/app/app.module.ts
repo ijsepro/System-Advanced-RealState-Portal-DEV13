@@ -31,6 +31,9 @@ import {AuthGuard} from './auth.guard';
 import {StarRatingModule} from 'angular-star-rating';
 import {ConstructorService} from './services/constructor.service';
 import { BankerOverviewComponent } from './layout/banker-overview/banker-overview.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {CommonModule} from '@angular/common';
+import {ToastrModule} from 'ngx-toastr';
 
 @NgModule({
     declarations: [
@@ -59,7 +62,10 @@ import { BankerOverviewComponent } from './layout/banker-overview/banker-overvie
         ReactiveFormsModule,
         AppRoutingModule,
         HomeModule,
-        StarRatingModule.forRoot()
+        StarRatingModule.forRoot(),
+        CommonModule,
+        BrowserAnimationsModule, // required animations module
+        ToastrModule.forRoot(),
     ],
     providers: [
         ForgetPasswordService,

@@ -11,7 +11,7 @@
     "e2e": "ng e2e"
   },
   "dependencies": {
-    "@angular/animations": "4.3.1",
+    "@angular/animations": "^4.3.1",
     "@angular/cli": "^1.7.4",
     "@angular/common": "4.3.1",
     "@angular/compiler": "4.3.1",
@@ -30,6 +30,7 @@
     "jw-bootstrap-switch-ng2": "1.0.3",
     "latest": "^0.2.0",
     "ng2-nouislider": "1.6.1",
+    "ngx-toastr": "^8.7.3",
     "nouislider": "9.2.0",
     "popper.js": "^1.12.3",
     "rxjs": "^5.1.0",

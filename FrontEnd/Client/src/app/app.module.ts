@@ -18,6 +18,8 @@ import {AppErrorHandler} from './common/app-error-handler';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
 import {ToastrModule} from 'ngx-toastr';
+import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
 
 @NgModule({
   declarations: [
@@ -36,8 +38,13 @@ import {ToastrModule} from 'ngx-toastr';
     HttpModule,
     CommonModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(),
-
+    ToastrModule.forRoot(), SweetAlert2Module.forRoot({
+      buttonsStyling: false,
+      customClass: 'modal-content',
+      confirmButtonClass: 'btn btn-primary',
+      cancelButtonClass: 'btn'
+    }),
+    LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR})
   ],
   providers: [
     UserRegistrationService,

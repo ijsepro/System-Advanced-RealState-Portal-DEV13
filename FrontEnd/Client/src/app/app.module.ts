@@ -38,7 +38,8 @@ import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
     HttpModule,
     CommonModule,
     BrowserAnimationsModule, // required animations module
-    ToastrModule.forRoot(), SweetAlert2Module.forRoot({
+    ToastrModule.forRoot(),
+    SweetAlert2Module.forRoot({
       buttonsStyling: false,
       customClass: 'modal-content',
       confirmButtonClass: 'btn btn-primary',

@@ -22,6 +22,7 @@ class Constructor_comments_model extends CI_Model
 		$this->db->from('constructorcomments,constructorclients,constructorwork');
 		$this->db->where('constructorcomments.ClientID = constructorclients.ClientID');
 		$this->db->where('constructorcomments.WorkID = constructorwork.WorkID');
+		$this->db->where(['constructorcomments.ConstructorID' => $conid]);
 
 		$query = $this->db->get();
 

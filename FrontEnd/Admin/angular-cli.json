@@ -20,10 +20,11 @@
       "prefix": "app",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "styles.css",
-        "assets/sass/paper-kit.scss",
-        "assets/css/demo.css",
-        "assets/css/nucleo-icons.css"
+        "../node_modules/ngx-toastr/toastr.css",
+        "../src/styles.css",
+        "../src/assets/sass/paper-kit.scss",
+        "../src/assets/css/demo.css",
+        "../src/assets/css/nucleo-icons.css"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.slim.min.js",

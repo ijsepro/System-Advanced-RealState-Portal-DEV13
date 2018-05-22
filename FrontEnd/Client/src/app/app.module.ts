@@ -20,6 +20,9 @@ import {CommonModule} from '@angular/common';
 import {ToastrModule} from 'ngx-toastr';
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
+import { ClientProfileComponent } from './client-profile/client-profile.component';
+import { NavBarComponent } from './client-profile/nav-bar/nav-bar.component';
+import { FooterComponent } from './client-profile/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
     LayoutComponent,
     LandingComponent,
     ConstructorProfileComponent,
-    MainComponent
+    MainComponent,
+    ClientProfileComponent,
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

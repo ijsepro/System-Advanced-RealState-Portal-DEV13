@@ -14,6 +14,8 @@ export class ClientConstuctorService {
   private getEducationUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/education/getConstructorEducation';
   private getExperianceUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
   private getCommentsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getconstructorjoincomments';
+  private getClientsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_clients/getconstructorclients';
+  private getProfileCommentUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getconstructorprofilecomments';
 
   constructor(private http: Http) {
 
@@ -45,10 +47,15 @@ export class ClientConstuctorService {
       .catch(this.handleError);
   }
 
-  getConstructorCommentsClients(conid) {
-    return this.http.post(this.getCommentsUrl + '/' + conid, conid)
+  getConstructorClients(conid) {
+    return this.http.post(this.getClientsUrl + '/' + conid, conid)
       .catch(this.handleError);
   }
+  getConstructorProfileComments(conid) {
+    return this.http.post(this.getProfileCommentUrl + '/' + conid, conid)
+      .catch(this.handleError);
+  }
+
 
   private handleError(error: Response) {
     if (error.status === 0) {

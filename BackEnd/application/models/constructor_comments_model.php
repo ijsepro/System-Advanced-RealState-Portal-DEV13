@@ -27,4 +27,17 @@ class Constructor_comments_model extends CI_Model
 
 		return json_encode($query->result());
 	}
+
+	public function getConstructorProfileComments($conid = '')
+	{
+		$this->db->select('ClientName,ClientProfilePicture,Commment');
+		$this->db->from('ConstructorClients,ConstructorComments');
+		$this->db->where(['ConstructorComments.WorkID' => NULL]);
+		$this->db->where('constructorcomments.ClientID = constructorclients.ClientID');
+		$this->db->where(['ConstructorComments.ConstructorID' => $conid]);
+
+		$query = $this->db->get();
+
+		return json_encode($query->result());
+	}
 }

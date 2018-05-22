@@ -19,9 +19,9 @@ class Constructor_clients extends CI_Controller
 		$this->load->model('constructor_clients_model');
 	}
 
-	public function getConstructorClients($clientid = '')
+	public function getConstructorClients($conid = '')
 	{
-		$clients = $this->constructor_clients_model->getConstructorClients($clientid);
+		$clients = $this->constructor_clients_model->getConstructorClients($conid);
 		echo $clients;
 	}
 }

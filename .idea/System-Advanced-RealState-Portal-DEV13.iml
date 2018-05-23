@@ -7,6 +7,8 @@
       <excludeFolder url="file://$MODULE_DIR$/BackEnd/application/tmp" />
       <excludeFolder url="file://$MODULE_DIR$/FrontEnd/Admin/dist" />
       <excludeFolder url="file://$MODULE_DIR$/FrontEnd/Admin/tmp" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontEnd/Client/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/FrontEnd/Client/tmp" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

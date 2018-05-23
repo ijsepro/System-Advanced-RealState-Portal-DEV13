@@ -23,6 +23,7 @@ import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
 import { ClientProfileComponent } from './client-profile/client-profile.component';
 import { NavBarComponent } from './client-profile/nav-bar/nav-bar.component';
 import { FooterComponent } from './client-profile/footer/footer.component';
+import { AddWorkComponent } from './add-work/add-work.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { FooterComponent } from './client-profile/footer/footer.component';
     MainComponent,
     ClientProfileComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    AddWorkComponent
   ],
   imports: [
     BrowserModule,

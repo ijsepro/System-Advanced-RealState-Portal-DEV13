@@ -2,11 +2,14 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
 import {ClientConstuctorService} from '../../../services/client-constuctor.service';
 import {NotFoundError} from '../../../common/not-found-error';
+import {NGXLogger} from 'ngx-logger';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-constructor-profile',
   templateUrl: './constructor-profile.component.html',
-  styleUrls: ['./constructor-profile.component.css']
+  styleUrls: ['./constructor-profile.component.css'],
+  providers: [NGXLogger]
 })
 export class ConstructorProfileComponent implements OnInit {
 
@@ -15,8 +18,10 @@ export class ConstructorProfileComponent implements OnInit {
   selectedEducation: any[];
   selectedExperiance: any[];
   selectedComments: any[];
+  selectedClients: any[];
+  selectedProfileComments: any[];
 
-  constructor(private service: ClientConstuctorService, private router: Router, private route: ActivatedRoute) {
+  constructor(private service: ClientConstuctorService, private router: Router, private route: ActivatedRoute, private logger: NGXLogger, private toastr: ToastrService) {
   }
 
   ngOnInit() {
@@ -33,10 +38,17 @@ export class ConstructorProfileComponent implements OnInit {
             this.getConstructorEducation(constructor['ConstructorID']);
             this.getConstructorExperiance(constructor['ConstructorID']);
             this.getConstructorComments(constructor['ConstructorID']);
+            this.getConstructorClients(constructor['ConstructorID']);
+            this.getConstructorProfileComments(constructor['ConstructorID']);
           }
         }, (error: Response) => {
           if (error instanceof NotFoundError) {
-            alert('Server has being temporary unavailable please try again shortly ');
+            this.toastr.warning('Please Try Again Shortly', 'server Error', {
+              progressBar: true,
+              positionClass: 'toast-top-center'
+            });
+
+            this.logger.debug('Server Error ');
           } else {
             throw error;
           }
@@ -51,7 +63,12 @@ export class ConstructorProfileComponent implements OnInit {
         this.selectedWorks = response.json();
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
-          alert('Server has being temporary unavailable please try again shortly ');
+          this.toastr.warning('Please Try Again Shortly', 'server Error', {
+            progressBar: true,
+            positionClass: 'toast-top-center'
+          });
+
+          this.logger.debug('Server Error ');
         } else {
           throw error;
         }
@@ -65,7 +82,12 @@ export class ConstructorProfileComponent implements OnInit {
         this.selectedEducation = response.json();
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
-          alert('Server has being temporary unavailable please try again shortly ');
+          this.toastr.warning('Please Try Again Shortly', 'server Error', {
+            progressBar: true,
+            positionClass: 'toast-top-center'
+          });
+
+          this.logger.debug('Server Error ');
         } else {
           throw error;
         }
@@ -79,7 +101,12 @@ export class ConstructorProfileComponent implements OnInit {
         this.selectedExperiance = response.json();
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
-          alert('Server has being temporary unavailable please try again shortly ');
+          this.toastr.warning('Please Try Again Shortly', 'server Error', {
+            progressBar: true,
+            positionClass: 'toast-top-center'
+          });
+
+          this.logger.debug('Server Error ');
         } else {
           throw error;
         }
@@ -93,7 +120,51 @@ export class ConstructorProfileComponent implements OnInit {
         this.selectedComments = response.json();
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
-          alert('Server has being temporary unavailable please try again shortly ');
+          this.toastr.warning('Please Try Again Shortly', 'server Error', {
+            progressBar: true,
+            positionClass: 'toast-top-center'
+          });
+
+          this.logger.debug('Server Error ');
+        } else {
+          throw error;
+        }
+      });
+  }
+
+  getConstructorClients(conid: number) {
+
+    this.service.getConstructorClients(conid)
+      .subscribe(response => {
+        this.selectedClients = response.json();
+      }, (error: Response) => {
+        if (error instanceof NotFoundError) {
+          this.toastr.warning('Please Try Again Shortly', 'server Error', {
+            progressBar: true,
+            positionClass: 'toast-top-center'
+          });
+
+          this.logger.debug('Server Error ');
+        } else {
+          throw error;
+        }
+      });
+  }
+
+  getConstructorProfileComments(conid: number) {
+
+    this.service.getConstructorProfileComments(conid)
+      .subscribe(response => {
+        this.selectedProfileComments = response.json();
+        console.log(this.selectedProfileComments)
+      }, (error: Response) => {
+        if (error instanceof NotFoundError) {
+          this.toastr.warning('Please Try Again Shortly', 'server Error', {
+            progressBar: true,
+            positionClass: 'toast-top-center'
+          });
+
+          this.logger.debug('Server Error ');
         } else {
           throw error;
         }

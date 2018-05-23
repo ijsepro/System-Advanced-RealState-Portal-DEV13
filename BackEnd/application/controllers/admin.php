@@ -96,7 +96,7 @@ class Admin extends CI_Controller
 
 	public function insert()
 	{
-		$target_dir = "D:\STUDYING\GIT\Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\assets\images/";
+		$target_dir = "D:\GDSE 42";
 		$target_file = $target_dir . basename($_FILES["selectFile"]["name"]);
 		$uploadOK = 1;
 		if (file_exists($target_file)) {

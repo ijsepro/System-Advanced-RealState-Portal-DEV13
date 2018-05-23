@@ -14,6 +14,7 @@ import {ArchitectureProfileComponent} from './layout/architecture-profile/archit
 import {ConstructorOverviewComponent} from './layout/constructor-overview/constructor-overview.component';
 import {AuthGuard} from './auth.guard';
 import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
+import {BankersOverviewComponent} from './layout/bankers-overview/bankers-overview.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -34,6 +35,12 @@ const routes: Routes = [
             },
             {
                 path: 'constructors', component: ConstructorOverviewComponent,
+                children: [
+                    {path: 'constructor-profile', component: ConstructorProfileComponent}
+                ]
+            },
+            {
+                path: 'bankers', component: BankersOverviewComponent,
                 children: [
                     {path: 'constructor-profile', component: ConstructorProfileComponent}
                 ]

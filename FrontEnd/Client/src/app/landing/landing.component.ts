@@ -1,21 +1,25 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {any} from 'codelyzer/util/function';
 import {UserRegistrationService} from '../services/user-registration.service';
 import {AppError} from '../common/app-error';
 import {NotFoundError} from '../common/not-found-error';
 import {ToastrService} from 'ngx-toastr';
+import {NGXLogger} from 'ngx-logger';
+import {SwalComponent} from '@toverux/ngx-sweetalert2';
 
 
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.css']
+  styleUrls: ['./landing.component.css'],
+  providers: [NGXLogger]
 })
 
 export class LandingComponent implements OnInit {
   url: any = '../../assets/img/kit/faces/card-profile2-square.jpg';
+  @ViewChild('registerd') private registerd: SwalComponent;
 
-  constructor(private elem: ElementRef, private service: UserRegistrationService, private toastr: ToastrService) {
+  constructor(private elem: ElementRef, private service: UserRegistrationService, private toastr: ToastrService, private logger: NGXLogger) {
   }
 
   ngOnInit() {
@@ -66,8 +70,9 @@ export class LandingComponent implements OnInit {
     this.service.registerUser(formData).subscribe(res => {
       if (res.json() === 1) {
         this.toastr.success('Registerd')
+
       } else {
-        alert('Error Registering user please try again.......')
+        this.toastr.error('Registerd Unsuccessful try Again')
       }
     }, (error: AppError) => {
       if (error instanceof NotFoundError) {
@@ -75,6 +80,8 @@ export class LandingComponent implements OnInit {
           progressBar: true,
           positionClass: 'toast-top-center'
         });
+        this.logger.debug('Server Error ');
+        // this.registerd.show();
       } else {
         throw error;
       }

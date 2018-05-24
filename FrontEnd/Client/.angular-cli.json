@@ -21,6 +21,7 @@
       "styles": [
         "../src/assets/css/material-kit.css",
         "../src/assets/css/material-kit-pro.css",
+        "../src/assets/sass/material-bootstrap-wizard.scss",
         "styles.css"
       ],
       "scripts": [
@@ -28,7 +29,11 @@
         "../node_modules/popper.js/dist/umd/popper.js",
         "../node_modules/bootstrap/dist/js/bootstrap.min.js",
         "../src/assets/js/bootstrap-material-design.js",
-        "../src/assets/js/material-kit.js"
+        "../src/assets/js/material-kit.js",
+
+        "../src/assets/js/bootstrap-wizad/jquery.bootstrap.js",
+        "../src/assets/js/bootstrap-wizad/jquery.validate.min.js",
+        "../src/assets/js/bootstrap-wizad/material-bootstrap-wizard.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

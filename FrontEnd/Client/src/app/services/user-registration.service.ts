@@ -13,7 +13,7 @@ export class UserRegistrationService {
   }
 
   registerUser(formdata) {
-    return this.http.post('http://localhost/BackEnd/Edifices/BackEnds/index.php/user/registerNewUser', formdata)
+    return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/user/registerNewUser', formdata)
       .catch((error: Response) => {
         if (error.status === 0)
           return Observable.throw(new NotFoundError(error.json()));

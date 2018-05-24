@@ -30,4 +30,15 @@ class Work extends CI_Controller
 		$works = $this->work_model->getArchitectureWorks($arcid);
 		echo $works;
 	}
+
+	public function postProject()
+	{
+		$path = $_FILES['work-file']['name'];
+		$ext = pathinfo($path, PATHINFO_EXTENSION);
+		if ($ext == "pdf") {
+			echo 1;
+		} else {
+			echo 0;
+		}
+	}
 }

@@ -25,6 +25,7 @@ import { NavBarComponent } from './client-profile/nav-bar/nav-bar.component';
 import { FooterComponent } from './client-profile/footer/footer.component';
 import { AddWorkComponent } from './add-work/add-work.component';
 import {LoginComponent} from './login/login.component';
+import {PostWorkService} from './services/post-work.service';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import {LoginComponent} from './login/login.component';
   providers: [
     UserRegistrationService,
     ClientConstuctorService,
+    PostWorkService,
     {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]

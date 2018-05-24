@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/config/database.php" afterPath="$PROJECT_DIR$/BackEnd/application/config/database.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/user.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/user.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/work.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/work.php" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/client-profile.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/client-profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/nav-bar/nav-bar.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/nav-bar/nav-bar.component.html" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/user-registration.service.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/user-registration.service.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/Facebook News Feed – Welcome To The Stories That Matter.mp4" afterPath="" />
-    </list>
+    <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -539,12 +522,12 @@
       <workItem from="1527083428751" duration="5323000" />
       <workItem from="1527131885721" duration="10391000" />
       <workItem from="1527169891602" duration="2140000" />
-      <workItem from="1527183270833" duration="2722000" />
+      <workItem from="1527183270833" duration="2843000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248353000" />
+    <option name="totallyTimeSpent" value="248474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">

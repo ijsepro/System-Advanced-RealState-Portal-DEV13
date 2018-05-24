@@ -2,19 +2,152 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/apple-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/arrow-left.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/arrow-left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/arrow-right.cur" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/arrow-right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/dg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/dg10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/dg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/dg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/dg6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/dg9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/AU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/BE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/BF.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/BG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/BO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/BR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CH.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/CZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/DJ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/DK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/DZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/EE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/EG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/ES.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/FI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/FR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/GA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/GB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/GM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/GT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/HN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/HT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/HU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/ID.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/IE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/IL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/IN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/IQ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/IR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/IT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/JM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/JO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/JP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/KG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/KN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/KP.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/KR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/KW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/KZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/LA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/LB.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/LC.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/LS.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/LU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/LV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/MG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/MK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/ML.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/MM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/MT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/MX.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/NA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/NE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/NG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/NI.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/NL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/NO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/OM.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PK.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PT.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/PY.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/QA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/RO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/RU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/RW.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/SV.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/TD.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/TJ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/TL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/TR.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/TZ.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/UA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/US.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/VE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/VN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/flags/YE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/image_placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/landing.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/loading-bubbles.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/office2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/presentation/components.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/presentation/components2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/product1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/product2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/product3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/sections/iphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/sections/iphone2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/BackEnd/application/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Database.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/assets/img/bg.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,39 +161,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="landing.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="46" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="main.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            <state relative-caret-position="-3162">
+              <caret line="383" column="20" selection-start-line="383" selection-start-column="20" selection-end-line="383" selection-end-column="20" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#strong#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+            <state relative-caret-position="272">
+              <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landing.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html">
+      <file leaf-file-name=".angular-cli.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -90,9 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FrontEnd/src/app/services/architecture.service.ts" />
-        <option value="$PROJECT_DIR$/Admin/BackEnd/application/config/database.php" />
-        <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/admin.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/architecture.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/auth.service.ts" />
         <option value="$PROJECT_DIR$/Admin/FrontEnd/src/app/services/constructor-overview.service.ts" />
@@ -126,21 +271,24 @@
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/assets/js/material-kit-pro.js" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing-main/landing-main.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/BackEnd/application/config/database.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/assets/css/material-dashboard.css" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/services/admin.service.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts" />
         <option value="$PROJECT_DIR$/Database.txt" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/styles.css" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/signup/signup.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -179,8 +327,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,12 +367,51 @@
               <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="landing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="landing" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
+              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
+              <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -246,19 +431,19 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/FrontEnd/Client/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\assets\css" />
-      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img" />
-      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src" />
-      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client" />
-      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src" />
       <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app\layout" />
       <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\app\pages" />
       <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\app\shared" />
       <recent name="D:\GDSE 42\Group Project\New Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\src\app\services" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Admin\src\assets\css" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src" />
+      <recent name="D:\INTELLIJ\AREP\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -275,14 +460,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/System-Advanced-RealState-Portal-DEV13.iml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/deployment.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/package-lock.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/package.json</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/styles.css</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -290,6 +472,36 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.spec.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/js/bootstrap-wizad/jquery.bootstrap.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/js/bootstrap-wizad/jquery.validate.min.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/js/bootstrap-wizad/material-bootstrap-wizard.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_card.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_checkboxes.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_colors.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_footers.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_inputs-size.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_inputs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_misc.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_mixins.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_navs-pagination.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_radios.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_responsive.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_ripples.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_shadows.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_tooltips.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_typography.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_variables.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_variables_bootstrap.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/_wizard-card.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/mixins/_buttons.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/mixins/_inputs.scss</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-bootstrap-wizard/mixins/_vendor-prefixes.scss</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -446,19 +658,6 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-    </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
-      <option name="PROGRAM_PARAMETERS" />
-      <predefined_log_file id="idea.log" enabled="true" />
-    </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
@@ -521,11 +720,17 @@
       <workItem from="1526472939190" duration="485000" />
       <workItem from="1526560758647" duration="126000" />
       <workItem from="1526621203706" duration="7133000" />
+      <workItem from="1526733702811" duration="5754000" />
+      <workItem from="1526786610186" duration="2446000" />
+      <workItem from="1526790908476" duration="597000" />
+      <workItem from="1527049756401" duration="5332000" />
+      <workItem from="1527083428751" duration="5323000" />
+      <workItem from="1527131885721" duration="10391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203852000" />
+    <option name="totallyTimeSpent" value="233695000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -538,24 +743,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5030257" side_tool="true" weight="0.32200646" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5043924" side_tool="true" weight="0.2972973" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="7" weight="0.32750398" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290938" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3290938" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.4969743" visible="true" weight="0.2972973" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.4956076" visible="true" weight="0.2972973" />
       <window_info id="Capture Tool" order="2" />
       <window_info anchor="right" id="Remote Host" order="3" />
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14787701" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14787701" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -569,6 +774,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="File Transfer" order="7" visible="true" weight="0.32750398" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,94 +827,9 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/node_modules/@ng-bootstrap/ng-bootstrap/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/new-user-registration/new-user-registration.component.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/components/modal/modal.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/signup/signup.component.html" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/components/modal/modal.component.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/new-user-registration/new-user-registration.component.html" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/shared/navbar/navbar.component.html" />
@@ -789,40 +910,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing-main/landing-main.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" lean-forward="true" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="52" lean-forward="true" selection-start-line="9" selection-start-column="52" selection-end-line="9" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -904,23 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Database.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-236">
@@ -935,33 +1009,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="3">
+          <caret line="38" column="27" lean-forward="true" selection-start-line="37" selection-start-column="28" selection-end-line="38" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html">
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#strong#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="10" column="51" lean-forward="true" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-689">
+          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/client-constuctor.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/layout.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/layout.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/signup/signup.component.ts" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/signup/signup.component.html" />
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/sass/material-kit/sections/_projects.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
+        <state relative-caret-position="782">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/.angular-cli.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3162">
+          <caret line="383" column="20" selection-start-line="383" selection-start-column="20" selection-end-line="383" selection-end-column="20" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#wizard-step#0;n#div#0;n#form#0;n#div#0;n#form-wizard#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#strong#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h4#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#5;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -24,6 +24,7 @@ import { ClientProfileComponent } from './client-profile/client-profile.componen
 import { NavBarComponent } from './client-profile/nav-bar/nav-bar.component';
 import { FooterComponent } from './client-profile/footer/footer.component';
 import { AddWorkComponent } from './add-work/add-work.component';
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { AddWorkComponent } from './add-work/add-work.component';
     ClientProfileComponent,
     NavBarComponent,
     FooterComponent,
+    LoginComponent,
     AddWorkComponent
   ],
   imports: [

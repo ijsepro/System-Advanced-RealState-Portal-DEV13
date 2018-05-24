@@ -5,13 +5,17 @@ import {Routes, RouterModule} from '@angular/router';
 import {LandingComponent} from './landing/landing.component';
 import {ConstructorProfileComponent} from './layout/constructor/constructor-profile/constructor-profile.component';
 import {MainComponent} from './landing/main/main.component';
+import {LoginComponent} from './login/login.component';
 
 const routes: Routes = [
     {path: '', component: LandingComponent,children:
         [
           {path: '', component: MainComponent},
           {path: 'profile', component: ConstructorProfileComponent}
-        ]},
+        ]
+    },
+    {path:'login', component:LoginComponent}
+
 ];
 
 @NgModule({

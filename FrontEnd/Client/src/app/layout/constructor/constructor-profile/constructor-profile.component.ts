@@ -35,11 +35,11 @@ export class ConstructorProfileComponent implements OnInit {
           this.selectedConstructor = response.json();
           for (let constructor of this.selectedConstructor) {
             this.getConstructorWorks(constructor['ConstructorID']);
-            this.getConstructorEducation(constructor['ConstructorID']);
-            this.getConstructorExperiance(constructor['ConstructorID']);
-            this.getConstructorComments(constructor['ConstructorID']);
-            this.getConstructorClients(constructor['ConstructorID']);
-            this.getConstructorProfileComments(constructor['ConstructorID']);
+            // this.getConstructorEducation(constructor['ConstructorID']);
+            // this.getConstructorExperiance(constructor['ConstructorID']);
+            // this.getConstructorComments(constructor['ConstructorID']);
+            // this.getConstructorClients(constructor['ConstructorID']);
+            // this.getConstructorProfileComments(constructor['ConstructorID']);
           }
         }, (error: Response) => {
           if (error instanceof NotFoundError) {
@@ -73,6 +73,7 @@ export class ConstructorProfileComponent implements OnInit {
           throw error;
         }
       });
+    this.getConstructorEducation(conid);
   }
 
   getConstructorEducation(conid: number) {
@@ -92,6 +93,7 @@ export class ConstructorProfileComponent implements OnInit {
           throw error;
         }
       });
+    this.getConstructorExperiance(conid);
   }
 
   getConstructorExperiance(conid: number) {
@@ -111,6 +113,7 @@ export class ConstructorProfileComponent implements OnInit {
           throw error;
         }
       });
+    this.getConstructorComments(conid);
   }
 
   getConstructorComments(conid: number) {
@@ -130,6 +133,7 @@ export class ConstructorProfileComponent implements OnInit {
           throw error;
         }
       });
+    this.getConstructorClients(conid);
   }
 
   getConstructorClients(conid: number) {
@@ -149,6 +153,7 @@ export class ConstructorProfileComponent implements OnInit {
           throw error;
         }
       });
+    this.getConstructorProfileComments(conid);
   }
 
   getConstructorProfileComments(conid: number) {
@@ -156,7 +161,6 @@ export class ConstructorProfileComponent implements OnInit {
     this.service.getConstructorProfileComments(conid)
       .subscribe(response => {
         this.selectedProfileComments = response.json();
-        console.log(this.selectedProfileComments)
       }, (error: Response) => {
         if (error instanceof NotFoundError) {
           this.toastr.warning('Please Try Again Shortly', 'server Error', {

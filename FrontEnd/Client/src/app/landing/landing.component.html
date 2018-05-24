@@ -126,223 +126,220 @@
   </div>
 </div>
 
-
 <div class="modal fade" id="signupModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-signup" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <i class="material-icons">clear</i>
-        </button>
-      </div>
-      <form-wizard>
-        <div class="card card-signup">
-          <form>
-            <h2 class="card-title text-center">Register</h2>
-            <div class="card-body">
-              <wizard-step>
-                <div class="row">
-                  <div class="col-md-5 ml-auto">
-                    <label for="selectFile">
-                      <img class="img-raised rounded img-fluid" [src]="url"
-                           alt="Card image cap" style="width: 300px;height: 300px;cursor: pointer"
-                           data-toggle="tooltip" data-placement="left" title="Click Here To Upload Profile Picture"
-                           data-container="body">
-                    </label>
-                    <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"
-                           style="display: none">
-                  </div>
-                  <div class="col-md-5 mr-auto">
-                    <form class="form" method="" action="">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-offset-2">
+        <!--      Wizard container        -->
+        <div class="wizard-container">
+          <div class="card wizard-card" data-color="orange" id="wizard">
+            <form>
+
+              <div class="wizard-header">
+                <h3 class="wizard-title">
+                  Create Your Profile
+                </h3>
+                <h5>This information will let us know more about you.</h5>
+              </div>
+              <div class="wizard-navigation row">
+                <div class="col-md-12">
+                  <ul>
+                    <li class="col-md-3"><a href="#about" data-toggle="tab">About</a></li>
+                    <li class="col-md-3" style="margin-left: 10%"><a href="#role" data-toggle="tab">Role</a></li>
+                    <li class="col-md-3" style="margin-left: 10%"><a href="#more-info" data-toggle="tab">More Info</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-pane" id="about">
+                  <h4 class="info-text">Let's start with the basic information. </h4>
+
+                  <div class="row">
+                    <div class="col-md-4 col-sm-offset-1" style="padding-left: 5%">
+                      <label for="selectFile">
+                        <img class="img-raised rounded img-fluid" [src]="url"
+                             alt="Card image cap" style="width: 300px;height: 300px;cursor: pointer"
+                             data-toggle="tooltip" data-placement="left" title="Click Here To Upload Profile Picture"
+                             data-container="body">
+                        <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"
+                               style="display: none">
+                      </label>
+                    </div>
+                    <div class="col-md-8 mr-auto">
                       <div class="input-group">
                         <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
+                          <span class="input-group-text">
+                          <i class="material-icons">group</i>
+                          </span>
                         </div>
-                        <input id="userName" type="text" class="form-control" placeholder="User Name">
+                        <input id="userName" type="text" class="form-control" placeholder="User Name"
+                               style="width: 380%">
                       </div>
-                      <br>
-                      <br>
+
                       <div class="input-group">
                         <div class="input-group-prepend">
-                        <span class="input-group-text">
-                           <i class="material-icons">
-                              email
-                           </i>
-                        </span>
+                          <span class="input-group-text">
+                          <i class="material-icons">email</i>
+                          </span>
                         </div>
-                        <input id="userEmail" type="text" class="form-control" placeholder="Email">
+                        <input id="userEmail" type="text" class="form-control" placeholder="Email" style="width: 380%">
                       </div>
-                      <br>
-                      <br>
+
                       <div class="input-group">
                         <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
+                          <span class="input-group-text">
+                          <i class="material-icons">lock</i>
+                          </span>
                         </div>
-                        <input id="userPassword" type="text" class="form-control" placeholder="Password">
+                        <input id="userPassword" type="password" class="form-control" placeholder="Password"
+                               style="width: 380%">
                       </div>
-                      <br>
-                      <br>
+
                       <div class="input-group">
                         <div class="input-group-prepend">
-                        <span class="input-group-text">
-                            <i class="material-icons">group</i>
-                        </span>
+                          <span class="input-group-text">
+                          <i class="material-icons">contact_phone</i>
+                          </span>
                         </div>
-                        <input id="userContactNumber" type="text" class="form-control" placeholder="Contact Number ">
+                        <input id="userContactNumber" type="text" class="form-control" placeholder="Contact Number"
+                               style="width: 380%">
                       </div>
-                    </form>
+
+                    </div>
                   </div>
                 </div>
-              </wizard-step>
-              <wizard-step>
-                <div class="row">
-                  <div class="col-md-3 col-ml-auto">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="button button-primary">Architecture</button>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="col-md-3 col-ml-auto">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="button button-primary">Architecture</button>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="col-md-3 col-ml-auto">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="button button-primary">Architecture</button>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                  </div>
-                  <div class="col-md-3 col-ml-auto">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <button class="button button-primary">Architecture</button>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+
+                <div class="tab-pane" id="role">
+                  <h4 class="info-text">Choose your role. </h4>
+                  <div class="row">
+                    <div class="col-md-1 col-sm-offset-2"></div>
+
+                    <div class="col-md-2 col-sm-offset-2">
+                      <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                           title="Select this option if you are a constructor.">
+                        <input type="radio" name="type" value="Constructor">
+                        <div class="icon">
+                          <i class="material-icons">how_to_reg</i>
+                        </div>
+                        <h6>Constructor</h6>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                           title="Select this option if you are a architecturet">
+                        <input type="radio" name="type" value="Architecture">
+                        <div class="icon">
+                          <i class="material-icons">how_to_reg</i>
+                        </div>
+                        <h6>Architecture</h6>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-offset-2">
+                      <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                           title="Select this option if you are a banker.">
+                        <input type="radio" name="type" value="Banker">
+                        <div class="icon">
+                          <i class="material-icons">how_to_reg</i>
+                        </div>
+                        <h6>Banker</h6>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2">
+                      <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                           title="Select this option if you are a flat provider">
+                        <input type="radio" name="type" value="Flat Provider">
+                        <div class="icon">
+                          <i class="material-icons">how_to_reg</i>
+                        </div>
+                        <h6>Flat Provider</h6>
+                      </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-offset-2">
+                      <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                           title="Select this option if you are a loan provider.">
+                        <input type="radio" name="type" value="Loan Provider">
+                        <div class="icon">
+                          <i class="material-icons">how_to_reg</i>
+                        </div>
+                        <h6>Loan Provider</h6>
+                      </div>
+                    </div>
+
+                    <div class="col-md-1 col-sm-offset-2"></div>
                   </div>
                 </div>
-              </wizard-step>
-              <wizard-step (onComplete)="register()">
-                <div class="row">
-                  <div class="col-md-2 col-ml-auto"></div>
-                  <div class="col-md-8 col-ml-auto">
-                    <br>
-                    <br>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-      <span class="input-group-text">
-      <i class="material-icons">group</i>
-      </span>
+
+                <div class="tab-pane" id="more-info">
+                  <h4 class="info-text">Tell us more about you. </h4>
+                  <div class="row">
+                    <div class="col-md-1 mr-auto"></div>
+
+                    <div class="col-md-10 mr-auto">
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                          <i class="material-icons">work</i>
+                          </span>
+                        </div>
+                        <input id="companyName" type="text" class="form-control" placeholder="Company Name"
+                               style="width: 520%">
                       </div>
-                      <input id="companyName" type="text" class="form-control" placeholder="Company Name">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-      <span class="input-group-text">
-      <i class="material-icons">
-      email
-      </i>
-      </span>
+
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                          <i class="material-icons">blur_on</i>
+                          </span>
+                        </div>
+                        <input id="status" type="text" class="form-control" placeholder="Status" style="width: 520%">
                       </div>
-                      <input id="status" type="text" class="form-control" placeholder="Status">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-      <span class="input-group-text">
-      <i class="material-icons">group</i>
-      </span>
+
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                          <i class="material-icons">ac_unit</i>
+                          </span>
+                        </div>
+                        <input id="aboutYou" type="text" class="form-control" placeholder="About you"
+                               style="width: 520%">
                       </div>
-                      <input id="aboutYou" type="text" class="form-control" placeholder="About you">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-      <span class="input-group-text">
-      <i class="material-icons">group</i>
-      </span>
+
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                          <i class="material-icons">phone_forwarded</i>
+                          </span>
+                        </div>
+                        <input id="officialNumber" type="text" class="form-control" placeholder="Official Number "
+                               style="width: 520%">
                       </div>
-                      <input id="officialNumber" type="text" class="form-control" placeholder="Official Number ">
                     </div>
-                    <br>
-                    <br>
+
+                    <div class="col-md-1 mr-auto"></div>
                   </div>
-                  <div class="col-md-2 col-ml-auto"></div>
                 </div>
-              </wizard-step>
-            </div>
-          </form>
+              </div>
+
+              <div class="wizard-footer">
+                <div class="pull-right">
+                  <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next >>'/>
+                  <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish' (click)="register()" />
+                </div>
+                <div class="pull-left">
+                  <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous'
+                         value='<< Previous'/>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </form>
+          </div>
         </div>
-        <!--<div class="alert alert-danger">-->
-        <!--<div class="container">-->
-        <!--<div class="alert-icon">-->
-        <!--<i class="material-icons">error_outline</i>-->
-        <!--</div>-->
-        <!--<button type="button" class="close" data-dismiss="alert" aria-label="Close">-->
-        <!--<span aria-hidden="true"><i class="material-icons">clear</i></span>-->
-        <!--</button>-->
-        <!--<b>Error Alert:</b> Damn man! You screwed up the server this time. You should find a good excuse for your Boss...-->
-        <!--</div>-->
-        <!--</div>-->
-      </form-wizard>
+      </div>
     </div>
   </div>
 </div>
-<!--<button (click)="Success()">Success</button>-->
-<swal
-  #registerd
-  title="Registerd"
-  text="This cannot be undone"
-  [showCancelButton]="true"
-  [focusCancel]="true"
->
-</swal>

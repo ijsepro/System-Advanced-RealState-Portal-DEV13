@@ -9,13 +9,13 @@ import 'rxjs/add/observable/throw'
 @Injectable()
 export class ClientConstuctorService {
 
-  private getConstructorUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/constructor/getConstructor';
-  private getWorksUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/work/getConstructorWorks';
-  private getEducationUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/education/getConstructorEducation';
-  private getExperianceUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
-  private getCommentsUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/constructor_comments/getconstructorjoincomments';
-  private getClientsUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/constructor_clients/getconstructorclients';
-  private getProfileCommentUrl = 'http://localhost/BackEnd/Edifices/BackEnd/index.php/constructor_comments/getconstructorprofilecomments';
+  private getConstructorUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/getConstructor';
+  private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
+  private getEducationUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/education/getConstructorEducation';
+  private getExperianceUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/experiance/getConstructorExperiance';
+  private getCommentsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getconstructorjoincomments';
+  private getClientsUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_clients/getconstructorclients';
+  private getProfileCommentUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor_comments/getconstructorprofilecomments';
 
   constructor(private http: Http) {
 

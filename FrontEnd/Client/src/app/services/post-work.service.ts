@@ -11,7 +11,7 @@ export class PostWorkService {
   }
 
   postFileType(formdata) {
-    return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/work/postProject', formdata)
+    return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/work/postProject', formdata)
       .catch(this.handleError);
   }
 

@@ -41,4 +41,52 @@ class Work extends CI_Controller
 			echo 0;
 		}
 	}
+
+	public function temparyPost()
+	{
+		$path = $_FILES['work-file']['name'];
+		$ext = pathinfo($path, PATHINFO_EXTENSION);
+		if ($ext == "pdf") {
+			$res = $this->work_model->temparyPost([
+				'url' => '../../assets/img/pdf.jpg',
+				'description' => $_POST['description']
+			]);
+			echo 1;
+		} else {
+			$target_dir = "D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img/";
+			$target_file = $target_dir . basename($_FILES["work-file"]["name"]);
+			$uploadOK = 1;
+
+			if (file_exists($target_file)) {
+				echo 0;
+				$uploadOK = 0;
+			} else {
+				if ($uploadOK == 1) {
+					move_uploaded_file($_FILES['work-file']["tmp_name"], $target_file);
+					$res = $this->work_model->temparyPost([
+						'url' => $_POST['imgname'],
+						'description' => $_POST['description']
+					]);
+					echo 1;
+				} else {
+					echo 0;
+				}
+			}
+		}
+
+	}
+
+	public function loadPost()
+	{
+		$architectures = $this->work_model->getPosts();
+		echo $architectures;
+	}
+
+	public function postAProject()
+	{
+		$res = $this->work_model->postProject([
+			'url' => $_POST['imgname'],
+			'description' => $_POST['description']
+		]);
+	}
 }

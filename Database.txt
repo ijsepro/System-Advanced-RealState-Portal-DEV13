@@ -820,3 +820,13 @@ insert into ConstructorComments values(
     2,
     'This is an owesome work'
 );
+create table temparypost(
+    url varchar(1000)not null,
+    description varchar(100)not null
+);
+create tablle projects(
+    projectID int not null AUTO_INCREMENT,
+    projectName varchar (100)not null,
+    projectType boolean not null,
+
+);

@@ -22,5 +22,18 @@ class Work_model extends CI_Model
 
 		return json_encode($query->result());
 	}
+	public function  temparyPost($data){
+		$this->db->insert('temparypost', $data);
+		return $this->db->affected_rows();
+	}
+	public function getPosts()
+	{
+		$query = $this->db->get('temparyPost');
+		return json_encode($query->result());
+	}
+	public function postProject($data){
+		$this->db->insert('ConstructorWork', $data);
+		return $this->db->affected_rows();
+	}
 }
 

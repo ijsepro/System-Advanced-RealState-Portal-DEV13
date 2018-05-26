@@ -11,8 +11,15 @@ export class PostWorkService {
   }
 
   postFileType(formdata) {
-    return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/work/postProject', formdata)
+    return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/work/postProject', formdata)
       .catch(this.handleError);
+  }
+  temparyPost(formdata){
+    return this.http.post('http://localhost/BackEnd/Edifices/BackEnd/index.php/work/temparyPost', formdata)
+      .catch(this.handleError);
+  }
+  loadPost(){
+    return this.http.get('http://localhost/BackEnd/Edifices/BackEnd/index.php/work/loadpost');
   }
 
   private handleError(error: Response) {

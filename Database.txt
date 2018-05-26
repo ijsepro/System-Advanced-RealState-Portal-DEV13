@@ -214,6 +214,378 @@ insert into Constructor values(
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+create table Bankers(
+	BankerID int not null AUTO_INCREMENT,
+	BankerName varchar(50)not null,
+	BankerEmail varchar(50)not null,
+	BankerProfilePicture varchar(100)not null,
+	BankerRole varchar(100)not null,
+	BankerStatus varchar(100)not null,
+	BankerWorksCount int not null,
+	BankerRatings double not null,
+	adminID int not null,
+	BankerGender varchar(50)not null,
+	BankerBirthday varchar(50)not null,
+	BankerMaritalStatus varchar(50)not null,
+	BankerLocation varchar(50)not null,
+	BankerMobile varchar(50)not null,
+	BankerFacebook varchar(50)not null,
+	BankerSkype varchar(50)not null,
+	BankerWeb varchar(50)not null,
+	constraint primary key(BankerID),
+	constraint foreign key(adminID) references admin(adminID)
+)ENGINE=InnoDB;
+
+insert into Bankers values(
+	0,
+	'Dinuka',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Banker',
+	'Im Doint Whats Best For You...',
+	12,
+	3.5,
+	1,
+	'Male',
+	'1996-11-04',
+	'In a relationship',
+	'Midigama',
+	'0771234567',
+	'www.facebook.com/DK96',
+	'www.skype.com/polla',
+	'www.edifices.com'
+);
+
+insert into Bankers values(
+	0,
+	'Thisal',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Banker',
+	'Im Doint Whats Best For You...',
+	102,
+	5.0,
+	1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into Bankers values(
+	0,
+	'Kushan',
+	'kushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Banker',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into Bankers values(
+	0,
+	'Thisaru',
+	'thisaru@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Banker',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into Bankers values(
+	0,
+	'Madushan',
+	'madushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Banker',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+create table LandProviders(
+	LandProviderID int not null AUTO_INCREMENT,
+	LandProviderName varchar(50)not null,
+	LandProviderEmail varchar(50)not null,
+	LandProviderProfilePicture varchar(100)not null,
+	LandProviderRole varchar(100)not null,
+	LandProviderStatus varchar(100)not null,
+	LandProviderWorksCount int not null,
+	LandProviderRatings double not null,
+	adminID int not null,
+	LandProviderGender varchar(50)not null,
+	LandProviderBirthday varchar(50)not null,
+	LandProviderMaritalStatus varchar(50)not null,
+	LandProviderLocation varchar(50)not null,
+	LandProviderMobile varchar(50)not null,
+	LandProviderFacebook varchar(50)not null,
+	LandProviderSkype varchar(50)not null,
+	LandProviderWeb varchar(50)not null,
+	constraint primary key(LandProviderID),
+	constraint foreign key(adminID) references admin(adminID)
+)ENGINE=InnoDB;
+
+insert into LandProviders values(
+	0,
+	'Dinuka',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Land Provider',
+	'Im Doint Whats Best For You...',
+	12,
+	3.5,
+	1,
+	'Male',
+	'1996-11-04',
+	'In a relationship',
+	'Midigama',
+	'0771234567',
+	'www.facebook.com/DK96',
+	'www.skype.com/polla',
+	'www.edifices.com'
+);
+
+insert into LandProviders values(
+	0,
+	'Thisal',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Land Provider',
+	'Im Doint Whats Best For You...',
+	102,
+	5.0,
+	1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into LandProviders values(
+	0,
+	'Kushan',
+	'kushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Land Provider',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into LandProviders values(
+	0,
+	'Thisaru',
+	'thisaru@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Land Provider',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into LandProviders values(
+	0,
+	'Madushan',
+	'madushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Land Provider',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+create table FlatProviders(
+	FlatProviderID int not null AUTO_INCREMENT,
+	FlatProviderName varchar(50)not null,
+	FlatProviderEmail varchar(50)not null,
+	FlatProviderProfilePicture varchar(100)not null,
+	FlatProviderRole varchar(100)not null,
+	FlatProviderStatus varchar(100)not null,
+	FlatProviderWorksCount int not null,
+	FlatProviderRatings double not null,
+	adminID int not null,
+	FlatProviderGender varchar(50)not null,
+	FlatProviderBirthday varchar(50)not null,
+	FlatProviderMaritalStatus varchar(50)not null,
+	FlatProviderLocation varchar(50)not null,
+	FlatProviderMobile varchar(50)not null,
+	FlatProviderFacebook varchar(50)not null,
+	FlatProviderSkype varchar(50)not null,
+	FlatProviderWeb varchar(50)not null,
+	constraint primary key(FlatProviderID),
+	constraint foreign key(adminID) references admin(adminID)
+)ENGINE=InnoDB;
+
+insert into FlatProviders values(
+	0,
+	'Dinuka',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Flat Provider',
+	'Im Doint Whats Best For You...',
+	12,
+	3.5,
+	1,
+	'Male',
+	'1996-11-04',
+	'In a relationship',
+	'Midigama',
+	'0771234567',
+	'www.facebook.com/DK96',
+	'www.skype.com/polla',
+	'www.edifices.com'
+);
+
+insert into FlatProviders values(
+	0,
+	'Thisal',
+	'athisaldinuka3@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Flat Provider',
+	'Im Doint Whats Best For You...',
+	102,
+	5.0,
+	1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into FlatProviders values(
+	0,
+	'Kushan',
+	'kushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Flat Provider',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into FlatProviders values(
+	0,
+	'Thisaru',
+	'thisaru@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Flat Provider',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+insert into FlatProviders values(
+	0,
+	'Madushan',
+	'madushan@gmail.com',
+	'../../../assets/img/faces/kaci-baum-2.jpg',
+	'An Unique Flat Provider',
+    'Im Doint Whats Best For You...',
+    102,
+    5.0,
+    1,
+    'Male',
+    '1996-11-04',
+    'In a relationship',
+    'Midigama',
+    '0771234567',
+    'www.facebook.com/DK96',
+    'www.skype.com/polla',
+    'www.edifices.com'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 create table ConstructorWork(
      WorkID int not null AUTO_INCREMENT,
      ConstructorID int not null,

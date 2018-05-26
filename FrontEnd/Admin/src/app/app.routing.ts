@@ -12,9 +12,11 @@ import {ArchitectureOverviewComponent} from './layout/architecture-overview/arch
 import {ConstructorProfileComponent} from './layout/constructor-profile/constructor-profile.component';
 import {ArchitectureProfileComponent} from './layout/architecture-profile/architecture-profile.component';
 import {ConstructorOverviewComponent} from './layout/constructor-overview/constructor-overview.component';
-import {AuthGuard} from './auth.guard';
+import {AuthGuard} from './services/auth.guard';
 import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-registration.component';
 import {BankersOverviewComponent} from './layout/bankers-overview/bankers-overview.component';
+import {LandProviderOverviewComponent} from './layout/land-provider-overview/land-provider-overview.component';
+import {FlatProviderOverviewComponent} from './layout/flat-provider-overview/flat-provider-overview.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -41,9 +43,21 @@ const routes: Routes = [
             },
             {
                 path: 'bankers', component: BankersOverviewComponent,
-                children: [
-                    {path: 'constructor-profile', component: ConstructorProfileComponent}
-                ]
+                // children: [
+                //     {path: 'constructor-profile', component: ConstructorProfileComponent}
+                // ]
+            },
+            {
+                path: 'land-providers', component: LandProviderOverviewComponent,
+                // children: [
+                //     {path: 'constructor-profile', component: ConstructorProfileComponent}
+                // ]
+            },
+            {
+                path: 'flat-providers', component: FlatProviderOverviewComponent,
+                // children: [
+                //     {path: 'constructor-profile', component: ConstructorProfileComponent}
+                // ]
             }
         ]
     },

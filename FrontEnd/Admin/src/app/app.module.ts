@@ -27,13 +27,18 @@ import {ArchitectureProfileComponent} from './layout/architecture-profile/archit
 import {ConstructorOverviewComponent} from './layout/constructor-overview/constructor-overview.component';
 import {ArchitectureService} from './services/architecture.service';
 import {AuthService} from './services/auth.service';
-import {AuthGuard} from './auth.guard';
+import {AuthGuard} from './services/auth.guard';
 import {StarRatingModule} from 'angular-star-rating';
 import {ConstructorService} from './services/constructor.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
 import {ToastrModule} from 'ngx-toastr';
 import { BankersOverviewComponent } from './layout/bankers-overview/bankers-overview.component';
+import {BankerService} from './services/banker.service';
+import { LandProviderOverviewComponent } from './layout/land-provider-overview/land-provider-overview.component';
+import { FlatProviderOverviewComponent } from './layout/flat-provider-overview/flat-provider-overview.component';
+import {LandProviderService} from './services/land-provider.service';
+import {FlatProviderService} from './services/flat-provider.service';
 
 @NgModule({
     declarations: [
@@ -51,7 +56,9 @@ import { BankersOverviewComponent } from './layout/bankers-overview/bankers-over
         ConstructorProfileComponent,
         ArchitectureProfileComponent,
         ConstructorOverviewComponent,
-        BankersOverviewComponent
+        BankersOverviewComponent,
+        LandProviderOverviewComponent,
+        FlatProviderOverviewComponent
     ],
     imports: [
         BrowserModule,
@@ -74,7 +81,10 @@ import { BankersOverviewComponent } from './layout/bankers-overview/bankers-over
         AuthGuard,
         ResetPasswordService,
         ArchitectureService,
-        ConstructorService
+        ConstructorService,
+        BankerService,
+        LandProviderService,
+        FlatProviderService
     ],
     bootstrap: [AppComponent]
 })

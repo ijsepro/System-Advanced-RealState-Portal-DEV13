@@ -26,6 +26,8 @@ import { FooterComponent } from './client-profile/footer/footer.component';
 import { AddWorkComponent } from './add-work/add-work.component';
 import {LoginComponent} from './login/login.component';
 import {PostWorkService} from './services/post-work.service';
+import { UserRolesComponent } from './user-roles/user-roles.component';
+import {UserRolesService} from './services/user-roles.service';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import {PostWorkService} from './services/post-work.service';
     NavBarComponent,
     FooterComponent,
     LoginComponent,
-    AddWorkComponent
+    AddWorkComponent,
+    UserRolesComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +65,7 @@ import {PostWorkService} from './services/post-work.service';
     UserRegistrationService,
     ClientConstuctorService,
     PostWorkService,
+    UserRolesService,
     {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]

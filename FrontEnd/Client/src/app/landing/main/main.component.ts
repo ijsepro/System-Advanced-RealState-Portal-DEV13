@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationExtras, Router} from '@angular/router';
+import {UserRolesService} from '../../services/user-roles.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  getRoles(name) {
+      let navigationExtras: NavigationExtras = {
+        queryParams: {
+          'name': name
+        }
+      };
+      this.router.navigate(['/user-roles'], navigationExtras)
   }
 
 }

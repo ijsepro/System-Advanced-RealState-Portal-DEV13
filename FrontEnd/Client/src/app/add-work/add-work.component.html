@@ -1,254 +1,226 @@
 <!--<app-nav-bar></app-nav-bar>-->
-<div class="image-container set-full-heigh" style="background-image: url(../../assets/img/kit/city.jpg)">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 col-sm-offset-2">
-        <!--      Wizard container        -->
-        <div class="wizard-container" style="margin-left: -10%">
-          <div class="card wizard-card" data-color="purple" id="wizard"
-               style="height: 160%;margin-left: -10%">
-            <form action="" method="">
-              <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
+<form>
+  <div class="image-container set-full-heigh" style="background-image: url(../../assets/img/kit/city.jpg)">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-offset-2">
+          <!--      Wizard container        -->
+          <div class="wizard-container" style="margin-left: -10%">
+            <div class="card wizard-card" data-color="purple" id="wizard"
+                 style="height: 160%;margin-left: -10%">
+              <form action="" method="">
+                <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
 
-              <div class="wizard-header">
-                <h3 class="wizard-title">
-                  Add Work
-                </h3>
-                <h5>This information will let us know more about your work.</h5>
-              </div>
-              <div class="wizard-navigation row">
-                <div class="col-md-12">
-                  <ul>
-                    <li class="col-md-3"><a href="#location" data-toggle="tab">About Work</a></li>
-                    <li class="col-md-3" style="margin-left: 10%"><a href="#type" data-toggle="tab">Photos</a></li>
-                    <li class="col-md-3" style="margin-left: 10%"><a href="#facilities" data-toggle="tab">Client
-                      Details</a></li>
-                  </ul>
+                <div class="wizard-header">
+                  <h3 class="wizard-title">
+                    Add Work
+                  </h3>
+                  <h5>This information will let us know more about your work.</h5>
                 </div>
-              </div>
+                <div class="wizard-navigation row">
+                  <div class="col-md-12">
+                    <ul>
+                      <li class="col-md-3"><a href="#location" data-toggle="tab">About Work</a></li>
+                      <li class="col-md-3" style="margin-left: 10%"><a href="#type" data-toggle="tab">Photos</a></li>
+                      <li class="col-md-3" style="margin-left: 10%"><a href="#facilities" data-toggle="tab">Client
+                        Details</a></li>
+                    </ul>
+                  </div>
+                </div>
 
-              <div class="tab-content">
-                <div class="tab-pane" id="location">
-                  <h4 class="info-text">Tell us more about facilities. </h4>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="row">
-                        <div class="col-md-3">
-                          <label for="selectFile">
-                            <img class="img-raised rounded img-fluid" [src]="url"
-                                 alt="Card image cap Loading " style="width: 200px;height: 200px;cursor: pointer"
-                                 data-toggle="tooltip" data-placement="left"
-                                 title="Click Here To Upload Profile Picture"
-                                 data-container="body" id="work-file">
-                          </label>
+                <div class="tab-content">
+                  <div class="tab-pane" id="location">
+                    <h4 class="info-text">Tell us more about facilities. </h4>
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-3">
+                            <label for="selectFile">
+                              <img class="img-raised rounded img-fluid" [src]="url"
+                                   alt="Card image cap Loading " style="width: 200px;height: 200px;cursor: pointer"
+                                   data-toggle="tooltip" data-placement="left"
+                                   title="Click Here To Upload Profile Picture"
+                                   data-container="body" id="work-file">
+                            </label>
 
-                          <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"
-                                 style="display: none">
-                        </div>
-                        <div class="col-md-9">
-                          <div class="row">
-                            <div *ngFor="let img of urls" class="col-md-4">
-                              <div class="card card-blog">
-                                <div class="card-image">
-                                  <a href="#pablo">
-                                    <img [src]="img.url" alt="">
-                                  </a>
-                                  <div class="colored-shadow"
-                                       style="background-image: url(&quot;assets/img/examples/color3.jpg&quot;); opacity: 1;"></div>
-                                </div>
-                                <div class="card-content">
-                                  <h6 class="category text-info">Dynamic Shadows</h6>
-                                  <h4 class="card-title">
-                                    <a href="#pablo">{{img.description}}</a>
-                                  </h4>
+                            <input type="file" name="selectFile" id="selectFile" (change)="readUrl($event)"
+                                   style="display: none">
+                          </div>
+                          <div class="col-md-9">
+                            <div class="row">
+                              <div *ngFor="let img of urls" class="col-md-4">
+                                <div class="card card-blog">
+                                  <div class="card-image">
+                                    <a href="#pablo">
+                                      <img [src]="img?.url" alt="">
+                                    </a>
+                                    <div class="colored-shadow"
+                                         style="background-image: url(&quot;assets/img/examples/color3.jpg&quot;); opacity: 1;"></div>
+                                  </div>
+                                  <div class="card-content">
+                                    <h6 class="category text-info">Dynamic Shadows</h6>
+                                    <h4 class="card-title">
+                                      <a href="#pablo">{{img.description}}</a>
+                                    </h4>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                            <!--<div class="col-md-4">-->
-                            <!--<div class="card card-blog">-->
-                            <!--<div class="card-image">-->
-                            <!--<a href="#pablo">-->
-                            <!--<img src="assets/img/examples/color3.jpg" alt="">-->
-                            <!--</a>-->
-                            <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/color3.jpg&quot;); opacity: 1;"></div></div>-->
-                            <!--<div class="card-content">-->
-                            <!--<h6 class="category text-info">Dynamic Shadows</h6>-->
-                            <!--<h4 class="card-title">-->
-                            <!--<a href="#pablo">The image from this card is getting a blue shadow</a>-->
-                            <!--</h4>-->
-                            <!--</div>-->
-                            <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="col-md-4">-->
-                            <!--<div class="card card-blog">-->
-                            <!--<div class="card-image">-->
-                            <!--<a href="#pablo">-->
-                            <!--<img src="assets/img/examples/color3.jpg" alt="">-->
-                            <!--</a>-->
-                            <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/color3.jpg&quot;); opacity: 1;"></div></div>-->
-                            <!--<div class="card-content">-->
-                            <!--<h6 class="category text-info">Dynamic Shadows</h6>-->
-                            <!--<h4 class="card-title">-->
-                            <!--<a href="#pablo">The image from this card is getting a blue shadow</a>-->
-                            <!--</h4>-->
-                            <!--</div>-->
-                            <!--</div>-->
-                            <!--</div>-->
                           </div>
-                        </div>
 
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                          <button type="button" class="btn btn-info"
-                                  [swal]="{ title: 'About above file '+ fileName, input: 'textarea' }"
-                                  (confirm)="description($event)"
-                          >
-                            Add File
-                          </button>
                         </div>
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12">
+                            <button type="button" class="btn btn-info"
+                                    [swal]="{ title: 'About above file '+ fileName, input: 'textarea' }"
+                                    (confirm)="description($event)"
+                            >
+                              Add File
+                            </button>
+                          </div>
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab-pane" id="type">
-                  <h4 class="info-text">What type of location do you have? </h4>
-                  <div class="row">
-                    <div class="col-md-10 col-sm-offset-1">
-                      <div class="col-md-4 col-sm-offset-2">
-                        <div class="choice" data-toggle="wizard-radio" rel="tooltip"
-                             title="Select this option if you have a house.">
-                          <input type="radio" name="type" value="House">
-                          <div class="icon">
-                            <i class="material-icons">home</i>
-                          </div>
-                          <h6>House</h6>
-                        </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="choice" data-toggle="wizard-radio" rel="tooltip"
-                             title="Select this option if you have an appartment">
-                          <input type="radio" name="type" value="Appartment">
-                          <div class="icon">
-                            <i class="material-icons">hotel</i>
-                          </div>
-                          <h6>Appartment</h6>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="tab-pane" id="facilities">
-                  <h4 class="info-text">Tell us more about facilities. </h4>
-                  <div class="row">
-                    <div class="col-md-5 col-sm-offset-1">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Your place is good for</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Business</option>
-                          <option>Vacation</option>
-                          <option>Work</option>
-                        </select>
+                  <div class="tab-pane" id="type">
+                    <h4 class="info-text">What type of location do you have? </h4>
+                    <div class="row">
+                      <div class="col-md-10 col-sm-offset-1">
+                        <div class="col-md-4 col-sm-offset-2">
+                          <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                               title="Select this option if you have a house.">
+                            <input (click)="houses()" type="radio" name="type" value="House" id="house">
+                            <div class="icon">
+                              <i class="material-icons">home</i>
+                            </div>
+                            <h6>House</h6>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="choice" data-toggle="wizard-radio" rel="tooltip"
+                               title="Select this option if you have an appartment">
+                            <input type="radio" name="type" value="Appartment" id="appartment">
+                            <div class="icon">
+                              <i class="material-icons">hotel</i>
+                            </div>
+                            <h6>Appartment</h6>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-5">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Is air conditioning included ?</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Yes</option>
-                          <option>No</option>
-                        </select>
+                  </div>
+                  <div class="tab-pane" id="facilities">
+                    <h4 class="info-text">Tell us more about facilities. </h4>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-offset-1">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Your place is good for</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Business</option>
+                            <option>Vacation</option>
+                            <option>Work</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Is air conditioning included ?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-offset-1">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Does your place have wi-fi?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Is breakfast included?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-md-5 col-sm-offset-1">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Does your place have wi-fi?</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Yes</option>
-                          <option>No</option>
-                        </select>
+                  </div>
+                  <div class="tab-pane" id="description">
+                    <div class="row">
+                      <div class="col-md-5 col-sm-offset-1">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Your place is good for</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Business</option>
+                            <option>Vacation</option>
+                            <option>Work</option>
+                          </select>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Is breakfast included?</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Yes</option>
-                          <option>No</option>
-                        </select>
+                      <div class="col-md-5">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Is air conditioning included ?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-offset-1">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Does your place have wi-fi?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Is breakfast included?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="tab-pane" id="description">
-                  <div class="row">
-                    <div class="col-md-5 col-sm-offset-1">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Your place is good for</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Business</option>
-                          <option>Vacation</option>
-                          <option>Work</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Is air conditioning included ?</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Yes</option>
-                          <option>No</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-5 col-sm-offset-1">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Does your place have wi-fi?</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Yes</option>
-                          <option>No</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="form-group label-floating">
-                        <label class="control-label">Is breakfast included?</label>
-                        <select class="form-control">
-                          <option disabled="" selected=""></option>
-                          <option>Yes</option>
-                          <option>No</option>
-                        </select>
-                      </div>
-                    </div>
+                <div class="wizard-footer">
+                  <div class="pull-right">
+                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next'/>
+                    <input type='button' (click)="postWork()" class='btn btn-finish btn-fill btn-primary btn-wd'
+                           name='finish'
+                           value='Finish'/>
                   </div>
+                  <div class="pull-left">
+                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous'
+                           value='Previous'/>
+                  </div>
+                  <div class="clearfix"></div>
                 </div>
-              </div>
-              <div class="wizard-footer">
-                <div class="pull-right">
-                  <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next'/>
-                  <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish'
-                         value='Finish'/>
-                </div>
-                <div class="pull-left">
-                  <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous'
-                         value='Previous'/>
-                </div>
-                <div class="clearfix"></div>
-              </div>
-            </form>
-          </div>
-        </div> <!-- wizard container -->
-      </div>
-    </div> <!-- row -->
+              </form>
+            </div>
+          </div> <!-- wizard container -->
+        </div>
+      </div> <!-- row -->
+    </div>
   </div>
-</div>
-<app-footer></app-footer>
-
+  <app-footer></app-footer>
+</form>

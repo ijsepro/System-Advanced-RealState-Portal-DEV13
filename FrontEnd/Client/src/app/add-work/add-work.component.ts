@@ -12,7 +12,7 @@ import {ToastrService} from 'ngx-toastr';
 })
 export class AddWorkComponent implements OnInit {
   url: any = '../../assets/img/upload.gif';
-  urls: any[];
+  urls: any[] = [];
   fileName;
 
   // @ViewChild('descriptions') private deleteSwal: SwalComponent;
@@ -34,10 +34,11 @@ export class AddWorkComponent implements OnInit {
           if (res.json() === 1) {
             this.url = '../../assets/img/pdf.jpg';
             reader.readAsDataURL(event.target.files[0]);
-            this.fileName = event.target.files[0].name;
+            this.fileName = 'pdf.jpg';
           } else {
             reader.onload = (event: any) => {
               this.url = event.target.result;
+
             };
             reader.readAsDataURL(event.target.files[0]);
             this.fileName = event.target.files[0].name;
@@ -54,22 +55,25 @@ export class AddWorkComponent implements OnInit {
     const name = this.fileName;
     const dir = '../../assets/img/';
     const imgurl = dir + name;
+
     formData.append('imgname', imgurl);
-    formData.append('description', evt);
     this.service.temparyPost(formData).subscribe(res => {
       if (res.json() == 0) {
-        this.toaster.error('Error please try again')
+        this.toaster.error('You have choose this Image already ')
       } else {
-        this.service.loadPost()
-          .subscribe(res => {
-            this.urls = res.json();
-          });
-        for(let i of this.urls){
-          console.log(i.url);
-        }
+        this.urls.push({'url': imgurl, 'description': evt});
       }
 
     });
   };
 
+  postWork() {
+    let house = this.elem.nativeElement.querySelector('#house').value;
+    house = this.elem.nativeElement.querySelector('#appartment').value;
+
+    alert(house);
+  }
+
+  houses() {
+  }
 }

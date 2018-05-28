@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/config/database.php" afterPath="$PROJECT_DIR$/BackEnd/application/config/database.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/user.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/user.php" />
       <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/work.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/work.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/models/work_model.php" afterPath="$PROJECT_DIR$/BackEnd/application/models/work_model.php" />
-      <change beforePath="$PROJECT_DIR$/Database.txt" afterPath="$PROJECT_DIR$/Database.txt" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/post-work.service.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/services/post-work.service.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,57 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add-work.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="add-work.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-85">
-              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="architecture.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/services/architecture.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="work.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Database.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Database.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="588" column="28" lean-forward="false" selection-start-line="216" selection-start-column="13" selection-end-line="588" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="work_model.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BackEnd/application/models/work_model.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+            <state relative-caret-position="31">
+              <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -83,8 +32,28 @@
       <file leaf-file-name="add-work.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="48" />
+            <state relative-caret-position="1003">
+              <caret line="63" column="6" lean-forward="false" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="68" column="54" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="work.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -94,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/post-work.service.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
-              <caret line="21" column="91" lean-forward="false" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+              <caret line="21" column="92" lean-forward="false" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -170,18 +139,18 @@
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/client-profile.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/services/user-registration.service.ts" />
         <option value="$PROJECT_DIR$/BackEnd/application/controllers/admin.php" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.html" />
         <option value="$PROJECT_DIR$/BackEnd/application/config/database.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/common/app-error-handler.ts" />
         <option value="$PROJECT_DIR$/BackEnd/application/controllers/user.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/services/post-work.service.ts" />
-        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts" />
-        <option value="$PROJECT_DIR$/BackEnd/application/controllers/work.php" />
         <option value="$PROJECT_DIR$/Database.txt" />
         <option value="$PROJECT_DIR$/BackEnd/application/models/work_model.php" />
+        <option value="$PROJECT_DIR$/BackEnd/application/controllers/work.php" />
         <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts" />
+        <option value="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
       </list>
     </option>
   </component>
@@ -209,10 +178,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="x" value="8" />
+    <option name="width" value="1366" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
@@ -233,7 +201,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,13 +228,6 @@
               <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
               <item name="application" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
-              <item name="System-Advanced-RealState-Portal-DEV13" type="462c0819:PsiDirectoryNode" />
-              <item name="BackEnd" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
@@ -317,8 +280,7 @@
               <item name="FrontEnd" type="462c0819:PsiDirectoryNode" />
               <item name="Admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="System-Advanced-RealState-Portal-DEV13" type="b2602c69:ProjectViewProjectNode" />
@@ -398,8 +360,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -449,12 +409,19 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/deployment.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/config/database.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/controllers/admin.php</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/controllers/work.php</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Database.txt</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/app.routing.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/bankers-overview/bankers-overview.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/bankers-overview/bankers-overview.component.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/architecture-profile/architecture-profile.component.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/app.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/app.routing.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/landing/main/main.component.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/services/post-work.service.ts</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -462,28 +429,114 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/controllers/banker.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/controllers/flat_provider.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/controllers/land_provider.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/models/banker_model.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/models/flat_provider_model.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/BackEnd/application/models/land_provider_model.php</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/flat-provider-overview/flat-provider-overview.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/flat-provider-overview/flat-provider-overview.component.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/flat-provider-overview/flat-provider-overview.component.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/flat-provider-overview/flat-provider-overview.component.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/land-provider-overview/land-provider-overview.component.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/land-provider-overview/land-provider-overview.component.scss</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/land-provider-overview/land-provider-overview.component.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/layout/land-provider-overview/land-provider-overview.component.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.guard.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/auth.guard.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/banker.service.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/banker.service.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/flat-provider.service.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/flat-provider.service.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/land-provider.service.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/services/land-provider.service.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/avatar.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/camp.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/card-profile1-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/card-profile2-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/card-profile4-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/card-profile5-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/card-profile6-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/christian.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/kendall.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/faces/marc.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/bg.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/bg2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/bg3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/avatar.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/camp.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/card-profile1-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/card-profile2-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/card-profile4-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/card-profile5-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/card-profile6-square.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/christian.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/kendall.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/faces/marc.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/apple-icon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/bg7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/blog8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-blog8.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-product1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-product2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-product3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-product4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-profile1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-profile2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-profile4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-profile5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-profile6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-profile7.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-project1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-project2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-project3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-project4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-project5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/card-project6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/clark-street-merc.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/clem-onojegaw.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/clem-onojeghuo.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/clem-onojeghuou.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/color1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/color2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/color3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/cynthia-del-rio.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/darren-coleshill.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/dolce.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/ecommerce-header.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/ecommerce-tips2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/gucci.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/mariya-georgieva.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/office1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/office2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/office3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/office4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/office5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/olu-eletu.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/product1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/product2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/product3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/product4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/profile_city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/slim-emcee-ug-the-poet-truth_from_africa_photography.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/studio-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/studio-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/studio-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/studio-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/studio-5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/suit-1.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/suit-2.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/suit-3.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/suit-4.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/suit-5.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/suit-6.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/examples/tom-ford.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/favicon.png</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/landing.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/free/profile.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/assets/img/kit/profile_city.jpg</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/services/user-roles.service.spec.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/services/user-roles.service.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/user-roles/user-roles.component.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/user-roles/user-roles.component.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/user-roles/user-roles.component.spec.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/app/user-roles/user-roles.component.ts</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Client/src/assets/img/code-wallpaper-2.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -491,10 +544,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/bankers.service.spec.ts</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/FrontEnd/Admin/src/app/bankers.service.ts</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -766,12 +815,17 @@
       <workItem from="1527263142685" duration="1894000" />
       <workItem from="1527269874035" duration="583000" />
       <workItem from="1527306985087" duration="9216000" />
-      <workItem from="1527322220936" duration="4997000" />
+      <workItem from="1527322220936" duration="5563000" />
+      <workItem from="1527351241678" duration="210000" />
+      <workItem from="1527351728314" duration="239000" />
+      <workItem from="1527391139928" duration="73000" />
+      <workItem from="1527438740678" duration="4696000" />
+      <workItem from="1527479915037" duration="7960000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276991000" />
+    <option name="totallyTimeSpent" value="290735000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -791,17 +845,17 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32200646" sideWeight="0.53177005" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32200646" sideWeight="0.5438729" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.4969743" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32847896" sideWeight="0.4969743" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32200646" sideWeight="0.46822995" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32200646" sideWeight="0.45612708" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24357034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2624811" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -813,7 +867,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -863,8 +917,14 @@
           <line>44</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts</url>
+          <line>49</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -873,14 +933,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing-main/landing-main.component.html" />
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/layout/constructor/constructor-profile/constructor-profile.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/shared/sidebar/sidebar.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -937,16 +989,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/auth.guard.ts" />
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3145">
@@ -1021,13 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="63" column="20" lean-forward="false" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1095,17 +1131,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-732">
           <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="n#footer#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -1147,7 +1172,7 @@
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/services/post-work.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="21" column="91" lean-forward="false" selection-start-line="21" selection-start-column="91" selection-end-line="21" selection-end-column="91" />
+          <caret line="21" column="92" lean-forward="false" selection-start-line="21" selection-start-column="92" selection-end-line="21" selection-end-column="92" />
           <folding />
         </state>
       </provider>
@@ -1156,9 +1181,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#48#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1166,7 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1174,53 +1195,74 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="34" column="48" lean-forward="false" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="80" column="55" lean-forward="false" selection-start-line="80" selection-start-column="55" selection-end-line="80" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Database.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
+        <state relative-caret-position="9996">
           <caret line="588" column="28" lean-forward="false" selection-start-line="216" selection-start-column="13" selection-end-line="588" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BackEnd/application/models/work_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
+        <state relative-caret-position="493">
           <caret line="34" column="42" lean-forward="false" selection-start-line="34" selection-start-column="42" selection-end-line="34" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/landing/landing.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/assets/img/MSI_GAMING_LAPTOP_game_videogame_computer__34__2048x1365.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Admin/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1123">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#56#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BackEnd/application/controllers/work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="60" column="19" lean-forward="false" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#label#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="31">
+          <caret line="54" column="54" lean-forward="false" selection-start-line="54" selection-start-column="54" selection-end-line="54" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/add-work/add-work.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="63" column="6" lean-forward="false" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="68" column="54" lean-forward="false" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>

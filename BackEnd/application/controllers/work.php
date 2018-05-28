@@ -46,33 +46,29 @@ class Work extends CI_Controller
 	{
 		$path = $_FILES['work-file']['name'];
 		$ext = pathinfo($path, PATHINFO_EXTENSION);
-		if ($ext == "pdf") {
-			$res = $this->work_model->temparyPost([
-				'url' => '../../assets/img/pdf.jpg',
-				'description' => $_POST['description']
-			]);
-			echo 1;
-		} else {
-			$target_dir = "D:\STUDYING\GIT\Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img/";
-			$target_file = $target_dir . basename($_FILES["work-file"]["name"]);
-			$uploadOK = 1;
+//		if ($ext == "pdf") {
+////			$res = $this->work_model->temparyPost([
+////				'url' => '../../assets/img/pdf.jpg',
+////				'description' => $_POST['description']
+////			]);
+//			echo 1;
+//		} else {
+		$target_dir = "D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img/";
+		$target_file = $target_dir . basename($_FILES["work-file"]["name"]);
+		$uploadOK = 1;
 
-			if (file_exists($target_file)) {
-				echo 0;
-				$uploadOK = 0;
+		if (file_exists($target_file)) {
+			echo 0;
+			$uploadOK = 0;
+		} else {
+			if ($uploadOK == 1) {
+				move_uploaded_file($_FILES['work-file']["tmp_name"], $target_file);
+				echo 1;
 			} else {
-				if ($uploadOK == 1) {
-					move_uploaded_file($_FILES['work-file']["tmp_name"], $target_file);
-					$res = $this->work_model->temparyPost([
-						'url' => $_POST['imgname'],
-						'description' => $_POST['description']
-					]);
-					echo 1;
-				} else {
-					echo 0;
-				}
+				echo 0;
 			}
 		}
+//		}
 
 	}
 

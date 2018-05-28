@@ -20,8 +20,6 @@ export class ArchitectureProfileComponent implements OnInit {
             let name = parms['name'];
             this.getArchitecture(name);
         });
-
-
     }
 
     getArchitecture(aName: String) {

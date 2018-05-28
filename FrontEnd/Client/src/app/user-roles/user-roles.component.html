@@ -1,5 +1,5 @@
 <div class="page-header header-filter" data-parallax="true"
-     style=" background-image: url('../../../assets/img/bg7.jpg');">
+     style=" background-image: url('../../assets/img/bg7.jpg');">
   <div class="container" style="margin-top: -15%">
     <div class="row">
       <div class="col-md-6">
@@ -41,13 +41,33 @@
               <div class="card card-rotate card-background">
                 <div class="front front-background"
                      style="background-image: url('../../assets/img/examples/card-blog5.jpg');">
+
+                  <!--*ngIf="role.ConstructorProfilePicture!=null"-->
+                  <!--[ngStyle]="{ 'background-image': 'url(' + role.ConstructorProfilePicture + ')'}"-->
+
                   <div class="card-content">
                     <h6 class="category text-info">Employee of Edifices.lk</h6>
                     <a href="#pablo">
-                      <h3 class="card-title">{{role.ConstructorName}}</h3>
+                      <h3 class="card-title" *ngIf="role.ConstructorName!=null">{{role.ConstructorName}}</h3>
+                      <h3 class="card-title" *ngIf="role.architectureName!=null">{{role.architectureName}}</h3>
+                      <h3 class="card-title" *ngIf="role.BankerName!=null">{{role.BankerName}}</h3>
+                      <h3 class="card-title" *ngIf="role.LandProviderName!=null">{{role.LandProviderName}}</h3>
+                      <h3 class="card-title" *ngIf="role.FlatProviderName!=null">{{role.FlatProviderName}}</h3>
                     </a>
-                    <p class="card-description">
+                    <p class="card-description" *ngIf="role.ConstructorStatus!=null">
                       {{role.ConstructorStatus}}
+                    </p>
+                    <p class="card-description" *ngIf="role.architectureStatus!=null">
+                      {{role.architectureStatus}}
+                    </p>
+                    <p class="card-description" *ngIf="role.BankerStatus!=null">
+                      {{role.BankerStatus}}
+                    </p>
+                    <p class="card-description" *ngIf="role.LandProviderStatus!=null">
+                      {{role.LandProviderStatus}}
+                    </p>
+                    <p class="card-description" *ngIf="role.FlatProviderStatus!=null">
+                      {{role.FlatProviderStatus}}
                     </p>
                   </div>
                 </div>

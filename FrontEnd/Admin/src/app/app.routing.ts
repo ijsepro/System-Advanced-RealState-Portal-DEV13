@@ -17,11 +17,13 @@ import {NewAdminRegistrationComponent} from './new-admin-registration/new-admin-
 import {BankersOverviewComponent} from './layout/bankers-overview/bankers-overview.component';
 import {LandProviderOverviewComponent} from './layout/land-provider-overview/land-provider-overview.component';
 import {FlatProviderOverviewComponent} from './layout/flat-provider-overview/flat-provider-overview.component';
+import {ResetPasswordComponent} from './reset-password/reset-password.component';
 
 const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'forget-password', component: ForgetPasswordComponent},
+    {path: 'reset-password', component: ResetPasswordComponent},
     {
         path: 'layout', component: LayoutComponent, canActivate: [AuthGuard],
         children: [

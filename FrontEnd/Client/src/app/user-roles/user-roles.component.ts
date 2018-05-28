@@ -27,23 +27,23 @@ export class UserRolesComponent implements OnInit {
 
   getRoles(name) {
     if (name === 'Architectures') {
-      // this.roleName = 'ArchitectureName';
       this.service.getArchitectures().subscribe(res => {
         this.roles = res.json();
       });
     } else if (name === 'Constructors') {
-      this.roleName = 'ConstructorName';
       this.service.getConstructors().subscribe(res => {
         this.roles = res.json();
       });
     } else if (name === 'Bankers') {
-      // this.roleName = 'BankerName';
       this.service.getBankers().subscribe(res => {
         this.roles = res.json();
       });
     } else if (name === 'LandProviders') {
-      // this.roleName = 'LandProviderName';
       this.service.getLandProviders().subscribe(res => {
+        this.roles = res.json();
+      });
+    } else if (name === 'FlatProviders') {
+      this.service.getFlatProviders().subscribe(res => {
         this.roles = res.json();
       });
     }

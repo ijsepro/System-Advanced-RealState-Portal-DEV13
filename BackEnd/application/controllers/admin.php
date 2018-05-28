@@ -71,7 +71,7 @@ class Admin extends CI_Controller
 
 		if ($userID != null) {
 			$result = $this->admin_model->updatePassword($userID, [
-				'adminPassword' => $newPassword
+				'adminPassword' => hash('sha256', $newPassword . Edifices)
 			]);
 			if ($result == 1) {
 				$setTokenUsed = $this->admin_model->setTokenUsed($rid, [

@@ -32,7 +32,7 @@ class Work_model extends CI_Model
 		return json_encode($query->result());
 	}
 	public function postProject($data){
-		$this->db->insert('ConstructorWork', $data);
+		$this->db->insert('Projects', $data);
 		return $this->db->affected_rows();
 	}
 }

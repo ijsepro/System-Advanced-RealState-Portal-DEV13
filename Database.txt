@@ -820,13 +820,25 @@ insert into ConstructorComments values(
     2,
     'This is an owesome work'
 );
-create table temparypost(
-    url varchar(1000)not null,
-    description varchar(100)not null
+create table postFiles(
+    fileID int not null AUTO_INCREMENT,
+    fileName varchar(1000)not null,
+    projectID int not null,
+    description varchar(100)not null,
+    constraint primary key (fileID),
+    constraint foreign key(projectID) references projects(projectID)
 );
 create table projects(
     projectID int not null AUTO_INCREMENT,
     projectName varchar (100)not null,
-    projectType boolean not null,
+    projectType varchar (100) not null,
+    projectDescription varchar(1000)not null,
     constraint primary key(projectID)
+);
+create table projectRating(
+    ratingID int not null AUTO_INCREMENT,
+    ratingsValue double (10,2)not null,
+    projectID int not null,
+    constraint primary key(ratingID),
+    constraint foreign key(projectID) references projects(projectID)
 );

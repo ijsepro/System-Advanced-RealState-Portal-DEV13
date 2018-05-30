@@ -68,12 +68,21 @@ export class AddWorkComponent implements OnInit {
   };
 
   postWork() {
-    let house = this.elem.nativeElement.querySelector('#house').value;
-    house = this.elem.nativeElement.querySelector('#appartment').value;
+    var json_arr = JSON.stringify(this.urls);
+    const formdata = new FormData();
+    formdata.append('name', this.elem.nativeElement.querySelector('#projectName').value);
+    formdata.append('description', this.elem.nativeElement.querySelector('#projectDescription').value);
+    formdata.append('files', json_arr);
 
-    alert(house);
+    this.service.postProject(formdata)
+      .subscribe(res => {
+        if (res.json() === 1) {
+          this.toaster.success('Your project will be in Projects Category in a moment ');
+        } else {
+          this.toaster.error('Please try again');
+        }
+      });
   }
 
-  houses() {
-  }
+
 }

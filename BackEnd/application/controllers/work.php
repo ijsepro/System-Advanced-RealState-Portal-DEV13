@@ -85,4 +85,22 @@ class Work extends CI_Controller
 			'description' => $_POST['description']
 		]);
 	}
+
+	/**
+	 *
+	 */
+	public function postProjects()
+	{
+		$res = $this->work_model->postProject([
+			'projectName' => $_POST['name'],
+			'projectType' => 'working on it',
+			'projectDescription' => $_POST['description']
+		]);
+		if ($res == 1) {
+			echo $res;
+		} else {
+			echo 0;
+		}
+
+	}
 }

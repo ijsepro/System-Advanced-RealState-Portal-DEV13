@@ -13,24 +13,64 @@
 
                 <div class="wizard-header">
                   <h3 class="wizard-title">
-                    Add Work
+                    Post a Project
                   </h3>
-                  <h5>This information will let us know more about your work.</h5>
+                  <h5>This information will let us know more about your Project.</h5>
                 </div>
                 <div class="wizard-navigation row">
                   <div class="col-md-12">
                     <ul>
-                      <li class="col-md-3"><a href="#location" data-toggle="tab">About Work</a></li>
-                      <li class="col-md-3" style="margin-left: 10%"><a href="#type" data-toggle="tab">Photos</a></li>
-                      <li class="col-md-3" style="margin-left: 10%"><a href="#facilities" data-toggle="tab">Client
-                        Details</a></li>
+                      <li class="col-md-3"><a href="#location" data-toggle="tab">About Project</a></li>
+                      <li class="col-md-3" style="margin-left: 10%"><a href="#type" data-toggle="tab">Upload Files</a>
+                      </li>
+                      <li class="col-md-3" style="margin-left: 10%"><a href="#facilities" data-toggle="tab"> Details</a>
+                      </li>
                     </ul>
                   </div>
                 </div>
 
                 <div class="tab-content">
                   <div class="tab-pane" id="location">
-                    <h4 class="info-text">Tell us more about facilities. </h4>
+                    <h4 class="info-text">Project Details. </h4>
+                    <div class="row">
+                      <div class="col-md-5 col-sm-offset-1">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Project Name</label>
+
+                          <input class="form-control" id="projectName">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Project Description</label>
+                          <input class="form-control" id="projectDescription">
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-sm-offset-1">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Does your place have wi-fi?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="form-group label-floating">
+                          <label class="control-label">Is breakfast included?</label>
+                          <select class="form-control">
+                            <option disabled="" selected=""></option>
+                            <option>Yes</option>
+                            <option>No</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane" id="type">
+                    <h4 class="info-text">What type of location do you have? </h4>
+
                     <div class="row">
                       <div class="col-md-12">
                         <div class="row">
@@ -79,33 +119,6 @@
                             </button>
                           </div>
 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="tab-pane" id="type">
-                    <h4 class="info-text">What type of location do you have? </h4>
-                    <div class="row">
-                      <div class="col-md-10 col-sm-offset-1">
-                        <div class="col-md-4 col-sm-offset-2">
-                          <div class="choice" data-toggle="wizard-radio" rel="tooltip"
-                               title="Select this option if you have a house.">
-                            <input (click)="houses()" type="radio" name="type" value="House" id="house">
-                            <div class="icon">
-                              <i class="material-icons">home</i>
-                            </div>
-                            <h6>House</h6>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="choice" data-toggle="wizard-radio" rel="tooltip"
-                               title="Select this option if you have an appartment">
-                            <input type="radio" name="type" value="Appartment" id="appartment">
-                            <div class="icon">
-                              <i class="material-icons">hotel</i>
-                            </div>
-                            <h6>Appartment</h6>
-                          </div>
                         </div>
                       </div>
                     </div>

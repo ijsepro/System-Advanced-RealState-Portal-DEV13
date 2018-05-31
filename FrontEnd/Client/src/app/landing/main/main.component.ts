@@ -20,7 +20,7 @@ export class MainComponent implements OnInit {
           'name': name
         }
       };
-      this.router.navigate(['/user-roles'], navigationExtras)
+      this.router.navigate(['/user-roles'], navigationExtras);
   }
 
 }

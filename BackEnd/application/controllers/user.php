@@ -24,7 +24,7 @@ class User extends CI_Controller
 
 	public function registerNewUser()
 	{
-		$target_dir = "D:\GDSE 42\Group Project\Edifices-Uploading-Folder/";
+		$target_dir = "C:\wamp64\www\IntellijIDEA\BackEnd\BackEnd\Uploads/";
 		$target_file = $target_dir . basename($_FILES["selectFile"]["name"]);
 //		$ext = pathinfo($target_file, PATHINFO_EXTENSION);
 //		echo $ext;

@@ -28,6 +28,8 @@ import {LoginComponent} from './login/login.component';
 import {PostWorkService} from './services/post-work.service';
 import { UserRolesComponent } from './user-roles/user-roles.component';
 import {UserRolesService} from './services/user-roles.service';
+import {AuthGuard} from './services/auth.guard';
+import {AuthService} from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -64,9 +66,11 @@ import {UserRolesService} from './services/user-roles.service';
   providers: [
     UserRegistrationService,
     ClientConstuctorService,
+    AuthGuard,
+    AuthService,
     PostWorkService,
     UserRolesService,
-    {provide: ErrorHandler, useClass: AppErrorHandler}
+    // {provide: ErrorHandler, useClass: AppErrorHandler}
   ],
   bootstrap: [AppComponent]
 })

@@ -48,4 +48,14 @@ export class UserRolesComponent implements OnInit {
       });
     }
   }
+
+  getRoleProfile(name) {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        'name': name
+      }
+    };
+    this.router.navigate(['/profile'], navigationExtras)
+  }
+
 }

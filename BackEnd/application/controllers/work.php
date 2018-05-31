@@ -53,7 +53,7 @@ class Work extends CI_Controller
 ////			]);
 //			echo 1;
 //		} else {
-		$target_dir = "D:\GDSE 42\Group Project\Advance-Real-Estate-Edifices\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img/";
+		$target_dir = "D:\STUDYING\GIT\Clone\System-Advanced-RealState-Portal-DEV13\FrontEnd\Client\src\assets\img/";
 		$target_file = $target_dir . basename($_FILES["work-file"]["name"]);
 		$uploadOK = 1;
 

@@ -143,6 +143,5 @@ class Admin extends CI_Controller
 		} else {
 			echo "You are not and admin to authorise a new one ";
 		}
-
 	}
 }

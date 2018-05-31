@@ -21,6 +21,7 @@ const routes: Routes = [
       //   ]
 
     {path: 'login', component: LoginComponent},
+    {path: 'profile', component: ConstructorProfileComponent},
     {path: 'user-roles', component: UserRolesComponent},
     {path: 'dashboard', component: ClientProfileComponent, canActivate: [AuthGuard] }
 

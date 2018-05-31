@@ -25,21 +25,19 @@ export class ConstructorProfileComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getConstructor();
+    this.route.queryParams.subscribe(parms => {
+      let name = parms['name'];
+      this.getRoleProfile(name);
+    });
   }
 
-  getConstructor() {
-    let name = 'Kushan';
+  getRoleProfile(name: String) {
+    // let name = 'Kushan';
     this.service.getConstructor(name)
       .subscribe(response => {
           this.selectedConstructor = response.json();
           for (let constructor of this.selectedConstructor) {
             this.getConstructorWorks(constructor['ConstructorID']);
-            // this.getConstructorEducation(constructor['ConstructorID']);
-            // this.getConstructorExperiance(constructor['ConstructorID']);
-            // this.getConstructorComments(constructor['ConstructorID']);
-            // this.getConstructorClients(constructor['ConstructorID']);
-            // this.getConstructorProfileComments(constructor['ConstructorID']);
           }
         }, (error: Response) => {
           if (error instanceof NotFoundError) {
@@ -174,5 +172,26 @@ export class ConstructorProfileComponent implements OnInit {
         }
       });
   }
+
+  // getRoleProfile(name: String) {
+  //   this.service.getConstructor(name)
+  //     .subscribe(response => {
+  //       this.selectedConstructor = response.json();
+  //       // for (let constructor of this.selectedConstructor) {
+  //       //   this.getConstructorWorks(constructor['ConstructorID']);
+  //       // }
+  //     }, (error: Response) => {
+  //       if (error instanceof NotFoundError) {
+  //         this.toastr.warning('Please Try Again Shortly', 'server Error', {
+  //           progressBar: true,
+  //           positionClass: 'toast-top-center'
+  //         });
+  //
+  //         this.logger.debug('Server Error ');
+  //       } else {
+  //         throw error;
+  //       }
+  //     });
+  // }
 
 }

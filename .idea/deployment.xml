@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="Apache Web Server">
     <serverData>
-      <paths name="Apache web server">
+      <paths name="Apache Web Server">
         <serverdata>
           <mappings>
-            <mapping deploy="Edifices" local="$PROJECT_DIR$" web="/Edifices" />
+            <mapping deploy="BackEnd" local="$PROJECT_DIR$" web="/BackEnd" />
           </mappings>
         </serverdata>
       </paths>

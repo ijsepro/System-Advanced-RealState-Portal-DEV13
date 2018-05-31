@@ -6,6 +6,7 @@ import {NotFoundError} from '../common/not-found-error';
 import {ToastrService} from 'ngx-toastr';
 import {NGXLogger} from 'ngx-logger';
 import {SwalComponent} from '@toverux/ngx-sweetalert2';
+import {NavigationExtras, Router} from '@angular/router';
 
 
 @Component({
@@ -19,20 +20,29 @@ export class LandingComponent implements OnInit {
   url: any = '../../assets/img/kit/faces/card-profile2-square.jpg';
   @ViewChild('registerd') private registerd: SwalComponent;
 
-  constructor(private elem: ElementRef, private service: UserRegistrationService, private toastr: ToastrService, private logger: NGXLogger) {
+  constructor(private elem: ElementRef, private service: UserRegistrationService, private toastr: ToastrService, private logger: NGXLogger, private router: Router) {
   }
 
   ngOnInit() {
 
   }
 
+  getRoles(name) {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        'name': name
+      }
+    };
+    this.router.navigate(['/user-roles'], navigationExtras);
+  }
+
   readUrl(event: any) {
     if (event.target.files && event.target.files[0]) {
-      var reader = new FileReader();
+      const reader = new FileReader();
 
       reader.onload = (event: any) => {
         this.url = event.target.result;
-      }
+      };
 
       reader.readAsDataURL(event.target.files[0]);
     }
@@ -45,8 +55,8 @@ export class LandingComponent implements OnInit {
   register() {
     const formData = new FormData();
 
-    let files = this.elem.nativeElement.querySelector('#selectFile').files;
-    let file = files[0];
+    const files = this.elem.nativeElement.querySelector('#selectFile').files;
+    const file = files[0];
 
     const userName = this.elem.nativeElement.querySelector('#userName').value;
     const userPassword = this.elem.nativeElement.querySelector('#userPassword').value;
@@ -69,10 +79,10 @@ export class LandingComponent implements OnInit {
 
     this.service.registerUser(formData).subscribe(res => {
       if (res.json() === 1) {
-        this.toastr.success('Registerd')
+        this.toastr.success('Registerd');
 
       } else {
-        this.toastr.error('Registerd Unsuccessful try Again')
+        this.toastr.error('Registerd Unsuccessful try Again');
       }
     }, (error: AppError) => {
       if (error instanceof NotFoundError) {

@@ -14,10 +14,10 @@ class Flat_Provider_model extends CI_Model
 		return json_encode($query->result());
 	}
 
-	public function getLandProvider($lName='')
+	public function getFlatProvider($fName='')
 	{
 		$this->db->select('*');
-		$query = $this->db->get_where('FlatProviders', ['FlatProviderName' => $lName]);
+		$query = $this->db->get_where('FlatProviders', ['FlatProviderName' => $fName]);
 
 		return json_encode($query->result());
 	}

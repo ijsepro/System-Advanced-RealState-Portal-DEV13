@@ -49,10 +49,11 @@ export class UserRolesComponent implements OnInit {
     }
   }
 
-  getRoleProfile(name) {
+  getRoleProfile(name,role) {
     let navigationExtras: NavigationExtras = {
       queryParams: {
-        'name': name
+        'name': name,
+        'role': role
       }
     };
     this.router.navigate(['/profile'], navigationExtras)

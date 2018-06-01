@@ -46,19 +46,19 @@ const routes: Routes = [
             {
                 path: 'bankers', component: BankersOverviewComponent,
                 // children: [
-                //     {path: 'constructor-profile', component: ConstructorProfileComponent}
+                //     {path: 'constructor-profile', component: UserProfileComponent}
                 // ]
             },
             {
                 path: 'land-providers', component: LandProviderOverviewComponent,
                 // children: [
-                //     {path: 'constructor-profile', component: ConstructorProfileComponent}
+                //     {path: 'constructor-profile', component: UserProfileComponent}
                 // ]
             },
             {
                 path: 'flat-providers', component: FlatProviderOverviewComponent,
                 // children: [
-                //     {path: 'constructor-profile', component: ConstructorProfileComponent}
+                //     {path: 'constructor-profile', component: UserProfileComponent}
                 // ]
             }
         ]

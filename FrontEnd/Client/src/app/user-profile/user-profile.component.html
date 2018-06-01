@@ -33,9 +33,9 @@
           </a>
         </li>
         <!--<li class="nav-item">-->
-          <!--<a class="nav-link" routerLink="/profile">-->
-            <!--<i class="material-icons"></i>Profile Page-->
-          <!--</a>-->
+        <!--<a class="nav-link" routerLink="/profile">-->
+        <!--<i class="material-icons"></i>Profile Page-->
+        <!--</a>-->
         <!--</li>-->
       </ul>
     </div>
@@ -95,21 +95,41 @@
   </div>
 </div>
 <div class="page-header header-filter" data-parallax="true"
-     style="background-image: url('../../../../assets/img/kit/city.jpg'); height: 25rem;"></div>
+     style="background-image: url('../../assets/img/kit/city.jpg'); height: 25rem;"></div>
 <div class="profile-page">
   <div class="main main-raised">
     <div class="profile-content">
-      <div class="container" *ngFor="let constrcutor of selectedConstructor">
+      <div class="container" *ngFor="let role of selectedRole">
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile">
               <div class="avatar">
-                <img [src]="constrcutor.ConstructorProfilePicture" alt="Circle Image"
+                <img *ngIf="role.ConstructorProfilePicture!=null" [src]="role.ConstructorProfilePicture"
+                     alt="Circle Image"
+                     class="img-raised rounded-circle img-fluid">
+                <img *ngIf="role.architectureProfilePicture!=null" [src]="role.architectureProfilePicture"
+                     alt="Circle Image"
+                     class="img-raised rounded-circle img-fluid">
+                <img *ngIf="role.BankerProfilePicture!=null" [src]="role.BankerProfilePicture" alt="Circle Image"
+                     class="img-raised rounded-circle img-fluid">
+                <img *ngIf="role.LandProviderProfilePicture!=null" [src]="role.LandProviderProfilePicture"
+                     alt="Circle Image"
+                     class="img-raised rounded-circle img-fluid">
+                <img *ngIf="role.FlatProviderProfilePicture!=null" [src]="role.FlatProviderProfilePicture"
+                     alt="Circle Image"
                      class="img-raised rounded-circle img-fluid">
               </div>
               <div class="name">
-                <h3 class="title">{{constrcutor.ConstructorName}}</h3>
-                <h6>{{constrcutor.ConstructorRole}}</h6>
+                <h3 class="title" *ngIf="role.ConstructorName!=null">{{role.ConstructorName}}</h3>
+                <h3 class="title" *ngIf="role.architectureName!=null">{{role.architectureName}}</h3>
+                <h3 class="title" *ngIf="role.BankerName!=null">{{role.BankerName}}</h3>
+                <h3 class="title" *ngIf="role.LandProviderName!=null">{{role.LandProviderName}}</h3>
+                <h3 class="title" *ngIf="role.FlatProviderName!=null">{{role.FlatProviderName}}</h3>
+                <h6 *ngIf="role.ConstructorRole!=null">{{role.ConstructorRole}}</h6>
+                <h6 *ngIf="role.architectureRole!=null">{{role.architectureRole}}</h6>
+                <h6 *ngIf="role.BankerRole!=null">{{role.BankerRole}}</h6>
+                <h6 *ngIf="role.LandProviderRole!=null">{{role.LandProviderRole}}</h6>
+                <h6 *ngIf="role.FlatProviderRole!=null">{{role.FlatProviderRole}}</h6>
                 <a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>
                 <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
                 <a href="#pablo" class="btn btn-just-icon btn-simple btn-pinterest"><i class="fa fa-pinterest"></i></a>
@@ -155,7 +175,11 @@
         </div>
 
         <div class="description text-center">
-          <p>{{constrcutor.ConstructorStatus}}</p>
+          <p *ngIf="role.ConstructorStatus!=null">{{role.ConstructorStatus}}</p>
+          <p *ngIf="role.architectureStatus!=null">{{role.architectureStatus}}</p>
+          <p *ngIf="role.BankerStatus!=null">{{role.BankerStatus}}</p>
+          <p *ngIf="role.LandProviderStatus!=null">{{role.LandProviderStatus}}</p>
+          <p *ngIf="role.FlatProviderStatus!=null">{{role.FlatProviderStatus}}</p>
         </div>
 
         <h3 align="center">
@@ -204,31 +228,50 @@
                           <th scope="row">Full
                             Name
                           </th>
-                          <td>{{constrcutor.ConstructorName}}</td>
+                          <td *ngIf="role.ConstructorName!=null">{{role.ConstructorName}}</td>
+                          <td *ngIf="role.architectureName!=null">{{role.architectureName}}</td>
+                          <td *ngIf="role.BankerName!=null">{{role.BankerName}}</td>
+                          <td *ngIf="role.LandProviderName!=null">{{role.LandProviderName}}</td>
+                          <td *ngIf="role.FlatProviderName!=null">{{role.FlatProviderName}}</td>
                         </tr>
                         <tr>
                           <th scope="row">Gender
                           </th>
-                          <td>{{constrcutor.ConstructorGender}}</td>
+                          <td *ngIf="role.ConstructorGender!=null">{{role.ConstructorGender}}</td>
+                          <td *ngIf="role.architectureGender!=null">{{role.architectureGender}}</td>
+                          <td *ngIf="role.BankerGender!=null">{{role.BankerGender}}</td>
+                          <td *ngIf="role.LandProviderGender!=null">{{role.LandProviderGender}}</td>
+                          <td *ngIf="role.FlatProviderGender!=null">{{role.FlatProviderGender}}</td>
                         </tr>
                         <tr>
                           <th scope="row">Birth
                             Date
                           </th>
-                          <td>{{constrcutor.ConstructorBirthday}}
-                          </td>
+                          <td *ngIf="role.ConstructorBirthday!=null">{{role.ConstructorBirthday}}</td>
+                          <td *ngIf="role.architectureBirthday!=null">{{role.architectureBirthday}}</td>
+                          <td *ngIf="role.BankerBirthday!=null">{{role.BankerBirthday}}</td>
+                          <td *ngIf="role.LandProviderBirthday!=null">{{role.LandProviderBirthday}}</td>
+                          <td *ngIf="role.FlatProviderBirthday!=null">{{role.FlatProviderBirthday}}</td>
                         </tr>
                         <tr>
                           <th scope="row">Marital
                             Status
                           </th>
-                          <td>{{constrcutor.ConstructorMaritalStatus}}</td>
+                          <td *ngIf="role.ConstructorMaritalStatus!=null">{{role.ConstructorMaritalStatus}}</td>
+                          <td *ngIf="role.architectureMaritalStatus!=null">{{role.architectureMaritalStatus}}</td>
+                          <td *ngIf="role.BankerMaritalStatus!=null">{{role.BankerMaritalStatus}}</td>
+                          <td *ngIf="role.LandProviderMaritalStatus!=null">{{role.LandProviderMaritalStatus}}</td>
+                          <td *ngIf="role.FlatProviderMaritalStatus!=null">{{role.FlatProviderMaritalStatus}}</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             Location
                           </th>
-                          <td>{{constrcutor.ConstructorLocation}}</td>
+                          <td *ngIf="role.ConstructorLocation!=null">{{role.ConstructorLocation}}</td>
+                          <td *ngIf="role.architectureLocation!=null">{{role.architectureLocation}}</td>
+                          <td *ngIf="role.BankerLocation!=null">{{role.BankerLocation}}</td>
+                          <td *ngIf="role.LandProviderLocation!=null">{{role.LandProviderLocation}}</td>
+                          <td *ngIf="role.FlatProviderLocation!=null">{{role.FlatProviderLocation}}</td>
                         </tr>
                         </tbody>
                       </table>
@@ -241,35 +284,70 @@
                         <tr>
                           <th scope="row">Email
                           </th>
-                          <td><a href="#!"><span
-                            class="__cf_email__"
-                            data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{constrcutor.ConstructorEmail}}</span></a>
+                          <td *ngIf="role.ConstructorEmail!=null">
+                            <a href="#!"><span class="__cf_email__"
+                              data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{role.ConstructorEmail}}</span>
+                            </a>
+                          </td>
+                          <td *ngIf="role.architectureEmail!=null">
+                            <a href="#!"><span class="__cf_email__"
+                              data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{role.architectureEmail}}</span>
+                            </a>
+                          </td>
+                          <td *ngIf="role.BankerEmail!=null">
+                            <a href="#!"><span class="__cf_email__"
+                              data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{role.BankerEmail}}</span>
+                            </a>
+                          </td>
+                          <td *ngIf="role.LandProviderEmail!=null">
+                            <a href="#!"><span class="__cf_email__"
+                              data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{role.LandProviderEmail}}</span>
+                            </a>
+                          </td>
+                          <td *ngIf="role.FlatProviderEmail!=null">
+                            <a href="#!"><span class="__cf_email__"
+                              data-cfemail="b1f5d4dcdef1d4c9d0dcc1ddd49fd2dedc">{{role.FlatProviderEmail}}</span>
+                            </a>
                           </td>
                         </tr>
                         <tr>
                           <th scope="row">Mobile
                             Number
                           </th>
-                          <td>{{constrcutor.ConstructorMobile}}
-                          </td>
+                          <td *ngIf="role.ConstructorMobile!=null">{{role.ConstructorMobile}}</td>
+                          <td *ngIf="role.architectureMobile!=null">{{role.architectureMobile}}</td>
+                          <td *ngIf="role.BankerMobile!=null">{{role.BankerMobile}}</td>
+                          <td *ngIf="role.LandProviderMobile!=null">{{role.LandProviderMobile}}</td>
+                          <td *ngIf="role.FlatProviderMobile!=null">{{role.FlatProviderMobile}}</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             Facebook
                           </th>
-                          <td>{{constrcutor.ConstructorFacebook}}</td>
+                          <td *ngIf="role.ConstructorFacebook!=null">{{role.ConstructorFacebook}}</td>
+                          <td *ngIf="role.architectureFacebook!=null">{{role.architectureFacebook}}</td>
+                          <td *ngIf="role.BankerFacebook!=null">{{role.BankerFacebook}}</td>
+                          <td *ngIf="role.LandProviderFacebook!=null">{{role.LandProviderFacebook}}</td>
+                          <td *ngIf="role.FlatProviderFacebook!=null">{{role.FlatProviderFacebook}}</td>
                         </tr>
                         <tr>
                           <th scope="row">Skype
                           </th>
-                          <td>{{constrcutor.ConstructorSkype}}</td>
+                          <td *ngIf="role.ConstructorSkype!=null">{{role.ConstructorSkype}}</td>
+                          <td *ngIf="role.architectureSkype!=null">{{role.architectureSkype}}</td>
+                          <td *ngIf="role.BankerSkype!=null">{{role.BankerSkype}}</td>
+                          <td *ngIf="role.LandProviderSkype!=null">{{role.LandProviderSkype}}</td>
+                          <td *ngIf="role.FlatProviderSkype!=null">{{role.FlatProviderSkype}}</td>
                         </tr>
                         <tr>
                           <th scope="row">
                             Website
                           </th>
-                          <td><a href="#!">{{constrcutor.ConstructorWeb}}</a>
-                          </td>
+                          <td *ngIf="role.ConstructorWeb!=null">{{role.ConstructorWeb}}</td>
+                          <td *ngIf="role.architectureWeb!=null">{{role.architectureWeb}}</td>
+                          <td *ngIf="role.BankerWeb!=null">{{role.BankerWeb}}</td>
+                          <td *ngIf="role.LandProviderWeb!=null">{{role.LandProviderWeb}}</td>
+                          <td *ngIf="role.FlatProviderWeb!=null">{{role.FlatProviderWeb}}</td>
                         </tr>
                         </tbody>
                       </table>
@@ -423,7 +501,7 @@
                     <div class="media media-post">
                       <a class="pull-left author" href="#pablo">
                         <div class="avatar">
-                          <img class="media-object" alt="64x64" src="../../../../assets/img/faces/avatar.jpg">
+                          <img class="media-object" alt="64x64" src="../../assets/img/faces/avatar.jpg">
                         </div>
                       </a>
                       <div class="media-body">

@@ -25,7 +25,7 @@ class Flat_Provider extends CI_Controller
 		echo $flatProviders;
 	}
 
-	public function getLandProvider($fName='')
+	public function getFlatProvider($fName='')
 	{
 		$flatProviders = $this->flat_provider_model->getFlatProvider($fName);
 		echo $flatProviders;

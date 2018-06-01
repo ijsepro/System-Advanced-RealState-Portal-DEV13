@@ -8,12 +8,12 @@ import {LandingComponent} from './landing/landing.component';
 import {RouterModule} from '@angular/router';
 import {AppRoutingModule} from './app.routing';
 import {FormWizardModule} from 'angular-wizard-form/dist';
-import {ConstructorProfileComponent} from './layout/constructor/constructor-profile/constructor-profile.component';
+import {UserProfileComponent} from './user-profile/user-profile.component';
 import {StarRatingModule} from 'angular-star-rating';
 import {UserRegistrationService} from './services/user-registration.service';
 import {HttpModule} from '@angular/http';
 import {MainComponent} from './landing/main/main.component';
-import {ClientConstuctorService} from './services/client-constuctor.service';
+import {UserProfileService} from './services/user-profile.service';
 import {AppErrorHandler} from './common/app-error-handler';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
@@ -36,7 +36,7 @@ import {AuthService} from './services/auth.service';
     AppComponent,
     LayoutComponent,
     LandingComponent,
-    ConstructorProfileComponent,
+    UserProfileComponent,
     MainComponent,
     ClientProfileComponent,
     NavBarComponent,
@@ -65,7 +65,7 @@ import {AuthService} from './services/auth.service';
   ],
   providers: [
     UserRegistrationService,
-    ClientConstuctorService,
+    UserProfileService,
     AuthGuard,
     AuthService,
     PostWorkService,

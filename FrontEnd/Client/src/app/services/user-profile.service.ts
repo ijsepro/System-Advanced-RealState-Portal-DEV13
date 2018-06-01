@@ -7,7 +7,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw'
 
 @Injectable()
-export class ClientConstuctorService {
+export class UserProfileService {
 
   private getConstructorUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/getConstructor';
   private getWorksUrl = 'http://localhost/MyServer/Edifices/BackEnd/index.php/work/getConstructorWorks';
@@ -51,11 +51,33 @@ export class ClientConstuctorService {
     return this.http.post(this.getClientsUrl + '/' + conid, conid)
       .catch(this.handleError);
   }
+
   getConstructorProfileComments(conid) {
     return this.http.post(this.getProfileCommentUrl + '/' + conid, conid)
       .catch(this.handleError);
   }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  getArchitecture(aName) {
+    return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/architecture/getArchitecture' + '/' + aName, aName)
+      .catch(this.handleError);
+  }
+
+  getBanker(bName) {
+    return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/banker/getBanker' + '/' + bName, bName)
+      .catch(this.handleError);
+  }
+
+  getLandProvider(lName) {
+    return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/land_Provider/getLandProvider' + '/' + lName, lName)
+      .catch(this.handleError);
+  }
+
+  getFlatProvider(fName) {
+    return this.http.post('http://localhost/MyServer/Edifices/BackEnd/index.php/flat_provider/getFlatProvider' + '/' + fName, fName)
+      .catch(this.handleError);
+  }
 
   private handleError(error: Response) {
     if (error.status === 0) {

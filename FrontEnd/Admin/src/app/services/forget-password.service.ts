@@ -4,7 +4,7 @@ import {Http} from "@angular/http";
 @Injectable()
 export class ForgetPasswordService {
 
-    private url = 'http://localhost/MyServer/Edifices/BackEnd/index.php/admin/sendPasswordResetMail';
+    private url = 'http://localhost/Backend/Edifices/BackEnd/index.php/admin/sendPasswordResetMail';
 
     constructor(private http: Http) {
 

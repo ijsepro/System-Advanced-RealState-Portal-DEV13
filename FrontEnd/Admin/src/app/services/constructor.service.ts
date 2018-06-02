@@ -20,6 +20,6 @@ export class ConstructorService {
     }
 
     getConstructors() {
-        return this.http.get('http://localhost/MyServer/Edifices/BackEnd/index.php/constructor/constructors');
+        return this.http.get('http://localhost/Backend/Edifices/BackEnd/index.php/constructor/constructors');
     }
 }

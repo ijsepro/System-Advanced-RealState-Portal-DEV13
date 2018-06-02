@@ -1,844 +1,1047 @@
 drop database edifices;
-create database edifices;
-use edifices;
+                    create database edifices;
+                    use edifices;
 
-create table admin (
-	adminID int not null AUTO_INCREMENT,
-	adminUserName varchar(10)not null,
-	adminEmail varchar(100)not null,
-	adminPassword varchar(100)not null,
-	adminProfilePicture varchar(100),
-	constraint primary key(adminID)	
-) ENGINE=InnoDB;
+                    create table admin (
+                    	adminID int not null AUTO_INCREMENT,
+                    	adminUserName varchar(10)not null,
+                    	adminEmail varchar(100)not null,
+                    	adminPassword varchar(100)not null,
+                    	adminProfilePicture varchar(100),
+                    	constraint primary key(adminID)
+                    ) ENGINE=InnoDB;
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table newAdmin(
-	newAdminID int not null AUTO_INCREMENT,
-	newAdminUserName varchar(10)not null,
-	newAdminEmail varchar(100)not null,
-	adminID int not null,
-	constraint primary key(newAdminId),
-	constraint foreign key(adminID) references admin(adminID)
-) ENGINE=InnoDB;
+                    create table newAdmin(
+                    	newAdminID int not null AUTO_INCREMENT,
+                    	newAdminUserName varchar(10)not null,
+                    	newAdminEmail varchar(100)not null,
+                    	adminID int not null,
+                    	constraint primary key(newAdminId),
+                    	constraint foreign key(adminID) references admin(adminID)
+                    ) ENGINE=InnoDB;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table architecture(
-	architectureID int not null AUTO_INCREMENT,
-	architectureName varchar(50)not null,
-	architectureEmail varchar(50)not null,
-	architectureProfilePicture varchar(100)not null,
-	architectureWorksCount int not null,
-	architectureRatings double not null,
-	adminID int not null,
-	constraint primary key(architectureID),
-	constraint foreign key(adminID) references admin(adminID)
-)ENGINE=InnoDB;
+                    create table architecture(
+                    	architectureID int not null AUTO_INCREMENT,
+                    	architectureName varchar(50)not null,
+                    	architectureEmail varchar(50)not null,
+                    	architectureProfilePicture varchar(100)not null,
+                    	architectureWorksCount int not null,
+                    	architectureRatings double not null,
+                    	adminID int not null,
+                    	constraint primary key(architectureID),
+                    	constraint foreign key(adminID) references admin(adminID)
+                    )ENGINE=InnoDB;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-insert into architecture values(
-	0,
-	'Dinuka',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	12,
-	3.5,
-	1);
-insert into architecture values(
-	0,
-	'Thisal',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	2.0,
-	1);
-insert into architecture values(
-	0,
-	'Kushan',
-	'kushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	1.0,
-	1);
-insert into architecture values(
-	0,
-	'Thisaru',
-	'thisaru@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	4.0,
-	1);
-insert into architecture values(
-	0,
-	'Madushan',
-	'madushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	102,
-	5.0,
-	1);
+                    insert into architecture values(
+                    	0,
+                    	'Dinuka',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	12,
+                    	3.5,
+                    	1);
+                    insert into architecture values(
+                    	0,
+                    	'Thisal',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	102,
+                    	2.0,
+                    	1);
+                    insert into architecture values(
+                    	0,
+                    	'Kushan',
+                    	'kushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	102,
+                    	1.0,
+                    	1);
+                    insert into architecture values(
+                    	0,
+                    	'Thisaru',
+                    	'thisaru@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	102,
+                    	4.0,
+                    	1);
+                    insert into architecture values(
+                    	0,
+                    	'Madushan',
+                    	'madushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	102,
+                    	5.0,
+                    	1);
 
-create table recovery_keys (
-  rid int(11) NOT NULL AUTO_INCREMENT,
-  userID int(11) NOT NULL,
-  token varchar(50) NOT NULL,
-  valid tinyint(4) NOT NULL DEFAULT '1',
-  PRIMARY KEY (rid)
-) ENGINE=InnoDB;
+                    create table recovery_keys (
+                      rid int(11) NOT NULL AUTO_INCREMENT,
+                      userID int(11) NOT NULL,
+                      token varchar(50) NOT NULL,
+                      valid tinyint(4) NOT NULL DEFAULT '1',
+                      PRIMARY KEY (rid)
+                    ) ENGINE=InnoDB;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table Constructor(
-	ConstructorID int not null AUTO_INCREMENT,
-	ConstructorName varchar(50)not null,
-	ConstructorEmail varchar(50)not null,
-	ConstructorProfilePicture varchar(100)not null,
-	ConstructorRole varchar(100)not null,
-	ConstructorStatus varchar(100)not null,
-	ConstructorWorksCount int not null,
-	ConstructorRatings double not null,
-	adminID int not null,
-	ConstructorGender varchar(50)not null,
-	ConstructorBirthday varchar(50)not null,
-	ConstructorMaritalStatus varchar(50)not null,
-	ConstructorLocation varchar(50)not null,
-	ConstructorMobile varchar(50)not null,
-	ConstructorFacebook varchar(50)not null,
-	ConstructorSkype varchar(50)not null,
-	ConstructorWeb varchar(50)not null,
-	constraint primary key(ConstructorID),
-	constraint foreign key(adminID) references admin(adminID)
-)ENGINE=InnoDB;
+                    create table Constructor(
+                    	ConstructorID int not null AUTO_INCREMENT,
+                    	ConstructorName varchar(50)not null,
+                    	ConstructorEmail varchar(50)not null,
+                    	ConstructorProfilePicture varchar(100)not null,
+                    	ConstructorRole varchar(100)not null,
+                    	ConstructorStatus varchar(100)not null,
+                    	ConstructorWorksCount int not null,
+                    	ConstructorRatings double not null,
+                    	adminID int not null,
+                    	ConstructorGender varchar(50)not null,
+                    	ConstructorBirthday varchar(50)not null,
+                    	ConstructorMaritalStatus varchar(50)not null,
+                    	ConstructorLocation varchar(50)not null,
+                    	ConstructorMobile varchar(50)not null,
+                    	ConstructorFacebook varchar(50)not null,
+                    	ConstructorSkype varchar(50)not null,
+                    	ConstructorWeb varchar(50)not null,
+                    	constraint primary key(ConstructorID),
+                    	constraint foreign key(adminID) references admin(adminID)
+                    )ENGINE=InnoDB;
 
-insert into Constructor values(
-	0,
-	'Dinuka',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Constructor',
-	'Im Doint Whats Best For You...',
-	12,
-	3.5,
-	1,
-	'Male',
-	'1996-11-04',
-	'In a relationship',
-	'Midigama',
-	'0771234567',
-	'www.facebook.com/DK96',
-	'www.skype.com/polla',
-	'www.edifices.com'
-);
+                    insert into Constructor values(
+                    	0,
+                    	'Dinuka',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Constructor',
+                    	'Im Doint Whats Best For You...',
+                    	12,
+                    	3.5,
+                    	1,
+                    	'Male',
+                    	'1996-11-04',
+                    	'In a relationship',
+                    	'Midigama',
+                    	'0771234567',
+                    	'www.facebook.com/DK96',
+                    	'www.skype.com/polla',
+                    	'www.edifices.com'
+                    );
 
-insert into Constructor values(
-	0,
-	'Thisal',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Constructor',
-	'Im Doint Whats Best For You...',
-	102,
-	5.0,
-	1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Constructor values(
+                    	0,
+                    	'Thisal',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Constructor',
+                    	'Im Doint Whats Best For You...',
+                    	102,
+                    	5.0,
+                    	1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into Constructor values(
-	0,
-	'Kushan',
-	'kushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Constructor',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Constructor values(
+                    	0,
+                    	'Kushan',
+                    	'kushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Constructor',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into Constructor values(
-	0,
-	'Thisaru',
-	'thisaru@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Constructor',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Constructor values(
+                    	0,
+                    	'Thisaru',
+                    	'thisaru@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Constructor',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into Constructor values(
-	0,
-	'Madushan',
-	'madushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Constructor',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Constructor values(
+                    	0,
+                    	'Madushan',
+                    	'madushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Constructor',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table Bankers(
-	BankerID int not null AUTO_INCREMENT,
-	BankerName varchar(50)not null,
-	BankerEmail varchar(50)not null,
-	BankerProfilePicture varchar(100)not null,
-	BankerRole varchar(100)not null,
-	BankerStatus varchar(100)not null,
-	BankerWorksCount int not null,
-	BankerRatings double not null,
-	adminID int not null,
-	BankerGender varchar(50)not null,
-	BankerBirthday varchar(50)not null,
-	BankerMaritalStatus varchar(50)not null,
-	BankerLocation varchar(50)not null,
-	BankerMobile varchar(50)not null,
-	BankerFacebook varchar(50)not null,
-	BankerSkype varchar(50)not null,
-	BankerWeb varchar(50)not null,
-	constraint primary key(BankerID),
-	constraint foreign key(adminID) references admin(adminID)
-)ENGINE=InnoDB;
+                    create table Bankers(
+                    	BankerID int not null AUTO_INCREMENT,
+                    	BankerName varchar(50)not null,
+                    	BankerEmail varchar(50)not null,
+                    	BankerProfilePicture varchar(100)not null,
+                    	BankerRole varchar(100)not null,
+                    	BankerStatus varchar(100)not null,
+                    	BankerWorksCount int not null,
+                    	BankerRatings double not null,
+                    	adminID int not null,
+                    	BankerGender varchar(50)not null,
+                    	BankerBirthday varchar(50)not null,
+                    	BankerMaritalStatus varchar(50)not null,
+                    	BankerLocation varchar(50)not null,
+                    	BankerMobile varchar(50)not null,
+                    	BankerFacebook varchar(50)not null,
+                    	BankerSkype varchar(50)not null,
+                    	BankerWeb varchar(50)not null,
+                    	constraint primary key(BankerID),
+                    	constraint foreign key(adminID) references admin(adminID)
+                    )ENGINE=InnoDB;
 
-insert into Bankers values(
-	0,
-	'Dinuka',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Banker',
-	'Im Doint Whats Best For You...',
-	12,
-	3.5,
-	1,
-	'Male',
-	'1996-11-04',
-	'In a relationship',
-	'Midigama',
-	'0771234567',
-	'www.facebook.com/DK96',
-	'www.skype.com/polla',
-	'www.edifices.com'
-);
+                    insert into Bankers values(
+                    	0,
+                    	'Dinuka',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Banker',
+                    	'Im Doint Whats Best For You...',
+                    	12,
+                    	3.5,
+                    	1,
+                    	'Male',
+                    	'1996-11-04',
+                    	'In a relationship',
+                    	'Midigama',
+                    	'0771234567',
+                    	'www.facebook.com/DK96',
+                    	'www.skype.com/polla',
+                    	'www.edifices.com'
+                    );
 
-insert into Bankers values(
-	0,
-	'Thisal',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Banker',
-	'Im Doint Whats Best For You...',
-	102,
-	5.0,
-	1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Bankers values(
+                    	0,
+                    	'Thisal',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Banker',
+                    	'Im Doint Whats Best For You...',
+                    	102,
+                    	5.0,
+                    	1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into Bankers values(
-	0,
-	'Kushan',
-	'kushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Banker',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Bankers values(
+                    	0,
+                    	'Kushan',
+                    	'kushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Banker',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into Bankers values(
-	0,
-	'Thisaru',
-	'thisaru@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Banker',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Bankers values(
+                    	0,
+                    	'Thisaru',
+                    	'thisaru@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Banker',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into Bankers values(
-	0,
-	'Madushan',
-	'madushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Banker',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into Bankers values(
+                    	0,
+                    	'Madushan',
+                    	'madushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Banker',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table LandProviders(
-	LandProviderID int not null AUTO_INCREMENT,
-	LandProviderName varchar(50)not null,
-	LandProviderEmail varchar(50)not null,
-	LandProviderProfilePicture varchar(100)not null,
-	LandProviderRole varchar(100)not null,
-	LandProviderStatus varchar(100)not null,
-	LandProviderWorksCount int not null,
-	LandProviderRatings double not null,
-	adminID int not null,
-	LandProviderGender varchar(50)not null,
-	LandProviderBirthday varchar(50)not null,
-	LandProviderMaritalStatus varchar(50)not null,
-	LandProviderLocation varchar(50)not null,
-	LandProviderMobile varchar(50)not null,
-	LandProviderFacebook varchar(50)not null,
-	LandProviderSkype varchar(50)not null,
-	LandProviderWeb varchar(50)not null,
-	constraint primary key(LandProviderID),
-	constraint foreign key(adminID) references admin(adminID)
-)ENGINE=InnoDB;
+                    create table LandProviders(
+                    	LandProviderID int not null AUTO_INCREMENT,
+                    	LandProviderName varchar(50)not null,
+                    	LandProviderEmail varchar(50)not null,
+                    	LandProviderProfilePicture varchar(100)not null,
+                    	LandProviderRole varchar(100)not null,
+                    	LandProviderStatus varchar(100)not null,
+                    	LandProviderWorksCount int not null,
+                    	LandProviderRatings double not null,
+                    	adminID int not null,
+                    	LandProviderGender varchar(50)not null,
+                    	LandProviderBirthday varchar(50)not null,
+                    	LandProviderMaritalStatus varchar(50)not null,
+                    	LandProviderLocation varchar(50)not null,
+                    	LandProviderMobile varchar(50)not null,
+                    	LandProviderFacebook varchar(50)not null,
+                    	LandProviderSkype varchar(50)not null,
+                    	LandProviderWeb varchar(50)not null,
+                    	constraint primary key(LandProviderID),
+                    	constraint foreign key(adminID) references admin(adminID)
+                    )ENGINE=InnoDB;
 
-insert into LandProviders values(
-	0,
-	'Dinuka',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Land Provider',
-	'Im Doint Whats Best For You...',
-	12,
-	3.5,
-	1,
-	'Male',
-	'1996-11-04',
-	'In a relationship',
-	'Midigama',
-	'0771234567',
-	'www.facebook.com/DK96',
-	'www.skype.com/polla',
-	'www.edifices.com'
-);
+                    insert into LandProviders values(
+                    	0,
+                    	'Dinuka',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Land Provider',
+                    	'Im Doint Whats Best For You...',
+                    	12,
+                    	3.5,
+                    	1,
+                    	'Male',
+                    	'1996-11-04',
+                    	'In a relationship',
+                    	'Midigama',
+                    	'0771234567',
+                    	'www.facebook.com/DK96',
+                    	'www.skype.com/polla',
+                    	'www.edifices.com'
+                    );
 
-insert into LandProviders values(
-	0,
-	'Thisal',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Land Provider',
-	'Im Doint Whats Best For You...',
-	102,
-	5.0,
-	1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into LandProviders values(
+                    	0,
+                    	'Thisal',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Land Provider',
+                    	'Im Doint Whats Best For You...',
+                    	102,
+                    	5.0,
+                    	1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into LandProviders values(
-	0,
-	'Kushan',
-	'kushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Land Provider',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into LandProviders values(
+                    	0,
+                    	'Kushan',
+                    	'kushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Land Provider',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into LandProviders values(
-	0,
-	'Thisaru',
-	'thisaru@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Land Provider',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into LandProviders values(
+                    	0,
+                    	'Thisaru',
+                    	'thisaru@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Land Provider',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into LandProviders values(
-	0,
-	'Madushan',
-	'madushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Land Provider',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into LandProviders values(
+                    	0,
+                    	'Madushan',
+                    	'madushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Land Provider',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table FlatProviders(
-	FlatProviderID int not null AUTO_INCREMENT,
-	FlatProviderName varchar(50)not null,
-	FlatProviderEmail varchar(50)not null,
-	FlatProviderProfilePicture varchar(100)not null,
-	FlatProviderRole varchar(100)not null,
-	FlatProviderStatus varchar(100)not null,
-	FlatProviderWorksCount int not null,
-	FlatProviderRatings double not null,
-	adminID int not null,
-	FlatProviderGender varchar(50)not null,
-	FlatProviderBirthday varchar(50)not null,
-	FlatProviderMaritalStatus varchar(50)not null,
-	FlatProviderLocation varchar(50)not null,
-	FlatProviderMobile varchar(50)not null,
-	FlatProviderFacebook varchar(50)not null,
-	FlatProviderSkype varchar(50)not null,
-	FlatProviderWeb varchar(50)not null,
-	constraint primary key(FlatProviderID),
-	constraint foreign key(adminID) references admin(adminID)
-)ENGINE=InnoDB;
+                    create table FlatProviders(
+                    	FlatProviderID int not null AUTO_INCREMENT,
+                    	FlatProviderName varchar(50)not null,
+                    	FlatProviderEmail varchar(50)not null,
+                    	FlatProviderProfilePicture varchar(100)not null,
+                    	FlatProviderRole varchar(100)not null,
+                    	FlatProviderStatus varchar(100)not null,
+                    	FlatProviderWorksCount int not null,
+                    	FlatProviderRatings double not null,
+                    	adminID int not null,
+                    	FlatProviderGender varchar(50)not null,
+                    	FlatProviderBirthday varchar(50)not null,
+                    	FlatProviderMaritalStatus varchar(50)not null,
+                    	FlatProviderLocation varchar(50)not null,
+                    	FlatProviderMobile varchar(50)not null,
+                    	FlatProviderFacebook varchar(50)not null,
+                    	FlatProviderSkype varchar(50)not null,
+                    	FlatProviderWeb varchar(50)not null,
+                    	constraint primary key(FlatProviderID),
+                    	constraint foreign key(adminID) references admin(adminID)
+                    )ENGINE=InnoDB;
 
-insert into FlatProviders values(
-	0,
-	'Dinuka',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Flat Provider',
-	'Im Doint Whats Best For You...',
-	12,
-	3.5,
-	1,
-	'Male',
-	'1996-11-04',
-	'In a relationship',
-	'Midigama',
-	'0771234567',
-	'www.facebook.com/DK96',
-	'www.skype.com/polla',
-	'www.edifices.com'
-);
+                    insert into FlatProviders values(
+                    	0,
+                    	'Dinuka',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Flat Provider',
+                    	'Im Doint Whats Best For You...',
+                    	12,
+                    	3.5,
+                    	1,
+                    	'Male',
+                    	'1996-11-04',
+                    	'In a relationship',
+                    	'Midigama',
+                    	'0771234567',
+                    	'www.facebook.com/DK96',
+                    	'www.skype.com/polla',
+                    	'www.edifices.com'
+                    );
 
-insert into FlatProviders values(
-	0,
-	'Thisal',
-	'athisaldinuka3@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Flat Provider',
-	'Im Doint Whats Best For You...',
-	102,
-	5.0,
-	1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into FlatProviders values(
+                    	0,
+                    	'Thisal',
+                    	'athisaldinuka3@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Flat Provider',
+                    	'Im Doint Whats Best For You...',
+                    	102,
+                    	5.0,
+                    	1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into FlatProviders values(
-	0,
-	'Kushan',
-	'kushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Flat Provider',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into FlatProviders values(
+                    	0,
+                    	'Kushan',
+                    	'kushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Flat Provider',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into FlatProviders values(
-	0,
-	'Thisaru',
-	'thisaru@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Flat Provider',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into FlatProviders values(
+                    	0,
+                    	'Thisaru',
+                    	'thisaru@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Flat Provider',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-insert into FlatProviders values(
-	0,
-	'Madushan',
-	'madushan@gmail.com',
-	'../../../assets/img/faces/kaci-baum-2.jpg',
-	'An Unique Flat Provider',
-    'Im Doint Whats Best For You...',
-    102,
-    5.0,
-    1,
-    'Male',
-    '1996-11-04',
-    'In a relationship',
-    'Midigama',
-    '0771234567',
-    'www.facebook.com/DK96',
-    'www.skype.com/polla',
-    'www.edifices.com'
-);
+                    insert into FlatProviders values(
+                    	0,
+                    	'Madushan',
+                    	'madushan@gmail.com',
+                    	'../../../assets/img/faces/kaci-baum-2.jpg',
+                    	'An Unique Flat Provider',
+                        'Im Doint Whats Best For You...',
+                        102,
+                        5.0,
+                        1,
+                        'Male',
+                        '1996-11-04',
+                        'In a relationship',
+                        'Midigama',
+                        '0771234567',
+                        'www.facebook.com/DK96',
+                        'www.skype.com/polla',
+                        'www.edifices.com'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table ConstructorWork(
-     WorkID int not null AUTO_INCREMENT,
-     ConstructorID int not null,
-     WorkName varchar(100)not null,
-     WorkPicture varchar(100)not null,
-     WorkRating double not null,
-     WorkDescrition varchar(50) not null,
-     constraint primary key(WorkID),
-     constraint foreign key(ConstructorID) references constructor(ConstructorID)
-)ENGINE=InnoDB;
+                    create table ConstructorWork(
+                         WorkID int not null AUTO_INCREMENT,
+                         ConstructorID int not null,
+                         WorkName varchar(100)not null,
+                         WorkPicture varchar(100)not null,
+                         WorkRating double not null,
+                         WorkDescrition varchar(50) not null,
+                         constraint primary key(WorkID),
+                         constraint foreign key(ConstructorID) references constructor(ConstructorID)
+                    )ENGINE=InnoDB;
 
-insert into ConstructorWork values(
-    0,
-    1,
-    'Build House',
-    '../../../assets/img/faces/kaci-baum-2.jpg',
-     4,
-     'Iski Babare Rabaree... Disti Didin...'
-);
-insert into ConstructorWork values(
-    0,
-    1,
-    'Build Buiding',
-    '../../../assets/img/faces/kaci-baum-2.jpg',
-     3,
-     'Iski Babare Rabaree... Disti Didin...'
-);
-insert into ConstructorWork values(
-    0,
-    1,
-    'Build Piramid',
-    '../../../assets/img/faces/kaci-baum-2.jpg',
-     5,
-     'Iski Babare Rabaree... Disti Didin...'
-);
+                    insert into ConstructorWork values(
+                        0,
+                        1,
+                        'Build House',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         4,
+                         'Iski Babare Rabaree... Disti Didin...'
+                    );
+                    insert into ConstructorWork values(
+                        0,
+                        1,
+                        'Build Buiding',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         3,
+                         'Iski Babare Rabaree... Disti Didin...'
+                    );
+                    insert into ConstructorWork values(
+                        0,
+                        1,
+                        'Build Piramid',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         5,
+                         'Iski Babare Rabaree... Disti Didin...'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table ArchitectureWork(
-     WorkID int not null AUTO_INCREMENT,
-     architectureID int not null,
-     WorkName varchar(100)not null,
-     WorkPicture varchar(100)not null,
-     WorkRating double not null,
-     constraint primary key(WorkID),
-     constraint foreign key(architectureID) references architecture(architectureID)
-)ENGINE=InnoDB;
+                    create table ArchitectureWork(
+                         WorkID int not null AUTO_INCREMENT,
+                         architectureID int not null,
+                         WorkName varchar(100)not null,
+                         WorkPicture varchar(100)not null,
+                         WorkRating double not null,
+                         constraint primary key(WorkID),
+                         constraint foreign key(architectureID) references architecture(architectureID)
+                    )ENGINE=InnoDB;
 
-insert into ArchitectureWork values(
-    0,
-    6,
-    'Build House',
-    '../../../assets/img/faces/kaci-baum-2.jpg',
-     4
-);
-insert into ArchitectureWork values(
-    0,
-    7,
-    'Build Buiding',
-    '../../../assets/img/faces/kaci-baum-2.jpg',
-     3
-);
-insert into ArchitectureWork values(
-    0,
-    8,
-    'Build Piramid',
-    '../../../assets/img/faces/kaci-baum-2.jpg',
-     5
-);
+                    insert into ArchitectureWork values(
+                        0,
+                        6,
+                        'Build House',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         4
+                    );
+                    insert into ArchitectureWork values(
+                        0,
+                        7,
+                        'Build Buiding',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         3
+                    );
+                    insert into ArchitectureWork values(
+                        0,
+                        8,
+                        'Build Piramid',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         5
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table newUser(
-	newUserID int not null AUTO_INCREMENT,
-	newUserName varchar(100)not null,
-	newUserEmail varchar(100)not null,
-	newUserPassword varchar(100)not null,
-	newUserContactNumber varchar(100)not null,
-	newUserStatus varchar(100)not null,
-	newUserAbout varchar(100)not null,
-	newUserOfficialNum varchar(100)not null,
-	newUserPC varchar(100)not null,
-	constraint primary key(newUserID)
-) ENGINE=InnoDB;
+                    create table newUser(
+                    	newUserID int not null AUTO_INCREMENT,
+                    	newUserName varchar(100)not null,
+                    	newUserEmail varchar(100)not null,
+                    	newUserPassword varchar(100)not null,
+                    	newUserContactNumber varchar(100)not null,
+                    	newUserStatus varchar(100)not null,
+                    	newUserAbout varchar(100)not null,
+                    	newUserOfficialNum varchar(100)not null,
+                    	newUserPC varchar(100)not null,
+                    	constraint primary key(newUserID)
+                    ) ENGINE=InnoDB;
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table ConstructorEducation(
-     ConstructorEducationID int not null AUTO_INCREMENT,
-     ConstructorID int not null,
-     UniversityName varchar(50)not null,
-     YearRange varchar(50)not null,
-     Degree varchar(50)not null,
-     Description varchar(100) not null,
-     constraint primary key(ConstructorEducationID),
-     constraint foreign key(ConstructorID) references constructor(ConstructorID)
-)ENGINE=InnoDB;
+                    create table ConstructorEducation(
+                         ConstructorEducationID int not null AUTO_INCREMENT,
+                         ConstructorID int not null,
+                         UniversityName varchar(50)not null,
+                         YearRange varchar(50)not null,
+                         Degree varchar(50)not null,
+                         Description varchar(100) not null,
+                         constraint primary key(ConstructorEducationID),
+                         constraint foreign key(ConstructorID) references constructor(ConstructorID)
+                    )ENGINE=InnoDB;
 
-insert into ConstructorEducation values(
-    0,
-    2,
-    'IJSE',
-    '2017-2019',
-    'BCS',
-    'I studied at IJSE Galle Branch'
-);
-insert into ConstructorEducation values(
-    0,
-    2,
-    'University of Dublin',
-    '2017-2019',
-    'Master',
-    'I studied at University of Dublin'
-);
-insert into ConstructorEducation values(
-    0,
-    2,
-    'IJSE',
-    '2017-2019',
-    'BCS',
-    'I studied at IJSE Galle Branch'
-);
+                    insert into ConstructorEducation values(
+                        0,
+                        2,
+                        'IJSE',
+                        '2017-2019',
+                        'BCS',
+                        'I studied at IJSE Galle Branch'
+                    );
+                    insert into ConstructorEducation values(
+                        0,
+                        2,
+                        'University of Dublin',
+                        '2017-2019',
+                        'Master',
+                        'I studied at University of Dublin'
+                    );
+                    insert into ConstructorEducation values(
+                        0,
+                        2,
+                        'IJSE',
+                        '2017-2019',
+                        'BCS',
+                        'I studied at IJSE Galle Branch'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table ConstructorExperiance(
-     ConstructorExperianceID int not null AUTO_INCREMENT,
-     ConstructorID int not null,
-     CompanyName varchar(50)not null,
-     YearRange varchar(50)not null,
-     Post varchar(50)not null,
-     Description varchar(100) not null,
-     constraint primary key(ConstructorExperianceID),
-     constraint foreign key(ConstructorID) references constructor(ConstructorID)
-)ENGINE=InnoDB;
+                    create table ConstructorExperiance(
+                         ConstructorExperianceID int not null AUTO_INCREMENT,
+                         ConstructorID int not null,
+                         CompanyName varchar(50)not null,
+                         YearRange varchar(50)not null,
+                         Post varchar(50)not null,
+                         Description varchar(100) not null,
+                         constraint primary key(ConstructorExperianceID),
+                         constraint foreign key(ConstructorID) references constructor(ConstructorID)
+                    )ENGINE=InnoDB;
 
-insert into ConstructorExperiance values(
-    0,
-    2,
-    'WSO2',
-    '2020-2025',
-    'Seniour Software Engineer',
-    'I work at WSO2'
-);
-insert into ConstructorExperiance values(
-    0,
-    2,
-    'MIT',
-    '2020-2025',
-    'Seniour Software Engineer',
-    'I work at MIT'
-);
-insert into ConstructorExperiance values(
-    0,
-    2,
-    'Vertusa',
-    '2020-2025',
-    'Seniour Software Engineer',
-    'I work at Vertusa'
-);
+                    insert into ConstructorExperiance values(
+                        0,
+                        2,
+                        'WSO2',
+                        '2020-2025',
+                        'Seniour Software Engineer',
+                        'I work at WSO2'
+                    );
+                    insert into ConstructorExperiance values(
+                        0,
+                        2,
+                        'MIT',
+                        '2020-2025',
+                        'Seniour Software Engineer',
+                        'I work at MIT'
+                    );
+                    insert into ConstructorExperiance values(
+                        0,
+                        2,
+                        'Vertusa',
+                        '2020-2025',
+                        'Seniour Software Engineer',
+                        'I work at Vertusa'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table ConstructorClients(
-     ClientID int not null AUTO_INCREMENT,
-     ConstructorID int not null,
-     ClientName varchar(100) not null,
-     ClientMobile int not null,
-     ClientEmail varchar(100) not null,
-     constraint primary key(ClientID),
-     constraint foreign key(ConstructorID) references constructor(ConstructorID)
-)ENGINE=InnoDB;
+                    create table ConstructorClients(
+                         ClientID int not null AUTO_INCREMENT,
+                         ConstructorID int not null,
+                         ClientName varchar(100) not null,
+                         ClientMobile int not null,
+                         ClientEmail varchar(100) not null,
+                         constraint primary key(ClientID),
+                         constraint foreign key(ConstructorID) references constructor(ConstructorID)
+                    )ENGINE=InnoDB;
 
-insert into ConstructorClients values(
-    0,
-    2,
-    'Dinuka Lakshitha',
-    '0761234567',
-    'Dinuka Lakshitha@gmail.com'
-);
+                    insert into ConstructorClients values(
+                        0,
+                        2,
+                        'Dinuka Lakshitha',
+                        '0761234567',
+                        'Dinuka Lakshitha@gmail.com'
+                    );
 
-insert into ConstructorClients values(
-    0,
-    2,
-    'Thisaru Hiruni@gmail.com',
-    '0771234567',
-    'Thisaru Hiruni'
-);
+                    insert into ConstructorClients values(
+                        0,
+                        2,
+                        'Thisaru Hiruni@gmail.com',
+                        '0771234567',
+                        'Thisaru Hiruni'
+                    );
 
-insert into ConstructorClients values(
-    0,
-    2,
-    'Thusara Kushi',
-    '0711234567',
-    'Thusara Kushi@gmail.com'
-);
+                    insert into ConstructorClients values(
+                        0,
+                        2,
+                        'Thusara Kushi',
+                        '0711234567',
+                        'Thusara Kushi@gmail.com'
+                    );
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-create table ConstructorComments(
-     CommentID int not null AUTO_INCREMENT,
-     ConstructorID int not null,
-     ClientID int not null,
-     WorkID int,
-     Commment varchar(100) not null,
-     constraint primary key(CommentID),
-     constraint foreign key(ConstructorID) references Constructor(ConstructorID),
-     constraint foreign key(ClientID) references ConstructorClients(ClientID),
-     constraint foreign key(WorkID) references ConstructorWork(WorkID)
-)ENGINE=InnoDB;
+                    create table ConstructorComments(
+                         CommentID int not null AUTO_INCREMENT,
+                         ConstructorID int not null,
+                         ClientID int not null,
+                         WorkID int,
+                         Commment varchar(100) not null,
+                         constraint primary key(CommentID),
+                         constraint foreign key(ConstructorID) references Constructor(ConstructorID),
+                         constraint foreign key(ClientID) references ConstructorClients(ClientID),
+                         constraint foreign key(WorkID) references ConstructorWork(WorkID)
+                    )ENGINE=InnoDB;
 
-insert into ConstructorComments values(
-    0,
-    2,
-    1,
-    1,
-    'Ado meka fatta wedakne'
-);
+                    insert into ConstructorComments values(
+                        0,
+                        2,
+                        1,
+                        1,
+                        'Ado meka fatta wedakne'
+                    );
 
-insert into ConstructorComments values(
-    0,
-    2,
-    1,
-    NULL,
-    'Such a creative constructor'
-);
+                    insert into ConstructorComments values(
+                        0,
+                        2,
+                        1,
+                        NULL,
+                        'Such a creative constructor'
+                    );
 
-insert into ConstructorComments values(
-    0,
-    2,
-    1,
-    2,
-    'This is an owesome work'
-);
-create table postFiles(
-    fileID int not null AUTO_INCREMENT,
-    fileName varchar(1000)not null,
-    projectID int not null,
-    description varchar(100)not null,
-    constraint primary key (fileID),
-    constraint foreign key(projectID) references projects(projectID)
-);
-create table projects(
-    projectID int not null AUTO_INCREMENT,
-    projectName varchar (100)not null,
-    projectType varchar (100) not null,
-    projectDescription varchar(1000)not null,
-    constraint primary key(projectID)
-);
-create table projectRating(
-    ratingID int not null AUTO_INCREMENT,
-    ratingsValue double (10,2)not null,
-    projectID int not null,
-    constraint primary key(ratingID),
-    constraint foreign key(projectID) references projects(projectID)
-);
+                    insert into ConstructorComments values(
+                        0,
+                        2,
+                        1,
+                        2,
+                        'This is an owesome work'
+                    );
+                    create table postFiles(
+                        fileID int not null AUTO_INCREMENT,
+                        fileName varchar(1000)not null,
+                        projectID int not null,
+                        description varchar(100)not null,
+                        constraint primary key (fileID),
+                        constraint foreign key(projectID) references projects(projectID)
+                    );
+                    create table projects(
+                        projectID int not null AUTO_INCREMENT,
+                        projectName varchar (100)not null,
+                        projectType varchar (100) not null,
+                        projectDescription varchar(1000)not null,
+                        constraint primary key(projectID)
+                    );
+                    create table projectRating(
+                        ratingID int not null AUTO_INCREMENT,
+                        ratingsValue double (10,2)not null,
+                        projectID int not null,
+                        constraint primary key(ratingID),
+                        constraint foreign key(projectID) references projects(projectID)
+                    );
+
+                    //////////////////////////////////////////////////////////////////////////////////////////////////////
+                    //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+                    create table architectureWork(
+                         WorkID int not null AUTO_INCREMENT,
+                         architectureID int not null,
+                         WorkName varchar(100)not null,
+                         WorkPicture varchar(100)not null,
+                         WorkRating double not null,
+                         WorkDescrition varchar(50) not null,
+                         constraint primary key(WorkID),
+                         constraint foreign key(architectureID) references architecture(architectureID)
+                    )ENGINE=InnoDB;
+
+                    insert into architectureWork values(
+                        0,
+                        1,
+                        'Build House',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         4,
+                         'Iski Babare Rabaree... Disti Didin...'
+                    );
+                    insert into architectureWork values(
+                        0,
+                        1,
+                        'Build Buiding',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         3,
+                         'Iski Babare Rabaree... Disti Didin...'
+                    );
+                    insert into architectureWork values(
+                        0,
+                        1,
+                        'Build Piramid',
+                        '../../../assets/img/faces/kaci-baum-2.jpg',
+                         5,
+                         'Iski Babare Rabaree... Disti Didin...'
+                    );
+
+
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ......................................................
+
+                    create table architectureEducation(
+                         architectureEducationID int not null AUTO_INCREMENT,
+                         architectureID int not null,
+                         UniversityName varchar(50)not null,
+                         YearRange varchar(50)not null,
+                         Degree varchar(50)not null,
+                         Description varchar(100) not null,
+                         constraint primary key(architectureEducationID),
+                         constraint foreign key(architectureID) references architecture(architectureID)
+                    )ENGINE=InnoDB;
+
+                    insert into architectureEducation values(
+                        0,
+                        2,
+                        'IJSE',
+                        '2017-2019',
+                        'BCS',
+                        'I studied at IJSE Galle Branch'
+                    );
+                    insert into architectureEducation values(
+                        0,
+                        2,
+                        'University of Dublin',
+                        '2017-2019',
+                        'Master',
+                        'I studied at University of Dublin'
+                    );
+                    insert into architectureEducation values(
+                        0,
+                        2,
+                        'IJSE',
+                        '2017-2019',
+                        'BCS',
+                        'I studied at IJSE Galle Branch'
+                    );
+
+
+
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ......................................................
+
+
+                    create table architectureExperiance(
+                         architectureExperianceID int not null AUTO_INCREMENT,
+                         architectureID int not null,
+                         CompanyName varchar(50)not null,
+                         YearRange varchar(50)not null,
+                         Post varchar(50)not null,
+                         Description varchar(100) not null,
+                         constraint primary key(architectureExperianceID),
+                         constraint foreign key(architectureID) references architecture(architectureID)
+                    )ENGINE=InnoDB;
+
+                    insert into architectureExperiance values(
+                        0,
+                        2,
+                        'WSO2',
+                        '2020-2025',
+                        'Seniour Software Engineer',
+                        'I work at WSO2'
+                    );
+                    insert into architectureExperiance values(
+                        0,
+                        2,
+                        'MIT',
+                        '2020-2025',
+                        'Seniour Software Engineer',
+                        'I work at MIT'
+                    );
+                    insert into architectureExperiance values(
+                        0,
+                        2,
+                        'Vertusa',
+                        '2020-2025',
+                        'Seniour Software Engineer',
+                        'I work at Vertusa'
+                    );
+
+                    ////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ......................................................
+
+
+                    create table architectureClients(
+                         ClientID int not null AUTO_INCREMENT,
+                         architectureID int not null,
+                         ClientName varchar(100) not null,
+                         ClientMobile int not null,
+                         ClientEmail varchar(100) not null,
+                         constraint primary key(ClientID),
+                         constraint foreign key(architectureID) references architecture(architectureID)
+                    )ENGINE=InnoDB;
+
+                    insert into architectureClients values(
+                        0,
+                        2,
+                        'Dinuka Lakshitha',
+                        '0761234567',
+                        'Dinuka Lakshitha@gmail.com'
+                    );
+
+                    insert into architectureClients values(
+                        0,
+                        2,
+                        'Thisaru Hiruni@gmail.com',
+                        '0771234567',
+                        'Thisaru Hiruni'
+                    );
+
+                    insert into architectureClients values(
+                        0,
+                        2,
+                        'Thusara Kushi',
+                        '0711234567',
+                        'Thusara Kushi@gmail.com'
+                    );
+
+
+                    ///////////////////////////////////////////////////////////////////////////////////////////////////////
+                    ............................................................
+
+
+
+                    create table architectureComments(
+                         CommentID int not null AUTO_INCREMENT,
+                         architectureID int not null,
+                         ClientID int not null,
+                         WorkID int,
+                         Commment varchar(100) not null,
+                         constraint primary key(CommentID),
+                         constraint foreign key(architectureID) references architecture(architectureID),
+                         constraint foreign key(ClientID) references architectureClients(ClientID),
+                         constraint foreign key(WorkID) references architectureWork(WorkID)
+                    )ENGINE=InnoDB;
+
+                    insert into architectureComments values(
+                        0,
+                        2,
+                        1,
+                        1,
+                        'Ado meka fatta wedakne'
+                    );
+
+                    insert into architectureComments values(
+                        0,
+                        2,
+                        1,
+                        NULL,
+                        'Such a creative constructor'
+                    );
+
+                    insert into architectureComments values(
+                        0,
+                        2,
+                        1,
+                        2,
+                        'This is an owesome work'
+                    );
+

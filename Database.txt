@@ -1249,3 +1249,205 @@ insert into BankersComments values(
     'This is an owesome work'
 );
 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+create table LandProvidersWork(
+     WorkID int not null AUTO_INCREMENT,
+     LandProvidersID int not null,
+     WorkName varchar(100)not null,
+     WorkPicture varchar(100)not null,
+     WorkRating double not null,
+     WorkDescrition varchar(50) not null,
+     constraint primary key(WorkID),
+     constraint foreign key(LandProvidersID) references LandProviders(LandProvidersID)
+)ENGINE=InnoDB;
+
+insert into LandProvidersWork values(
+    0,
+    1,
+    'Build House',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     4,
+     'Iski Babare Rabaree... Disti Didin...'
+);
+insert into LandProvidersWork values(
+    0,
+    1,
+    'Build Buiding',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     3,
+     'Iski Babare Rabaree... Disti Didin...'
+);
+insert into LandProvidersWork values(
+    0,
+    1,
+    'Build Piramid',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     5,
+     'Iski Babare Rabaree... Disti Didin...'
+);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+......................................................
+
+create table LandProvidersEducation(
+     LandProvidersEducationID int not null AUTO_INCREMENT,
+     LandProvidersID int not null,
+     UniversityName varchar(50)not null,
+     YearRange varchar(50)not null,
+     Degree varchar(50)not null,
+     Description varchar(100) not null,
+     constraint primary key(architectureEducationID),
+     constraint foreign key(LandProvidersID) references LandProviders(LandProvidersID)
+)ENGINE=InnoDB;
+
+insert into LandProvidersEducation values(
+    0,
+    2,
+    'IJSE',
+    '2017-2019',
+    'BCS',
+    'I studied at IJSE Galle Branch'
+);
+insert into LandProvidersEducation values(
+    0,
+    2,
+    'University of Dublin',
+    '2017-2019',
+    'Master',
+    'I studied at University of Dublin'
+);
+insert into LandProvidersEducation values(
+    0,
+    2,
+    'IJSE',
+    '2017-2019',
+    'BCS',
+    'I studied at IJSE Galle Branch'
+);
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+......................................................
+
+
+create table LandProvidersExperiance(
+     LandProvidersExperianceID int not null AUTO_INCREMENT,
+     LandProvidersID int not null,
+     CompanyName varchar(50)not null,
+     YearRange varchar(50)not null,
+     Post varchar(50)not null,
+     Description varchar(100) not null,
+     constraint primary key(architectureExperianceID),
+     constraint foreign key(LandProvidersID) references LandProviders(LandProvidersID)
+)ENGINE=InnoDB;
+
+insert into LandProvidersExperiance values(
+    0,
+    2,
+    'WSO2',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at WSO2'
+);
+insert into LandProvidersExperiance values(
+    0,
+    2,
+    'MIT',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at MIT'
+);
+insert into LandProvidersExperiance values(
+    0,
+    2,
+    'Vertusa',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at Vertusa'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+......................................................
+
+
+create table LandProvidersClients(
+     ClientID int not null AUTO_INCREMENT,
+     architectureID int not null,
+     ClientName varchar(100) not null,
+     ClientMobile int not null,
+     ClientEmail varchar(100) not null,
+     constraint primary key(ClientID),
+     constraint foreign key(LandProvidersID) references LandProviders(LandProvidersID)
+)ENGINE=InnoDB;
+
+insert into LandProvidersClients values(
+    0,
+    2,
+    'Dinuka Lakshitha',
+    '0761234567',
+    'Dinuka Lakshitha@gmail.com'
+);
+
+insert into LandProvidersClients values(
+    0,
+    2,
+    'Thisaru Hiruni@gmail.com',
+    '0771234567',
+    'Thisaru Hiruni'
+);
+
+insert into LandProvidersClients values(
+    0,
+    2,
+    'Thusara Kushi',
+    '0711234567',
+    'Thusara Kushi@gmail.com'
+);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+............................................................
+
+
+
+create table LandProvidersComments(
+     CommentID int not null AUTO_INCREMENT,
+     LandProvidersID int not null,
+     ClientID int not null,
+     WorkID int,
+     Commment varchar(100) not null,
+     constraint primary key(CommentID),
+     constraint foreign key(LandProvidersID) references LandProviders(LandProvidersID),
+     constraint foreign key(ClientID) references LandProvidersClients(ClientID),
+     constraint foreign key(WorkID) references LandProvidersWork(WorkID)
+)ENGINE=InnoDB;
+
+insert into LandProvidersComments values(
+    0,
+    2,
+    1,
+    1,
+    'Ado meka fatta wedakne'
+);
+
+insert into LandProvidersComments values(
+    0,
+    2,
+    1,
+    NULL,
+    'Such a creative constructor'
+);
+
+insert into LandProvidersComments values(
+    0,
+    2,
+    1,
+    2,
+    'This is an owesome work'
+);

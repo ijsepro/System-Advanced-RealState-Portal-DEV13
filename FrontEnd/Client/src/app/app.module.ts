@@ -18,18 +18,19 @@ import {AppErrorHandler} from './common/app-error-handler';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CommonModule} from '@angular/common';
 import {ToastrModule} from 'ngx-toastr';
-import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
+import {SweetAlert2Module} from '@toverux/ngx-sweetalert2';
 import {LoggerModule, NgxLoggerLevel} from 'ngx-logger';
-import { ClientProfileComponent } from './client-profile/client-profile.component';
-import { NavBarComponent } from './client-profile/nav-bar/nav-bar.component';
-import { FooterComponent } from './client-profile/footer/footer.component';
-import { AddWorkComponent } from './add-work/add-work.component';
+import {ClientProfileComponent} from './client-profile/client-profile.component';
+import {NavBarComponent} from './client-profile/nav-bar/nav-bar.component';
+import {FooterComponent} from './client-profile/footer/footer.component';
+import {AddWorkComponent} from './add-work/add-work.component';
 import {LoginComponent} from './login/login.component';
 import {PostWorkService} from './services/post-work.service';
-import { UserRolesComponent } from './user-roles/user-roles.component';
+import {UserRolesComponent} from './user-roles/user-roles.component';
 import {UserRolesService} from './services/user-roles.service';
 import {AuthGuard} from './services/auth.guard';
 import {AuthService} from './services/auth.service';
+import {SuiModule} from 'ng2-semantic-ui';
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import {AuthService} from './services/auth.service';
       confirmButtonClass: 'btn btn-primary',
       cancelButtonClass: 'btn'
     }),
-    LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR})
+    LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR}),
+    SuiModule
   ],
   providers: [
     UserRegistrationService,

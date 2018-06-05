@@ -1451,3 +1451,208 @@ insert into LandProvidersComments values(
     2,
     'This is an owesome work'
 );
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+create table FlatProvidersWork(
+     WorkID int not null AUTO_INCREMENT,
+     FlatProvidersID int not null,
+     WorkName varchar(100)not null,
+     WorkPicture varchar(100)not null,
+     WorkRating double not null,
+     WorkDescrition varchar(50) not null,
+     constraint primary key(WorkID),
+     constraint foreign key(FlatProvidersID) references FlatProviders(FlatProvidersID)
+)ENGINE=InnoDB;
+
+insert into FlatProvidersWork values(
+    0,
+    1,
+    'Build House',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     4,
+     'Iski Babare Rabaree... Disti Didin...'
+);
+insert into FlatProvidersWork values(
+    0,
+    1,
+    'Build Buiding',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     3,
+     'Iski Babare Rabaree... Disti Didin...'
+);
+insert into FlatProvidersWork values(
+    0,
+    1,
+    'Build Piramid',
+    '../../../assets/img/faces/kaci-baum-2.jpg',
+     5,
+     'Iski Babare Rabaree... Disti Didin...'
+);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+......................................................
+
+create table FlatProvidersEducation(
+     FlatProvidersEducationID int not null AUTO_INCREMENT,
+     FlatProvidersID int not null,
+     UniversityName varchar(50)not null,
+     YearRange varchar(50)not null,
+     Degree varchar(50)not null,
+     Description varchar(100) not null,
+     constraint primary key(FlatProvidersEducationID),
+     constraint foreign key(FlatProvidersID) references FlatProviders(FlatProvidersID)
+)ENGINE=InnoDB;
+
+insert into FlatProvidersEducation values(
+    0,
+    2,
+    'IJSE',
+    '2017-2019',
+    'BCS',
+    'I studied at IJSE Galle Branch'
+);
+insert into FlatProvidersEducation values(
+    0,
+    2,
+    'University of Dublin',
+    '2017-2019',
+    'Master',
+    'I studied at University of Dublin'
+);
+insert into FlatProvidersEducation values(
+    0,
+    2,
+    'IJSE',
+    '2017-2019',
+    'BCS',
+    'I studied at IJSE Galle Branch'
+);
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+......................................................
+
+
+create table FlatProvidersExperiance(
+     FlatProvidersExperianceID int not null AUTO_INCREMENT,
+     FlatProvidersID int not null,
+     CompanyName varchar(50)not null,
+     YearRange varchar(50)not null,
+     Post varchar(50)not null,
+     Description varchar(100) not null,
+     constraint primary key(FlatProvidersExperianceID),
+     constraint foreign key(FlatProvidersID) references FlatProviders(FlatProvidersID)
+)ENGINE=InnoDB;
+
+insert into FlatProvidersExperiance values(
+    0,
+    2,
+    'WSO2',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at WSO2'
+);
+insert into FlatProvidersExperiance values(
+    0,
+    2,
+    'MIT',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at MIT'
+);
+insert into FlatProvidersExperiance values(
+    0,
+    2,
+    'Vertusa',
+    '2020-2025',
+    'Seniour Software Engineer',
+    'I work at Vertusa'
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+......................................................
+
+
+create table FlatProvidersClients(
+     ClientID int not null AUTO_INCREMENT,
+     FlatProvidersID int not null,
+     ClientName varchar(100) not null,
+     ClientMobile int not null,
+     ClientEmail varchar(100) not null,
+     constraint primary key(ClientID),
+     constraint foreign key(FlatProvidersID) references FlatProviders(FlatProvidersID)
+)ENGINE=InnoDB;
+
+insert into FlatProvidersClients values(
+    0,
+    2,
+    'Dinuka Lakshitha',
+    '0761234567',
+    'Dinuka Lakshitha@gmail.com'
+);
+
+insert into FlatProvidersClients values(
+    0,
+    2,
+    'Thisaru Hiruni@gmail.com',
+    '0771234567',
+    'Thisaru Hiruni'
+);
+
+insert into FlatProvidersClients values(
+    0,
+    2,
+    'Thusara Kushi',
+    '0711234567',
+    'Thusara Kushi@gmail.com'
+);
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+............................................................
+
+
+
+create table FlatProvidersComments(
+     CommentID int not null AUTO_INCREMENT,
+     FlatProvidersID int not null,
+     ClientID int not null,
+     WorkID int,
+     Commment varchar(100) not null,
+     constraint primary key(CommentID),
+     constraint foreign key(FlatProvidersID) references FlatProviders(FlatProvidersID),
+     constraint foreign key(ClientID) references FlatProvidersClients(ClientID),
+     constraint foreign key(WorkID) references FlatProvidersWork(WorkID)
+)ENGINE=InnoDB;
+
+insert into FlatProvidersComments values(
+    0,
+    2,
+    1,
+    1,
+    'Ado meka fatta wedakne'
+);
+
+insert into FlatProvidersComments values(
+    0,
+    2,
+    1,
+    NULL,
+    'Such a creative constructor'
+);
+
+insert into FlatProvidersComments values(
+    0,
+    2,
+    1,
+    2,
+    'This is an owesome work'
+);
+

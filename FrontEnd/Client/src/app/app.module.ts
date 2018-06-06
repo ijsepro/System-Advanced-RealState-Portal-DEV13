@@ -31,6 +31,9 @@ import {UserRolesService} from './services/user-roles.service';
 import {AuthGuard} from './services/auth.guard';
 import {AuthService} from './services/auth.service';
 import {SuiModule} from 'ng2-semantic-ui';
+import {FormsModule} from '@angular/forms';
+import { AdminProfileComponent } from './admin-profile/admin-profile.component';
+import { AdminNavComponent } from './admin-profile/admin-nav/admin-nav.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import {SuiModule} from 'ng2-semantic-ui';
     FooterComponent,
     LoginComponent,
     AddWorkComponent,
-    UserRolesComponent
+    UserRolesComponent,
+    AdminProfileComponent,
+    AdminNavComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +68,8 @@ import {SuiModule} from 'ng2-semantic-ui';
       cancelButtonClass: 'btn'
     }),
     LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR}),
-    SuiModule
+    SuiModule,
+    FormsModule
   ],
   providers: [
     UserRegistrationService,

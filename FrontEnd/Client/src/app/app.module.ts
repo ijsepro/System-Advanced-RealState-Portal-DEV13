@@ -32,8 +32,10 @@ import {AuthGuard} from './services/auth.guard';
 import {AuthService} from './services/auth.service';
 import {SuiModule} from 'ng2-semantic-ui';
 import {FormsModule} from '@angular/forms';
-import { AdminProfileComponent } from './admin-profile/admin-profile.component';
-import { AdminNavComponent } from './admin-profile/admin-nav/admin-nav.component';
+import {AdminProfileComponent} from './admin-profile/admin-profile.component';
+import {AdminNavComponent} from './admin-profile/admin-nav/admin-nav.component';
+import {SidebarModule} from 'ng-sidebar';
+import {AdminService} from './services/admin.service';
 
 @NgModule({
   declarations: [
@@ -69,7 +71,9 @@ import { AdminNavComponent } from './admin-profile/admin-nav/admin-nav.component
     }),
     LoggerModule.forRoot({serverLoggingUrl: '/api/logs', level: NgxLoggerLevel.DEBUG, serverLogLevel: NgxLoggerLevel.ERROR}),
     SuiModule,
-    FormsModule
+    FormsModule,
+    // SidebarModule.forRoot()
+
   ],
   providers: [
     UserRegistrationService,
@@ -78,7 +82,8 @@ import { AdminNavComponent } from './admin-profile/admin-nav/admin-nav.component
     AuthService,
     PostWorkService,
     UserRolesService,
-    // {provide: ErrorHandler, useClass: AppErrorHandler}
+    // {provide: ErrorHandler, useClass: AppErrorHandler},
+    AdminService
   ],
   bootstrap: [AppComponent]
 })

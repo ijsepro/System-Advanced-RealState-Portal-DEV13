@@ -11,83 +11,92 @@
         <div [suiCollapse]="collapse">
           <div class="ui segment">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4" *ngFor="let archi of architectures">
                 <div class="card card-profile">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img" src="assets/img/examples/card-profile4.jpg">
+                      <img class="img" [src]="archi.architectureProfilePicture">
 
                       <div class="card-title">
-                        Tania Andrew
+                        {{archi.architectureName}}
                       </div>
                     </a>
-                    <div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>
+                    <div class="colored-shadow"
+                         style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div>
+                  </div>
 
                   <div class="card-content">
-                    <h6 class="category text-info">Web Designer</h6>
+                    <h4 class="card-title">Works Done -: {{archi.architectureWorksCount}}</h4>
+                    <sui-rating class="heart" [isReadonly]="true" [ngModel]="archi.architectureRatings"
+                                [maximum]="5"></sui-rating>
+                    <p class="card-category">
 
-                    <p class="card-description">
-                      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                      <span class="text-success"><i class="fa fa-long-arrow-up"></i>{{archi.architectureRatings}}</span>
+                      increase in
+                      today sales.
                     </p>
 
                     <div class="footer">
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
+                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i
+                        class="fa fa-twitter"></i></a>
                       <a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>
+                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i
+                        class="fa fa-instagram"></i></a>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="ui segments">
+      <div class="ui segment">
+        <a class="item" (click)="collapse = !collapse">
+          <i class="sidebar icon"></i> Bankers
+        </a>
+      </div>
+      <div class="ui segment">
+        <div [suiCollapse]="collapse">
+          <div class="ui segment">
+            <div class="row">
+              <div class="col-md-4" *ngFor="let bank of bankers">
                 <div class="card card-profile">
                   <div class="card-image">
                     <a href="#pablo">
-                      <img class="img" src="assets/img/examples/card-profile4.jpg">
+                      <img class="img" [src]="bank.BankerProfilePicture">
 
                       <div class="card-title">
-                        Tania Andrew
+                        {{bank.BankerName}}
                       </div>
                     </a>
-                    <div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>
-
-                  <div class="card-content">
-                    <h6 class="category text-info">Web Designer</h6>
-
-                    <p class="card-description">
-                      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-                    </p>
-
-                    <div class="footer">
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>
-                    </div>
+                    <div class="colored-shadow"
+                         style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div>
                   </div>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card card-profile">
-                  <div class="card-image">
-                    <a href="#pablo">
-                      <img class="img" src="assets/img/examples/card-profile4.jpg">
-
-                      <div class="card-title">
-                        Tania Andrew
-                      </div>
-                    </a>
-                    <div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>
 
                   <div class="card-content">
-                    <h6 class="category text-info">Web Designer</h6>
+                    <h4 class="card-title">Works Done -: {{bank.BankerWorksCount}}</h4>
+                    <sui-rating class="heart" [isReadonly]="true" [ngModel]="bank.BankerRatings"
+                                [maximum]="5"></sui-rating>
+                    <p class="card-category">
 
-                    <p class="card-description">
-                      Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
+                      <span class="text-success"><i class="fa fa-long-arrow-up"></i>{{bank.BankerRatings}}</span>
+                      increase in
+                      today sales.
                     </p>
 
                     <div class="footer">
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>
+                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i
+                        class="fa fa-twitter"></i></a>
                       <a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>
-                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>
+                      <a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i
+                        class="fa fa-instagram"></i></a>
                     </div>
                   </div>
                 </div>
@@ -99,203 +108,3 @@
     </div>
   </div>
 </div>
-<!--<div class="row">-->
-  <!--<div class="col-md-12">-->
-    <!--<div class="ui segments">-->
-      <!--<div class="ui segment">-->
-        <!--<a class="item" (click)="collapse = !collapse">-->
-          <!--<i class="sidebar icon"></i> Architectures-->
-        <!--</a>-->
-      <!--</div>-->
-      <!--<div class="ui segment">-->
-        <!--<div [suiCollapse]="collapse">-->
-          <!--<div class="ui segment">-->
-            <!--<div class="row">-->
-              <!--<div class="col-md-4">-->
-                <!--<div class="card card-profile">-->
-                  <!--<div class="card-image">-->
-                    <!--<a href="#pablo">-->
-                      <!--<img class="img" src="assets/img/examples/card-profile4.jpg">-->
-
-                      <!--<div class="card-title">-->
-                        <!--Tania Andrew-->
-                      <!--</div>-->
-                    <!--</a>-->
-                    <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                  <!--<div class="card-content">-->
-                    <!--<h6 class="category text-info">Web Designer</h6>-->
-
-                    <!--<p class="card-description">-->
-                      <!--Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
-                    <!--</p>-->
-
-                    <!--<div class="footer">-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-4">-->
-                <!--<div class="card card-profile">-->
-                  <!--<div class="card-image">-->
-                    <!--<a href="#pablo">-->
-                      <!--<img class="img" src="assets/img/examples/card-profile4.jpg">-->
-
-                      <!--<div class="card-title">-->
-                        <!--Tania Andrew-->
-                      <!--</div>-->
-                    <!--</a>-->
-                    <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                  <!--<div class="card-content">-->
-                    <!--<h6 class="category text-info">Web Designer</h6>-->
-
-                    <!--<p class="card-description">-->
-                      <!--Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
-                    <!--</p>-->
-
-                    <!--<div class="footer">-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-4">-->
-                <!--<div class="card card-profile">-->
-                  <!--<div class="card-image">-->
-                    <!--<a href="#pablo">-->
-                      <!--<img class="img" src="assets/img/examples/card-profile4.jpg">-->
-
-                      <!--<div class="card-title">-->
-                        <!--Tania Andrew-->
-                      <!--</div>-->
-                    <!--</a>-->
-                    <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                  <!--<div class="card-content">-->
-                    <!--<h6 class="category text-info">Web Designer</h6>-->
-
-                    <!--<p class="card-description">-->
-                      <!--Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
-                    <!--</p>-->
-
-                    <!--<div class="footer">-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-<!--<div class="row">-->
-  <!--<div class="col-md-12">-->
-    <!--<div class="ui segments">-->
-      <!--<div class="ui segment">-->
-        <!--<a class="item" (click)="collapse = !collapse">-->
-          <!--<i class="sidebar icon"></i> Architectures-->
-        <!--</a>-->
-      <!--</div>-->
-      <!--<div class="ui segment">-->
-        <!--<div [suiCollapse]="collapse">-->
-          <!--<div class="ui segment">-->
-            <!--<div class="row">-->
-              <!--<div class="col-md-4">-->
-                <!--<div class="card card-profile">-->
-                  <!--<div class="card-image">-->
-                    <!--<a href="#pablo">-->
-                      <!--<img class="img" src="assets/img/examples/card-profile4.jpg">-->
-
-                      <!--<div class="card-title">-->
-                        <!--Tania Andrew-->
-                      <!--</div>-->
-                    <!--</a>-->
-                    <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                  <!--<div class="card-content">-->
-                    <!--<h6 class="category text-info">Web Designer</h6>-->
-
-                    <!--<p class="card-description">-->
-                      <!--Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
-                    <!--</p>-->
-
-                    <!--<div class="footer">-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-4">-->
-                <!--<div class="card card-profile">-->
-                  <!--<div class="card-image">-->
-                    <!--<a href="#pablo">-->
-                      <!--<img class="img" src="assets/img/examples/card-profile4.jpg">-->
-
-                      <!--<div class="card-title">-->
-                        <!--Tania Andrew-->
-                      <!--</div>-->
-                    <!--</a>-->
-                    <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                  <!--<div class="card-content">-->
-                    <!--<h6 class="category text-info">Web Designer</h6>-->
-
-                    <!--<p class="card-description">-->
-                      <!--Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
-                    <!--</p>-->
-
-                    <!--<div class="footer">-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-              <!--<div class="col-md-4">-->
-                <!--<div class="card card-profile">-->
-                  <!--<div class="card-image">-->
-                    <!--<a href="#pablo">-->
-                      <!--<img class="img" src="assets/img/examples/card-profile4.jpg">-->
-
-                      <!--<div class="card-title">-->
-                        <!--Tania Andrew-->
-                      <!--</div>-->
-                    <!--</a>-->
-                    <!--<div class="colored-shadow" style="background-image: url(&quot;assets/img/examples/card-profile4.jpg&quot;); opacity: 1;"></div></div>-->
-
-                  <!--<div class="card-content">-->
-                    <!--<h6 class="category text-info">Web Designer</h6>-->
-
-                    <!--<p class="card-description">-->
-                      <!--Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...-->
-                    <!--</p>-->
-
-                    <!--<div class="footer">-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-twitter"><i class="fa fa-twitter"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-dribbble"><i class="fa fa-dribbble"></i></a>-->
-                      <!--<a href="#pablo" class="btn btn-just-icon btn-simple btn-instagram"><i class="fa fa-instagram"></i></a>-->
-                    <!--</div>-->
-                  <!--</div>-->
-                <!--</div>-->
-              <!--</div>-->
-            <!--</div>-->
-          <!--</div>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->

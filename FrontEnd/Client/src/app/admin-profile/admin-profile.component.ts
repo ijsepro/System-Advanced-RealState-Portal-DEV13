@@ -1,4 +1,5 @@
 import {Component, ElementRef, OnInit} from '@angular/core';
+import {AdminService} from '../services/admin.service';
 
 
 @Component({
@@ -7,12 +8,28 @@ import {Component, ElementRef, OnInit} from '@angular/core';
   styleUrls: ['./admin-profile.component.css']
 })
 export class AdminProfileComponent implements OnInit {
+  architectures: any[];
+  bankers: any[];
 
-  constructor() {
+  constructor(private service: AdminService) {
   }
 
 
   ngOnInit() {
+    this.loadArchitectures();
+    this.loadBankers();
+  }
+
+  loadArchitectures() {
+    this.service.getArchitectures().subscribe(res => {
+      this.architectures = res.json();
+    });
+  }
+
+  loadBankers() {
+    this.service.getBankers().subscribe(res => {
+      this.bankers = res.json();
+    });
   }
 
 }

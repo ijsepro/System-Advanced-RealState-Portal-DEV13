@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2430db58-bf80-474d-80fe-868d6a682213" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/baf066c1-8209-4eb9-8cd2-d2d5b06838b2.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/baf066c1-8209-4eb9-8cd2-d2d5b06838b2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/controllers/user.php" afterPath="$PROJECT_DIR$/BackEnd/application/controllers/user.php" />
-      <change beforePath="$PROJECT_DIR$/BackEnd/application/models/user_model.php" afterPath="$PROJECT_DIR$/BackEnd/application/models/user_model.php" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/view-profile/view-profile.component.html" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/view-profile/view-profile.component.html" />
-      <change beforePath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/view-profile/view-profile.component.ts" afterPath="$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/view-profile/view-profile.component.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +56,8 @@
       <file leaf-file-name="view-profile.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/view-profile/view-profile.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="135" column="254" lean-forward="false" selection-start-line="135" selection-start-column="254" selection-end-line="135" selection-end-column="254" />
+            <state relative-caret-position="85">
+              <caret line="96" column="65" lean-forward="false" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -568,12 +562,12 @@
       <workItem from="1528534075084" duration="1100000" />
       <workItem from="1528723023584" duration="2824000" />
       <workItem from="1528779952918" duration="2064000" />
-      <workItem from="1528784312880" duration="12034000" />
+      <workItem from="1528784312880" duration="12162000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345713000" />
+    <option name="totallyTimeSpent" value="345841000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1042,8 +1036,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FrontEnd/Client/src/app/client-profile/view-profile/view-profile.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="135" column="254" lean-forward="false" selection-start-line="135" selection-start-column="254" selection-end-line="135" selection-end-column="254" />
+        <state relative-caret-position="85">
+          <caret line="96" column="65" lean-forward="false" selection-start-line="96" selection-start-column="65" selection-end-line="96" selection-end-column="65" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>

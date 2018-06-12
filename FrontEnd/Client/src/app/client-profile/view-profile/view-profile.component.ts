@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ClientService} from '../../services/client.service';
 
 @Component({
   selector: 'app-view-profile',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewProfileComponent implements OnInit {
 
-  constructor() { }
+  projects: any[];
+
+  constructor(private service: ClientService) {
+  }
 
   ngOnInit() {
+    this.viewProjects()
+  }
+
+  /**
+   * @method viewProjects
+   * get the works of the client in to works projects
+   */
+  viewProjects() {
+
+    this.service.getWork(1)
+      .subscribe(res => {
+        this.projects = res.json();
+      });
+  }
+  ratings(projectID){
+    alert(projectID);
   }
 
 }

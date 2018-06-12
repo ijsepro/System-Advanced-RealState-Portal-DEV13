@@ -37,6 +37,7 @@ import {AdminNavComponent} from './admin-profile/admin-nav/admin-nav.component';
 import {SidebarModule} from 'ng-sidebar';
 import {AdminService} from './services/admin.service';
 import { ViewProfileComponent } from './client-profile/view-profile/view-profile.component';
+import {ClientService} from './services/client.service';
 
 @NgModule({
   declarations: [
@@ -84,8 +85,9 @@ import { ViewProfileComponent } from './client-profile/view-profile/view-profile
     AuthService,
     PostWorkService,
     UserRolesService,
-    {provide: ErrorHandler, useClass: AppErrorHandler},
-    AdminService
+    // {provide: ErrorHandler, useClass: AppErrorHandler},
+    AdminService,
+    ClientService
   ],
   bootstrap: [AppComponent]
 })

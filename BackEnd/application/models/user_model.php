@@ -23,4 +23,17 @@ class User_model extends CI_Model
 			return false;
 		}
 	}
+
+	/**
+	 * @function findProjects
+	 * find the projects of the client
+	 * @param $clientID
+	 * @return projects of the client
+	 */
+	public function findProjects($clientID){
+		$this->db->select('*');
+		$query = $this->db->get_where('Works', ['userID' => $clientID]);
+
+		return json_encode($query->result());
+	}
 }

@@ -54,4 +54,15 @@ class User extends CI_Controller
 			}
 		}
 	}
+
+	/**
+	 * @function getProjects
+	 * response with the work of the client
+	 */
+	public function getProjects($clientID){
+
+		$projects = $this->user_model->findProjects($clientID);
+		echo $projects;
+
+	}
 }

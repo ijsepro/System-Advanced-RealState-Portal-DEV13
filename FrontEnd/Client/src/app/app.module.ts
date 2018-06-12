@@ -36,6 +36,7 @@ import {AdminProfileComponent} from './admin-profile/admin-profile.component';
 import {AdminNavComponent} from './admin-profile/admin-nav/admin-nav.component';
 import {SidebarModule} from 'ng-sidebar';
 import {AdminService} from './services/admin.service';
+import { ViewProfileComponent } from './client-profile/view-profile/view-profile.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {AdminService} from './services/admin.service';
     AddWorkComponent,
     UserRolesComponent,
     AdminProfileComponent,
-    AdminNavComponent
+    AdminNavComponent,
+    ViewProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -82,7 +84,7 @@ import {AdminService} from './services/admin.service';
     AuthService,
     PostWorkService,
     UserRolesService,
-    // {provide: ErrorHandler, useClass: AppErrorHandler},
+    {provide: ErrorHandler, useClass: AppErrorHandler},
     AdminService
   ],
   bootstrap: [AppComponent]

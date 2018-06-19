@@ -92,35 +92,23 @@
         <div class="col-md-12">
           <div class="card card-blog">
             <div class="card-image">
-              <a href="#pablo">
-                <img class="img" src="assets/img/examples/card-blog2.jpg">
-              </a>
-              <div class="colored-shadow"
-                   style="background-image: url('../../assets/img/examples/blog5.jpg'); opacity: 1;"></div>
+              <div class="fileinput fileinput-new text-center" data-provides="fileinput">
+                <div class="fileinput-new thumbnail img-circle img-raised">
+                  <img [src]="url" alt="Rounded Image" class="img-rounded img-responsive">
+                </div>
+                <div class="fileinput-preview fileinput-exists thumbnail img-circle img-raised"></div>
+                <div>
+									<span class="btn btn-raised btn-round btn-default btn-file">
+										<span class="fileinput-new">Change photo</span>
+																				<input (change)="readUrl($event)"  type="file" name="..."></span>
+                </div>
+              </div>
             </div>
 
             <div class="card-content">
-              <h6 class="category text-success">Legal</h6>
-
-              <h4 class="card-title">
-                <a href="#pablo">5 Common Legal Mistakes That Can Trip-Up Your Startup</a>
-              </h4>
-              <p class="card-description">
-                Don't be scared of the truth because we need to restart the human foundation in truth And I love you
-                like
-                Kanye loves Kanye I love Rick Owens’ bed design but the back is...
-              </p>
-              <div class="footer">
-                <div class="author">
-                  <a href="#pablo">
-                    <img src="../../assets/img/examples/blog5.jpg" alt="..." class="avatar img-raised">
-                    <span>Mike John</span>
-                  </a>
-                </div>
-                <div class="stats">
-                  <i class="material-icons">schedule</i> 5 min read
-                </div>
-              </div>
+              <h6>Storage allowed</h6>
+              <sui-progress class="disabled" [value]="15"></sui-progress>
+              <h5 style="text-align: center;font-size: 25px">15%</h5>
             </div>
           </div>
         </div>
